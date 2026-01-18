@@ -1,1 +1,0 @@
-2026-01-02 10:57:40,839 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_29.pkl

@@ -1,4 +1,0 @@
-n_solutions: 100
-spacing: 0.0
-diversity: 16.24807680927192
-MMID: 1.1105925581375968

@@ -1,6 +1,0 @@
-current_time: 10
-broken_machine: 2
-n_solutions: 100
-best_makespan: 1536.0
-best_time_diff: 529935.0
-best_assign_diff: 6.0
