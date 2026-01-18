@@ -1,0 +1,5 @@
+point_id,obj1_time_diff,obj2_assign_diff,obj3_makespan
+0,30.0,7.0,15.0
+1,58.0,7.0,14.0
+2,94.0,5.0,16.0
+3,59.0,6.0,15.0

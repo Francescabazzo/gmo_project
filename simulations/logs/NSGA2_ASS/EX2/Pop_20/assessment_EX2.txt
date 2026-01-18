@@ -1,0 +1,17 @@
+2026-01-09 10:26:26,767 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_2.pkl
+2026-01-09 10:26:26,767 - INFO - ============================================================
+2026-01-09 10:26:26,767 - INFO - START EXPERIMENT 2
+2026-01-09 10:26:26,767 - INFO - ============================================================
+2026-01-09 10:26:26,767 - INFO - Starting time: 2026-01-09 10:26:26
+2026-01-09 10:26:26,767 - INFO - Parameters of the experiment:
+2026-01-09 10:26:26,767 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_2.pkl
+2026-01-09 10:26:26,767 - INFO -   broken_machine_id: 0
+2026-01-09 10:26:26,767 - INFO -   disruption_time: 1
+2026-01-09 10:26:26,767 - INFO - Job number: 10
+2026-01-09 10:26:26,767 - INFO - Machine number: 6
+2026-01-09 10:26:26,767 - INFO - Unique machines: [1, 4, 3]
+2026-01-09 10:47:18,327 - ERROR - cannot unpack non-iterable NoneType object
+2026-01-09 10:47:18,327 - INFO - ============================================================
+2026-01-09 10:47:18,327 - INFO - END OF THE EXPERIMENT 2 - FAILED
+2026-01-09 10:47:18,327 - INFO - Message: cannot unpack non-iterable NoneType object
+2026-01-09 10:47:18,328 - INFO - ============================================================

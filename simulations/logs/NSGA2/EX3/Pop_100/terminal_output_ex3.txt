@@ -1,0 +1,5 @@
+=== EXPERIMENT 3 STARTED AT 2026-01-06 23:01:56.285772 ===
+Population size: 100
+Data file: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_3.pkl
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+2026-01-07 10:43:22,970 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_4.pkl
+2026-01-07 10:43:22,970 - INFO - ============================================================
+2026-01-07 10:43:22,970 - INFO - START EXPERIMENT 4
+2026-01-07 10:43:22,970 - INFO - ============================================================
+2026-01-07 10:43:22,970 - INFO - Starting time: 2026-01-07 10:43:22
+2026-01-07 10:43:22,970 - INFO - Parameters of the experiment:
+2026-01-07 10:43:22,970 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_4.pkl
+2026-01-07 10:43:22,970 - INFO -   broken_machine_id: 3
+2026-01-07 10:43:22,970 - INFO -   disruption_time: 310
+2026-01-07 10:43:22,970 - INFO - Job number: 12
+2026-01-07 10:43:22,970 - INFO - Machine number: 8
+2026-01-07 10:43:22,970 - INFO - Unique machines: []
+2026-01-07 10:43:22,970 - INFO - Starting rescheduling with NSGA-II...
+2026-01-07 10:49:35,532 - INFO - NSGA-II Optimization Results:
+2026-01-07 10:49:35,532 - INFO -   Number of generations completed: 51
+2026-01-07 10:49:35,532 - INFO -   Number of function evaluations: 1000
+2026-01-07 10:49:35,532 - INFO -   Pareto front size: 20
+2026-01-07 10:49:35,532 - INFO - Best solution selected (min_time_diff):
+2026-01-07 10:49:35,532 - INFO -   Time Differences: 616775.00
+2026-01-07 10:49:35,532 - INFO -   Assignment Differences: 7.00
+2026-01-07 10:49:35,532 - INFO -   Makespan: 1488.00
+2026-01-07 10:49:35,532 - INFO - Pareto Front Statistics:
+2026-01-07 10:49:35,532 - INFO -   Time Differences range: 560294.00 - 1097074.00
+2026-01-07 10:49:35,533 - INFO -   Assignment Differences range: 5.00 - 10.00
+2026-01-07 10:49:35,533 - INFO -   Makespan range: 1488.00 - 1678.00
+2026-01-07 10:49:35,533 - INFO - Generating and saving plots...
+2026-01-07 10:49:36,165 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/pareto_front.pdf
+2026-01-07 10:49:36,469 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/pareto_front_assessment.pdf
+2026-01-07 10:49:36,793 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/pareto_front_normalized.pdf
+2026-01-07 10:49:37,296 - INFO - Gantt chart saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/gantt_chart_ex4.png
+2026-01-07 10:49:37,297 - INFO - Updated environment saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/rescheduled_environment_ex4.pkl
+2026-01-07 10:49:37,297 - INFO - ============================================================
+2026-01-07 10:49:37,297 - INFO - END OF THE EXPERIMENT 4 - COMPLETED
+2026-01-07 10:49:37,297 - INFO - ============================================================
+2026-01-07 10:49:37,297 - INFO - All results saved for experiment 4
+2026-01-07 10:49:37,297 - INFO -   Plots: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20/pareto_front_normalized.pdf
+2026-01-07 10:49:37,297 - INFO -   Data: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX4/Pop_20
+2026-01-07 10:49:37,297 - INFO -   Logs: /home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs/NSGA2/EX4/Pop_20
+2026-01-07 10:49:37,297 - ERROR - Error during NSGA-II experiment 4: name 'stdout_capture' is not defined
+2026-01-07 10:49:37,297 - INFO - ============================================================
+2026-01-07 10:49:37,297 - INFO - END OF THE EXPERIMENT 4 - FAILED
+2026-01-07 10:49:37,298 - INFO - Message: name 'stdout_capture' is not defined
+2026-01-07 10:49:37,298 - INFO - ============================================================

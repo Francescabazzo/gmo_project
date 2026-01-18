@@ -1,0 +1,15 @@
+2026-01-09 10:25:33,243 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_1.pkl
+2026-01-09 10:25:33,243 - INFO - ============================================================
+2026-01-09 10:25:33,243 - INFO - START EXPERIMENT 1
+2026-01-09 10:25:33,243 - INFO - ============================================================
+2026-01-09 10:25:33,243 - INFO - Starting time: 2026-01-09 10:25:33
+2026-01-09 10:25:33,243 - INFO - Parameters of the experiment:
+2026-01-09 10:25:33,243 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_1.pkl
+2026-01-09 10:25:33,243 - INFO -   broken_machine_id: 1
+2026-01-09 10:25:33,243 - INFO -   disruption_time: 4
+2026-01-09 10:25:33,243 - INFO - Job number: 4
+2026-01-09 10:25:33,243 - INFO - Machine number: 5
+2026-01-09 10:25:33,244 - INFO - Unique machines: []
+2026-01-09 10:25:36,402 - INFO - ============================================================
+2026-01-09 10:25:36,402 - INFO - END OF THE EXPERIMENT 1 - COMPLETED
+2026-01-09 10:25:36,402 - INFO - ============================================================

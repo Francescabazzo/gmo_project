@@ -1,0 +1,4 @@
+n_solutions: 1
+spacing: nan
+diversity: 0.0
+MMID: 0.0

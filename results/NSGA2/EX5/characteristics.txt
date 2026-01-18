@@ -1,0 +1,4 @@
+Dataset: '/fjsp/kacem/Kacem1.fjs'
+Jobs: 4
+Machines: 5
+Operations: 12

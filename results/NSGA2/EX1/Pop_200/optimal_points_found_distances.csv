@@ -1,0 +1,6 @@
+Time differences,Assignment differences,Makespan,Optimal Time Differences,Distance Time differences,Optimal Assignment Differences,Distance assignment differences,Optimal Makespan,Distance makespan
+0.64,1.0,0.5,0.0,0.64,0.3333333333333333,0.6666666666666667,0.0,0.5
+0.48,0.0,1.0,0.48,0.0,0.0,0.0,1.0,0.0
+1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+0.44,0.3333333333333333,1.0,0.0,0.44,0.3333333333333333,0.0,0.0,1.0
+0.76,0.3333333333333333,0.5,0.0,0.76,0.3333333333333333,0.0,0.0,0.5

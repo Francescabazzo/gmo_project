@@ -1,0 +1,22 @@
+2025-11-17 17:48:47,261 - INFO - ============================================================
+2025-11-17 17:48:47,261 - INFO - START EXPERIMENT 4
+2025-11-17 17:48:47,262 - INFO - ============================================================
+2025-11-17 17:48:47,262 - INFO - Starting time: 2025-11-17 17:48:47
+2025-11-17 17:48:47,262 - INFO - Parameters of the experiment:
+2025-11-17 17:48:47,262 - INFO -   file_path: C:\Users\utente\Desktop\TESI\Job_Shop_Scheduling_Benchmark_Environments_and_Instances\results_scheduling\schedule_simulation_4.pkl
+2025-11-17 17:48:47,262 - INFO -   broken_machine_id: 2
+2025-11-17 17:48:47,263 - INFO -   disruption_time: 10
+2025-11-17 17:48:47,263 - INFO -   time_limit: 1800
+2025-11-17 17:48:47,264 - INFO - Environment loaded from: C:\Users\utente\Desktop\TESI\Job_Shop_Scheduling_Benchmark_Environments_and_Instances\results_scheduling\schedule_simulation_4.pkl
+2025-11-17 17:48:47,264 - INFO - Job number: 12
+2025-11-17 17:48:47,264 - INFO - Machine number: 8
+2025-11-17 17:48:47,265 - INFO - Unique machines: []
+2025-11-17 17:48:47,265 - INFO - Starting rescheduling with MILP model...
+2025-11-17 18:18:48,317 - INFO - Rescheduling completed
+2025-11-17 18:18:48,317 - INFO - Best objective value: 311982.0
+2025-11-17 18:18:48,318 - INFO - Computation time: 128.98078417778015 seconds
+2025-11-17 18:18:51,300 - INFO - Objective evolution plot saved in: C:\Users\utente\Desktop\TESI\Job_Shop_Scheduling_Benchmark_Environments_and_Instances\images\EX4\objective_evolution_ex4_resch_lin.png
+2025-11-17 18:18:51,994 - INFO - Gantt chart saved in: C:\Users\utente\Desktop\TESI\Job_Shop_Scheduling_Benchmark_Environments_and_Instances\images\EX4\schedule_gantt_ex4_resch_lin.png
+2025-11-17 18:18:51,995 - INFO - ============================================================
+2025-11-17 18:18:51,995 - INFO - END OF THE EXPERIMENT 4 - COMPLETED
+2025-11-17 18:18:51,995 - INFO - ============================================================

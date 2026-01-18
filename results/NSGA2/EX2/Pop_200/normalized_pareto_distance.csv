@@ -1,0 +1,2 @@
+point_id,pf_f1_norm,pf_f2_norm,pf_f3_norm,nearest_opt_id,opt_f1_norm,opt_f2_norm,opt_f3_norm,euclidean_distance
+0,1.0,0.0,1.0,0,0.0,0.0,1.0,1.0

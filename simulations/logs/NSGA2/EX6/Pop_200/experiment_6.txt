@@ -1,0 +1,18 @@
+2026-01-08 18:03:12,797 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_6.pkl
+2026-01-08 18:03:12,797 - INFO - ============================================================
+2026-01-08 18:03:12,797 - INFO - START EXPERIMENT 6
+2026-01-08 18:03:12,797 - INFO - ============================================================
+2026-01-08 18:03:12,797 - INFO - Starting time: 2026-01-08 18:03:12
+2026-01-08 18:03:12,797 - INFO - Parameters of the experiment:
+2026-01-08 18:03:12,797 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_6.pkl
+2026-01-08 18:03:12,797 - INFO -   broken_machine_id: 6
+2026-01-08 18:03:12,797 - INFO -   disruption_time: 10
+2026-01-08 18:03:12,798 - INFO - Job number: 15
+2026-01-08 18:03:12,798 - INFO - Machine number: 8
+2026-01-08 18:03:12,798 - INFO - Unique machines: [4, 0]
+2026-01-08 18:03:12,798 - INFO - Starting rescheduling with NSGA-II...
+2026-01-09 08:57:24,788 - ERROR - Error during NSGA-II experiment 6: cannot unpack non-iterable NoneType object
+2026-01-09 08:57:24,788 - INFO - ============================================================
+2026-01-09 08:57:24,788 - INFO - END OF THE EXPERIMENT 6 - FAILED
+2026-01-09 08:57:24,788 - INFO - Message: cannot unpack non-iterable NoneType object
+2026-01-09 08:57:24,788 - INFO - ============================================================

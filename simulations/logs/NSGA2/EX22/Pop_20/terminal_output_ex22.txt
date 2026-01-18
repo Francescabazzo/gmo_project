@@ -1,0 +1,1479 @@
+=== EXPERIMENT 22 STARTED AT 2026-01-09 09:32:47.478154 ===
+Population size: 20
+Data file: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_22.pkl
+--------------------------------------------------------------------------------
+
+Jobs: 8
+Machines: 7
+Ops per job: [3, 3, 3, 3, 3, 3, 3, 3]
+Starting NSGA-II.
+Population: 20
+Crossover rate: 0.8, Mutation rate: 0.1
+==========================================================================================
+n_gen  |  n_eval  | n_nds  |     cv_min    |     cv_avg    |      eps      |   indicator  
+==========================================================================================
+     1 |       20 |      2 |  0.000000E+00 |  5.8000000000 |             - |             -
+     2 |       40 |      2 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         ideal
+     3 |       60 |      8 |  0.000000E+00 |  0.000000E+00 |  0.2500000000 |         ideal
+     4 |       80 |      7 |  0.000000E+00 |  0.000000E+00 |  0.1643192488 |         ideal
+     5 |      100 |      3 |  0.000000E+00 |  0.000000E+00 |  0.6296296296 |         ideal
+     6 |      120 |      3 |  0.000000E+00 |  0.000000E+00 |  6.5858106876 |         ideal
+     7 |      140 |      2 |  0.000000E+00 |  0.000000E+00 |  2.1603075796 |         ideal
+     8 |      160 |      1 |  0.000000E+00 |  0.000000E+00 |  1.393510E+05 |         ideal
+     9 |      180 |      1 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    10 |      200 |      1 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    11 |      220 |      2 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         ideal
+    12 |      240 |      6 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    13 |      260 |     12 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    14 |      280 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    15 |      300 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    16 |      320 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    17 |      340 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    18 |      360 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    19 |      380 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    20 |      400 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    21 |      420 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    22 |      440 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    23 |      460 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    24 |      480 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    25 |      500 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    26 |      520 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    27 |      540 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    28 |      560 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    29 |      580 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    30 |      600 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    31 |      620 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    32 |      640 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    33 |      660 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    34 |      680 |     20 |  0.000000E+00 |  0.000000E+00 |  0.2909978169 |         ideal
+    35 |      700 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    36 |      720 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    37 |      740 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    38 |      760 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    39 |      780 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    40 |      800 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    41 |      820 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    42 |      840 |     20 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+
+============================================================
+PARETO FRONT DEFINITION
+============================================================
+Pareto front extracted from res.opt:
+  Solutions number: 20
+  Chromosome dimension: (20, 32)
+  Objectives dimension: (20, 3)
+  All the solutions are non dominated (valid front)
+============================================================
+
+=============== PARETO FRONT ASSESSMENT ===============
+Size of X: (20, 32), Size of F: (20, 3)
+Found 20 total points, 3 unique points
+==========================================================
+UNIQUE INDIVIDUAL 1/3 (Original index: 0): [1 0 0 2 1 0 1 0 1 1 1 0 0 0 0 1 7 0 3 4 5 6 2 4 4 1 7 5 1 6 0 5]
+Value of the first objective: 55927.0.
+Value of the second objective: 4.0.
+Value of the third objective: 787.0.
+
+============================================================
+SCHEDULE SUMMARY
+============================================================
+Op   Job  Machine  Start    End      Dur    Status      
+------------------------------------------------------------
+0    0    2        -0.0     100.0    100.0  COMPLETED   
+6    2    N/A      -0.0     87.0     87.0   COMPLETED   
+9    3    1        -0.0     65.0     65.0   COMPLETED   
+21   7    3        -0.0     245.0    245.0  ONGOING     
+10   3    4        65.0     238.0    173.0  ONGOING     
+3    1    N/A      87.0     301.0    214.0  ONGOING     
+7    2    6        87.0     232.0    145.0  ONGOING     
+18   6    2        100.0    245.0    145.0  ONGOING     
+1    0    6        232.0    355.0    123.0  TO_PROCESS  
+11   3    3        245.0    390.0    145.0  TO_PROCESS  
+19   6    2        245.0    369.0    124.0  TO_PROCESS  
+22   7    5        245.0    469.0    224.0  TO_PROCESS  
+8    2    4        249.0    349.0    100.0  TO_PROCESS  
+12   4    N/A      301.0    429.0    128.0  TO_PROCESS  
+4    1    2        369.0    456.0    87.0   TO_PROCESS  
+20   6    4        369.0    514.0    145.0  TO_PROCESS  
+15   5    3        390.0    544.0    154.0  TO_PROCESS  
+13   4    6        429.0    515.0    86.0   TO_PROCESS  
+5    1    6        515.0    665.0    150.0  TO_PROCESS  
+14   4    5        515.0    600.0    85.0   TO_PROCESS  
+2    0    3        544.0    694.0    150.0  TO_PROCESS  
+16   5    2        544.0    667.0    123.0  TO_PROCESS  
+23   7    5        600.0    765.0    165.0  TO_PROCESS  
+17   5    4        667.0    787.0    120.0  TO_PROCESS  
+
+------------------------------------------------------------
+PER-MACHINE SCHEDULE:
+------------------------------------------------------------
+Machine 0: 6(-0-87) → 3(87-301) → 12(301-429)
+Machine 1: 9(-0-65)
+Machine 2: 0(-0-100) → 18(100-245) → 19(245-369) → 4(369-456) → 16(544-667)
+Machine 3: 21(-0-245) → 11(245-390) → 15(390-544) → 2(544-694)
+Machine 4: 10(65-238) → 8(249-349) → 20(369-514) → 17(667-787)
+Machine 5: 22(245-469) → 14(515-600) → 23(600-765)
+Machine 6: 7(87-232) → 1(232-355) → 13(429-515) → 5(515-665)
+
+Makespan: 787.0
+============================================================
+
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6437 nonzeros
+Model fingerprint: 0xaad7a92c
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+
+User MIP start produced solution with objective 55927 (0.00s)
+Loaded user MIP start with objective 55927
+
+Presolve removed 1630 rows and 932 columns
+Presolve time: 0.01s
+Presolved: 17 rows, 21 columns, 54 nonzeros
+Presolved model has 7 quadratic constraint(s)
+Variable types: 7 continuous, 14 integer (6 binary)
+Root relaxation presolve removed 17 rows and 21 columns
+Root relaxation presolve: All rows and columns removed
+
+Root relaxation: objective 1.958200e+04, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    42341.000000 19582.0000  53.8%     -    0s
+     0     0 38766.0000    0    4 42341.0000 38766.0000  8.44%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Cover: 2
+  Flow cover: 4
+
+Explored 1 nodes (3 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 42341 55927 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.234100000000e+04, best bound 4.234100000000e+04, gap 0.0000%
+
+User-callback calls 1212, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 787.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=245.0, end=390.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=625.0, Machine 4
+ - Operation 15: start=390.0, end=544.0, Machine 3
+ - Operation 16: start=544.0, end=667.0, Machine 2
+ - Operation 17: start=667.0, end=787.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 787.0, quadratric delay 42341.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 4
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6329 nonzeros
+Model fingerprint: 0xe0bc4b18
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+04]
+
+User MIP start produced solution with objective 4 (0.00s)
+Loaded user MIP start with objective 4
+
+Presolve removed 1636 rows and 935 columns
+Presolve time: 0.01s
+Presolved: 11 rows, 18 columns, 42 nonzeros
+Presolved model has 7 quadratic constraint(s)
+Variable types: 8 continuous, 10 integer (2 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+
+User-callback calls 1136, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 787.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=232.0, end=355.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=245.0, end=390.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=600.0, Machine 5
+ - Operation 15: start=390.0, end=544.0, Machine 3
+ - Operation 16: start=544.0, end=667.0, Machine 2
+ - Operation 17: start=667.0, end=787.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=600.0, end=765.0, Machine 5
+
+ Objective values: cmax 787.0, quadratric delay 55927.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 5
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6451 nonzeros
+Model fingerprint: 0x20d96f1b
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+04]
+
+User MIP start produced solution with objective 787 (0.00s)
+Loaded user MIP start with objective 787
+
+Presolve removed 1632 rows and 933 columns
+Presolve time: 0.01s
+Presolved: 15 rows, 20 columns, 57 nonzeros
+Presolved model has 7 quadratic constraint(s)
+Variable types: 8 continuous, 12 integer (2 binary)
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+Root relaxation presolve removed 15 rows and 20 columns
+Root relaxation presolve: All rows and columns removed
+
+Root relaxation: objective 7.450000e+02, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     745.0000000  745.00000  0.00%     -    0s
+
+Explored 1 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 745 787 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.450000000000e+02, best bound 7.450000000000e+02, gap 0.0000%
+
+User-callback calls 1232, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 745.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=550.0, end=700.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=625.0, Machine 4
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=502.0, end=625.0, Machine 2
+ - Operation 17: start=625.0, end=745.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 745.0, quadratric delay 55965.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 4
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+==========================================================
+UNIQUE INDIVIDUAL 2/3 (Original index: 2): [1 0 0 2 1 0 1 0 1 1 1 0 0 0 0 1 7 4 0 5 6 4 2 3 7 1 4 5 1 0 6 5]
+Value of the first objective: 71501.0.
+Value of the second objective: 4.0.
+Value of the third objective: 719.0.
+
+============================================================
+SCHEDULE SUMMARY
+============================================================
+Op   Job  Machine  Start    End      Dur    Status      
+------------------------------------------------------------
+0    0    2        -0.0     100.0    100.0  COMPLETED   
+6    2    N/A      -0.0     87.0     87.0   COMPLETED   
+9    3    1        -0.0     65.0     65.0   COMPLETED   
+21   7    3        -0.0     245.0    245.0  ONGOING     
+10   3    4        65.0     238.0    173.0  ONGOING     
+3    1    N/A      87.0     301.0    214.0  ONGOING     
+7    2    6        87.0     232.0    145.0  ONGOING     
+18   6    2        100.0    245.0    145.0  ONGOING     
+1    0    6        232.0    355.0    123.0  TO_PROCESS  
+15   5    3        245.0    399.0    154.0  TO_PROCESS  
+19   6    2        245.0    369.0    124.0  TO_PROCESS  
+22   7    5        245.0    469.0    224.0  TO_PROCESS  
+8    2    4        249.0    349.0    100.0  TO_PROCESS  
+12   4    N/A      301.0    429.0    128.0  TO_PROCESS  
+4    1    2        369.0    456.0    87.0   TO_PROCESS  
+20   6    4        369.0    514.0    145.0  TO_PROCESS  
+11   3    3        399.0    544.0    145.0  TO_PROCESS  
+13   4    6        429.0    515.0    86.0   TO_PROCESS  
+16   5    2        456.0    579.0    123.0  TO_PROCESS  
+23   7    5        469.0    634.0    165.0  TO_PROCESS  
+5    1    6        515.0    665.0    150.0  TO_PROCESS  
+2    0    3        544.0    694.0    150.0  TO_PROCESS  
+17   5    4        579.0    699.0    120.0  TO_PROCESS  
+14   4    5        634.0    719.0    85.0   TO_PROCESS  
+
+------------------------------------------------------------
+PER-MACHINE SCHEDULE:
+------------------------------------------------------------
+Machine 0: 6(-0-87) → 3(87-301) → 12(301-429)
+Machine 1: 9(-0-65)
+Machine 2: 0(-0-100) → 18(100-245) → 19(245-369) → 4(369-456) → 16(456-579)
+Machine 3: 21(-0-245) → 15(245-399) → 11(399-544) → 2(544-694)
+Machine 4: 10(65-238) → 8(249-349) → 20(369-514) → 17(579-699)
+Machine 5: 22(245-469) → 23(469-634) → 14(634-719)
+Machine 6: 7(87-232) → 1(232-355) → 13(429-515) → 5(515-665)
+
+Makespan: 719.0
+============================================================
+
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6437 nonzeros
+Model fingerprint: 0xc5eb2744
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+
+User MIP start produced solution with objective 71501 (0.00s)
+Loaded user MIP start with objective 71501
+
+Presolve removed 1645 rows and 947 columns
+Presolve time: 0.01s
+Presolved: 2 rows, 6 columns, 4 nonzeros
+Presolved model has 3 quadratic constraint(s)
+Variable types: 3 continuous, 3 integer (0 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 71501 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.150100000000e+04, best bound 7.150100000000e+04, gap 0.0000%
+
+User-callback calls 709, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 719.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=634.0, end=719.0, Machine 5
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=456.0, end=579.0, Machine 2
+ - Operation 17: start=579.0, end=699.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 719.0, quadratric delay 71501.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 5
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6329 nonzeros
+Model fingerprint: 0x036f5c80
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+04]
+
+User MIP start produced solution with objective 4 (0.00s)
+Loaded user MIP start with objective 4
+
+Presolve removed 1647 rows and 953 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 1: 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+
+User-callback calls 811, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 719.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=232.0, end=355.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=634.0, end=719.0, Machine 5
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=456.0, end=579.0, Machine 2
+ - Operation 17: start=579.0, end=699.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 719.0, quadratric delay 71501.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 5
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6451 nonzeros
+Model fingerprint: 0xf0b3f56d
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+04]
+
+User MIP start produced solution with objective 719 (0.00s)
+Loaded user MIP start with objective 719
+
+Presolve removed 1647 rows and 953 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 1: 719 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.190000000000e+02, best bound 7.190000000000e+02, gap 0.0000%
+
+User-callback calls 1188, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 719.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=634.0, end=719.0, Machine 5
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=456.0, end=579.0, Machine 2
+ - Operation 17: start=579.0, end=699.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 719.0, quadratric delay 71501.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 5
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+==========================================================
+UNIQUE INDIVIDUAL 3/3 (Original index: 4): [1 0 0 2 1 0 1 0 1 1 1 0 0 0 0 1 7 4 0 5 6 2 4 4 1 3 7 5 1 0 6 5]
+Value of the first objective: 60459.0.
+Value of the second objective: 4.0.
+Value of the third objective: 765.0.
+
+============================================================
+SCHEDULE SUMMARY
+============================================================
+Op   Job  Machine  Start    End      Dur    Status      
+------------------------------------------------------------
+0    0    2        -0.0     100.0    100.0  COMPLETED   
+6    2    N/A      -0.0     87.0     87.0   COMPLETED   
+9    3    1        -0.0     65.0     65.0   COMPLETED   
+21   7    3        -0.0     245.0    245.0  ONGOING     
+10   3    4        65.0     238.0    173.0  ONGOING     
+3    1    N/A      87.0     301.0    214.0  ONGOING     
+7    2    6        87.0     232.0    145.0  ONGOING     
+18   6    2        100.0    245.0    145.0  ONGOING     
+1    0    6        232.0    355.0    123.0  TO_PROCESS  
+15   5    3        245.0    399.0    154.0  TO_PROCESS  
+19   6    2        245.0    369.0    124.0  TO_PROCESS  
+22   7    5        245.0    469.0    224.0  TO_PROCESS  
+8    2    4        249.0    349.0    100.0  TO_PROCESS  
+12   4    N/A      301.0    429.0    128.0  TO_PROCESS  
+4    1    2        369.0    456.0    87.0   TO_PROCESS  
+20   6    4        369.0    514.0    145.0  TO_PROCESS  
+11   3    3        399.0    544.0    145.0  TO_PROCESS  
+13   4    6        429.0    515.0    86.0   TO_PROCESS  
+16   5    2        456.0    579.0    123.0  TO_PROCESS  
+5    1    6        515.0    665.0    150.0  TO_PROCESS  
+14   4    5        515.0    600.0    85.0   TO_PROCESS  
+2    0    3        544.0    694.0    150.0  TO_PROCESS  
+17   5    4        579.0    699.0    120.0  TO_PROCESS  
+23   7    5        600.0    765.0    165.0  TO_PROCESS  
+
+------------------------------------------------------------
+PER-MACHINE SCHEDULE:
+------------------------------------------------------------
+Machine 0: 6(-0-87) → 3(87-301) → 12(301-429)
+Machine 1: 9(-0-65)
+Machine 2: 0(-0-100) → 18(100-245) → 19(245-369) → 4(369-456) → 16(456-579)
+Machine 3: 21(-0-245) → 15(245-399) → 11(399-544) → 2(544-694)
+Machine 4: 10(65-238) → 8(249-349) → 20(369-514) → 17(579-699)
+Machine 5: 22(245-469) → 14(515-600) → 23(600-765)
+Machine 6: 7(87-232) → 1(232-355) → 13(429-515) → 5(515-665)
+
+Makespan: 765.0
+============================================================
+
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6437 nonzeros
+Model fingerprint: 0x60061411
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+
+User MIP start produced solution with objective 60459 (0.00s)
+Loaded user MIP start with objective 60459
+
+Presolve removed 1638 rows and 939 columns
+Presolve time: 0.01s
+Presolved: 9 rows, 14 columns, 30 nonzeros
+Presolved model has 5 quadratic constraint(s)
+Variable types: 5 continuous, 9 integer (3 binary)
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+Root relaxation presolve removed 9 rows and 14 columns
+Root relaxation presolve: All rows and columns removed
+
+Root relaxation: objective 4.329800e+04, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    54969.000000 43298.0000  21.2%     -    0s
+     0     0 43298.0000    0    2 54969.0000 43298.0000  21.2%     -    0s
+
+Explored 1 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 54969 60459 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.496900000000e+04, best bound 5.496900000000e+04, gap 0.0000%
+
+User-callback calls 1315, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 765.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=625.0, Machine 4
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=456.0, end=579.0, Machine 2
+ - Operation 17: start=625.0, end=745.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 765.0, quadratric delay 54969.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 4
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6329 nonzeros
+Model fingerprint: 0x649e439f
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+04]
+
+User MIP start produced solution with objective 4 (0.00s)
+Loaded user MIP start with objective 4
+
+Presolve removed 1639 rows and 936 columns
+Presolve time: 0.01s
+Presolved: 8 rows, 17 columns, 34 nonzeros
+Presolved model has 7 quadratic constraint(s)
+Variable types: 8 continuous, 9 integer (1 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.02 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+
+User-callback calls 1191, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 765.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=232.0, end=355.0, Machine 6
+ - Operation 2: start=544.0, end=694.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=600.0, Machine 5
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=456.0, end=579.0, Machine 2
+ - Operation 17: start=579.0, end=699.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=600.0, end=765.0, Machine 5
+
+ Objective values: cmax 765.0, quadratric delay 60459.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 5
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1647 rows, 953 columns and 6451 nonzeros
+Model fingerprint: 0x562515f5
+Model has 8 quadratic constraints
+Variable types: 8 continuous, 945 integer (888 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+04]
+
+User MIP start produced solution with objective 765 (0.00s)
+Loaded user MIP start with objective 765
+
+Presolve removed 1637 rows and 935 columns
+Presolve time: 0.01s
+Presolved: 10 rows, 18 columns, 40 nonzeros
+Presolved model has 7 quadratic constraint(s)
+Variable types: 8 continuous, 10 integer (1 binary)
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+Root relaxation presolve removed 10 rows and 18 columns
+Root relaxation presolve: All rows and columns removed
+
+Root relaxation: objective 7.450000e+02, 0 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     745.0000000  745.00000  0.00%     -    0s
+
+Explored 1 nodes (0 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 745 765 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.450000000000e+02, best bound 7.450000000000e+02, gap 0.0000%
+
+User-callback calls 1755, time in user-callback 0.00 sec
+
+=== SOLUTION ===
+Cmax: 745.0
+
+Operations:
+ - Operation 0: start=0.0, end=100.0, Machine 2
+ - Operation 1: start=236.0, end=359.0, Machine 6
+ - Operation 2: start=573.0, end=723.0, Machine 3
+ - Operation 3: start=87.0, end=301.0, Machine 0
+ - Operation 4: start=369.0, end=456.0, Machine 2
+ - Operation 5: start=515.0, end=665.0, Machine 6
+ - Operation 6: start=0.0, end=87.0, Machine 0
+ - Operation 7: start=87.0, end=232.0, Machine 6
+ - Operation 8: start=249.0, end=349.0, Machine 4
+ - Operation 9: start=0.0, end=65.0, Machine 1
+ - Operation 10: start=65.0, end=238.0, Machine 4
+ - Operation 11: start=399.0, end=544.0, Machine 3
+ - Operation 12: start=301.0, end=429.0, Machine 0
+ - Operation 13: start=429.0, end=515.0, Machine 6
+ - Operation 14: start=515.0, end=625.0, Machine 4
+ - Operation 15: start=245.0, end=399.0, Machine 3
+ - Operation 16: start=502.0, end=625.0, Machine 2
+ - Operation 17: start=625.0, end=745.0, Machine 4
+ - Operation 18: start=100.0, end=245.0, Machine 2
+ - Operation 19: start=245.0, end=369.0, Machine 2
+ - Operation 20: start=369.0, end=514.0, Machine 4
+ - Operation 21: start=0.0, end=245.0, Machine 3
+ - Operation 22: start=245.0, end=469.0, Machine 5
+ - Operation 23: start=469.0, end=634.0, Machine 5
+
+ Objective values: cmax 745.0, quadratric delay 60450.0, machine assignments 4
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 2
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 0
+   Operation 13 → Machine 6
+   Operation 14 → Machine 4
+   Operation 15 → Machine 3
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 2
+   Operation 1 → Machine 6
+   Operation 2 → Machine 3
+   Operation 3 → Machine 0
+   Operation 4 → Machine 1
+   Operation 5 → Machine 6
+   Operation 6 → Machine 0
+   Operation 7 → Machine 6
+   Operation 8 → Machine 4
+   Operation 9 → Machine 1
+   Operation 10 → Machine 4
+   Operation 11 → Machine 3
+   Operation 12 → Machine 1
+   Operation 13 → Machine 6
+   Operation 14 → Machine 1
+   Operation 15 → Machine 1
+   Operation 16 → Machine 2
+   Operation 17 → Machine 4
+   Operation 18 → Machine 2
+   Operation 19 → Machine 2
+   Operation 20 → Machine 4
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 5
+Optimal Pareto Front size (before Non Dominated Sorting): (9, 3)
+[[4.2341e+04 4.0000e+00 7.8700e+02]
+ [5.5927e+04 4.0000e+00 7.8700e+02]
+ [5.5965e+04 4.0000e+00 7.4500e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [5.4969e+04 4.0000e+00 7.6500e+02]
+ [6.0459e+04 4.0000e+00 7.6500e+02]
+ [6.0450e+04 4.0000e+00 7.4500e+02]]
+
+Filtered Pareto front size: (6, 3)
+[[4.2341e+04 4.0000e+00 7.8700e+02]
+ [5.5965e+04 4.0000e+00 7.4500e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [7.1501e+04 4.0000e+00 7.1900e+02]
+ [5.4969e+04 4.0000e+00 7.6500e+02]]
+Combined Pareto solutions and objectives saved to CSV: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/pareto_solutions_full.csv
+Pareto solutions saved to JSON: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/pareto_solutions.json
+Metrics saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/metrics.txt
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/pareto_front.pdf
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/pareto_front_assessment.pdf
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX22/Pop_20/pareto_front_normalized.pdf
+
+=== EXPERIMENT 22 COMPLETED ===
+End time: 2026-01-09 09:32:50.015968
+Duration: 0:00:02.537814
+================================================================================

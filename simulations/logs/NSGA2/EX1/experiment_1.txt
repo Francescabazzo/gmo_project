@@ -1,0 +1,38 @@
+2026-01-04 11:07:12,151 - INFO - Environment loaded from: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results_scheduling\schedule_simulation_1.pkl
+2026-01-04 11:07:12,151 - INFO - ============================================================
+2026-01-04 11:07:12,151 - INFO - START EXPERIMENT 1
+2026-01-04 11:07:12,151 - INFO - ============================================================
+2026-01-04 11:07:12,151 - INFO - Starting time: 2026-01-04 11:07:12
+2026-01-04 11:07:12,151 - INFO - Parameters of the experiment:
+2026-01-04 11:07:12,151 - INFO -   file_path: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results_scheduling\schedule_simulation_1.pkl
+2026-01-04 11:07:12,151 - INFO -   broken_machine_id: 1
+2026-01-04 11:07:12,151 - INFO -   disruption_time: 4
+2026-01-04 11:07:12,151 - INFO - Job number: 4
+2026-01-04 11:07:12,151 - INFO - Machine number: 5
+2026-01-04 11:07:12,151 - INFO - Unique machines: []
+2026-01-04 11:07:12,151 - INFO - Starting rescheduling with NSGA-II...
+2026-01-04 11:07:14,621 - INFO - NSGA-II Optimization Results:
+2026-01-04 11:07:14,621 - INFO -   Number of generations completed: 43
+2026-01-04 11:07:14,621 - INFO -   Number of function evaluations: 8400
+2026-01-04 11:07:14,621 - INFO -   Pareto front size: 200
+2026-01-04 11:07:14,621 - INFO - Best solution selected (min_time_diff):
+2026-01-04 11:07:14,621 - INFO -   Time Differences: 18.00
+2026-01-04 11:07:14,621 - INFO -   Assignment Differences: 2.00
+2026-01-04 11:07:14,621 - INFO -   Makespan: 15.00
+2026-01-04 11:07:14,621 - INFO - Pareto Front Statistics:
+2026-01-04 11:07:14,621 - INFO -   Time Differences range: 17.00 - 31.00
+2026-01-04 11:07:14,621 - INFO -   Assignment Differences range: 2.00 - 5.00
+2026-01-04 11:07:14,621 - INFO -   Makespan range: 13.00 - 15.00
+2026-01-04 11:07:14,621 - INFO - Generating and saving plots...
+2026-01-04 11:07:14,875 - INFO - Pareto front plot saved: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\pareto_front.pdf
+2026-01-04 11:07:15,104 - INFO - Pareto front plot saved: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\pareto_front_assessment.pdf
+2026-01-04 11:07:15,324 - INFO - Pareto front plot saved: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\pareto_front_normalized.pdf
+2026-01-04 11:07:15,491 - INFO - Gantt chart saved: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\gantt_chart_ex1.png
+2026-01-04 11:07:15,491 - INFO - Updated environment saved: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\rescheduled_environment_ex1.pkl
+2026-01-04 11:07:15,491 - INFO - ============================================================
+2026-01-04 11:07:15,491 - INFO - END OF THE EXPERIMENT 1 - COMPLETED
+2026-01-04 11:07:15,491 - INFO - ============================================================
+2026-01-04 11:07:15,491 - INFO - All results saved for experiment 1
+2026-01-04 11:07:15,491 - INFO -   Plots: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200\pareto_front_normalized.pdf
+2026-01-04 11:07:15,491 - INFO -   Data: C:\Users\franc\PycharmProjects\fjsp_rescheduling\results\NSGA2\EX1\Pop_200
+2026-01-04 11:07:15,491 - INFO -   Logs: C:\Users\franc\PycharmProjects\fjsp_rescheduling\simulations\logs\NSGA2\

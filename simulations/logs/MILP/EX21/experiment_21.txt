@@ -1,0 +1,18 @@
+2026-01-02 04:16:04,316 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_21.pkl
+2026-01-02 04:16:04,317 - INFO - ============================================================
+2026-01-02 04:16:04,317 - INFO - START EXPERIMENT 21
+2026-01-02 04:16:04,317 - INFO - ============================================================
+2026-01-02 04:16:04,317 - INFO - Starting time: 2026-01-02 04:16:04
+2026-01-02 04:16:04,317 - INFO - Parameters of the experiment:
+2026-01-02 04:16:04,317 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_21.pkl
+2026-01-02 04:16:04,317 - INFO -   broken_machine_id: 1
+2026-01-02 04:16:04,317 - INFO -   disruption_time: 214
+2026-01-02 04:16:04,317 - INFO -   time_limit: 3600
+2026-01-02 04:16:04,317 - INFO - Job number: 7
+2026-01-02 04:16:04,317 - INFO - Machine number: 7
+2026-01-02 04:16:04,317 - INFO - Unique machines: []
+2026-01-02 04:16:04,317 - INFO - Starting rescheduling with MILP model...
+2026-01-02 04:16:06,025 - INFO - Gantt chart saved in: /home/bazzo/Scrivania/fjsp_rescheduling/results/MILP/EX21/schedule_gantt_ex21_resch_nolin.png
+2026-01-02 04:16:06,026 - INFO - ============================================================
+2026-01-02 04:16:06,026 - INFO - END OF THE EXPERIMENT 21 - COMPLETED
+2026-01-02 04:16:06,026 - INFO - ============================================================

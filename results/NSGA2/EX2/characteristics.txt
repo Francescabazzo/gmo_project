@@ -1,0 +1,4 @@
+Dataset: '/fjsp/brandimarte/Mk10.fjs'
+Jobs: 20
+Machines: 10
+Operations: 240

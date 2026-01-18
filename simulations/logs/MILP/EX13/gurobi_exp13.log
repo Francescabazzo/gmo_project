@@ -1,0 +1,223 @@
+
+Gurobi 12.0.3 (linux64) logging started Fri Jan  2 04:13:32 2026
+
+Set parameter LogFile to value "/home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs/EX13/gurobi_exp13.log"
+Set parameter OutputFlag to value 1
+Set parameter TimeLimit to value 2160
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  2160
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 33358 rows, 55391 columns and 141944 nonzeros
+Model fingerprint: 0xb96083ca
+Model has 20 quadratic constraints
+Variable types: 20 continuous, 55371 integer (54900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+03]
+Presolve removed 22480 rows and 50201 columns
+Presolve time: 0.37s
+Presolved: 10878 rows, 5190 columns, 44950 nonzeros
+Presolved model has 20 quadratic constraint(s)
+Variable types: 20 continuous, 5170 integer (5021 binary)
+Root relaxation presolve removed 10878 rows and 5190 columns
+Root relaxation presolve: All rows and columns removed
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.01 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    4          -    0.00000      -     -    0s
+H    0     0                    4.774354e+07    0.00000   100%     -    0s
+H    0     0                    4.745998e+07    0.00000   100%     -    0s
+H    0     0                    413032.00000    0.00000   100%     -    0s
+H    0     0                    347083.00000    0.00000   100%     -    0s
+H    0     0                    51189.000000    0.00000   100%     -    0s
+H    0     0                    49813.000000    0.00000   100%     -    0s
+H    0     0                    47917.000000    0.00000   100%     -    0s
+H    0     0                    46540.000000    0.00000   100%     -    0s
+H    0     0                    45424.000000    0.00000   100%     -    0s
+H    0     0                    45153.000000    0.00000   100%     -    0s
+     0     0    0.00000    0   18 45153.0000    0.00000   100%     -    1s
+H    0     0                    42283.000000    0.00000   100%     -    1s
+H    0     0                    42192.000000    0.00000   100%     -    1s
+H    0     0                    41780.000000    0.00000   100%     -    1s
+H    0     0                    41513.000000    0.00000   100%     -    1s
+H    0     0                    37804.000000    0.00000   100%     -    1s
+H    0     0                    33093.000000    0.00000   100%     -    1s
+H    0     0                    32469.000000    0.00000   100%     -    1s
+H    0     0                    31880.000000    0.00000   100%     -    1s
+H    0     0                    31412.000000    0.00000   100%     -    1s
+H    0     0                    31376.000000    0.00000   100%     -    1s
+H    0     0                    30417.000000    0.00000   100%     -    1s
+H    0     0                    13731.000000    0.00000   100%     -    1s
+H    0     0                    13482.000000    0.00000   100%     -    1s
+H    0     0                    13293.000000    0.00000   100%     -    1s
+     0     0    0.00000    0   25 13293.0000    0.00000   100%     -    2s
+H    0     0                    13118.000000    0.00000   100%     -    2s
+H    0     0                    12086.000000    0.00000   100%     -    2s
+     0     0    0.00000    0   29 12086.0000    0.00000   100%     -    2s
+H    0     0                    12081.000000    0.00000   100%     -    2s
+H    0     0                    12077.000000    0.00000   100%     -    2s
+H    0     0                    11429.000000    0.00000   100%     -    2s
+H    0     0                    11219.000000    0.00000   100%     -    2s
+H    0     0                    10756.000000    0.00000   100%     -    2s
+H    0     0                    10567.000000    0.00000   100%     -    2s
+H    0     0                    5510.0000000    0.00000   100%     -    2s
+H    0     0                    5474.0000000    0.00000   100%     -    2s
+H    0     0                    4329.0000000    0.00000   100%     -    2s
+H    0     0                    3415.0000000    0.00000   100%     -    2s
+     0     0    0.00000    0   57 3415.00000    0.00000   100%     -    2s
+     0     0    0.00000    0    - 3415.00000    0.00000   100%     -    3s
+     0     0    0.00000    0   37 3415.00000    0.00000   100%     -    3s
+H    0     0                    3410.0000000    0.00000   100%     -    3s
+H    0     0                    2259.0000000    0.00000   100%     -    3s
+H    0     0                    1935.0000000    0.00000   100%     -    4s
+H    0     0                    1611.0000000    0.00000   100%     -    4s
+H    0     0                    1275.0000000    0.00000   100%     -    4s
+H    0     0                     995.0000000    0.00000   100%     -    4s
+H    0     0                     874.0000000    0.00000   100%     -    4s
+H    0     0                     873.0000000    0.00000   100%     -    4s
+H    0     0                     872.0000000    0.00000   100%     -    4s
+H    0     0                     732.0000000    0.00000   100%     -    4s
+     0     0    0.00000    0    5  732.00000    0.00000   100%     -    4s
+     0     0    0.00000    0   12  732.00000    0.00000   100%     -    4s
+     0     0    0.00000    0   15  732.00000    0.00000   100%     -    4s
+H    0     0                     650.0000000    0.00000   100%     -    4s
+H    0     0                     266.0000000    0.00000   100%     -    4s
+H    0     0                      41.0000000    0.00000   100%     -    4s
+H    0     0                       3.0000000    0.00000   100%     -    4s
+H    0     0                       0.0000000    0.00000  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 3
+  Lift-and-project: 1
+  Implied bound: 9
+  Flow cover: 21
+  Zero half: 2
+  RLT: 1
+  Relax-and-lift: 3
+
+Explored 1 nodes (4259 simplex iterations) in 4.57 seconds (4.75 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 0 3 41 ... 995
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+User-callback calls 3001, time in user-callback 0.01 sec
+Set parameter TimeLimit to value 1080
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1080
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 33359 rows, 55391 columns and 141964 nonzeros
+Model fingerprint: 0x8d5c0c50
+Model has 20 quadratic constraints
+Variable types: 20 continuous, 55371 integer (54900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+03]
+
+MIP start from previous solve produced solution with objective 161 (0.02s)
+Loaded MIP start from previous solve with objective 161
+
+Presolve removed 30984 rows and 54290 columns
+Presolve time: 0.27s
+Presolved: 2375 rows, 1101 columns, 10564 nonzeros
+Found heuristic solution: objective 10.0000000
+Variable types: 0 continuous, 1101 integer (1028 binary)
+Root relaxation presolve removed 1104 rows and 490 columns
+Root relaxation presolved: 1271 rows, 611 columns, 5553 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 148 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   19    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (148 simplex iterations) in 0.37 seconds (0.46 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 3: 0 10 161 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+User-callback calls 1708, time in user-callback 0.00 sec
+Set parameter TimeLimit to value 360
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  360
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 33361 rows, 55391 columns and 142306 nonzeros
+Model fingerprint: 0x8e7721c9
+Model has 20 quadratic constraints
+Variable types: 20 continuous, 55371 integer (54900 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+03]
+
+MIP start from previous solve produced solution with objective 523 (0.02s)
+Loaded MIP start from previous solve with objective 523
+
+Presolve removed 32422 rows and 54919 columns
+Presolve time: 0.06s
+Presolved: 939 rows, 472 columns, 2522 nonzeros
+Variable types: 0 continuous, 472 integer (402 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.09 seconds (0.09 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 523 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.230000000000e+02, best bound 5.230000000000e+02, gap 0.0000%
+
+User-callback calls 600, time in user-callback 0.00 sec

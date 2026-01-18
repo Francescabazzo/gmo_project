@@ -1,0 +1,13 @@
+2026-01-06 23:01:56,296 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_3.pkl
+2026-01-06 23:01:56,296 - INFO - ============================================================
+2026-01-06 23:01:56,296 - INFO - START EXPERIMENT 3
+2026-01-06 23:01:56,296 - INFO - ============================================================
+2026-01-06 23:01:56,296 - INFO - Starting time: 2026-01-06 23:01:56
+2026-01-06 23:01:56,296 - INFO - Parameters of the experiment:
+2026-01-06 23:01:56,296 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_3.pkl
+2026-01-06 23:01:56,296 - INFO -   broken_machine_id: 5
+2026-01-06 23:01:56,296 - INFO -   disruption_time: 75
+2026-01-06 23:01:56,296 - INFO - Job number: 20
+2026-01-06 23:01:56,296 - INFO - Machine number: 15
+2026-01-06 23:01:56,296 - INFO - Unique machines: [1, 4]
+2026-01-06 23:01:56,297 - INFO - Starting rescheduling with NSGA-II...

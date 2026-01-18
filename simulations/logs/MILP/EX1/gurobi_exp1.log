@@ -1,0 +1,201 @@
+Gurobi 12.0.3 (linux64) logging started Fri Jan  2 00:09:47 2026
+
+Set parameter LogFile to value "/home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs/EX1/gurobi_exp1.log"
+Set parameter OutputFlag to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Optimize a model with 1532 rows, 285 columns and 7063 nonzeros
+Model fingerprint: 0x59be959f
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 1106 rows and 190 columns
+Presolve time: 0.00s
+Presolved: 434 rows, 107 columns, 1972 nonzeros
+Presolved model has 4 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 3.909e+04
+ Factor NZ  : 5.751e+04 (roughly 1 MB of memory)
+ Factor Ops : 9.487e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00 -8.32001000e+01  1.56e+02 1.00e-01  5.21e+00     0s
+   1   0.00000000e+00 -4.20221844e+02  1.48e+01 4.05e-03  9.22e-01     0s
+   2   0.00000000e+00 -1.50347145e+02  3.00e+00 1.25e-03  2.79e-01     0s
+   3   0.00000000e+00 -2.99421125e+01  1.46e-01 2.28e-04  5.26e-02     0s
+   4   0.00000000e+00 -2.81986701e-01  2.11e-03 1.60e-06  4.85e-04     0s
+   5   0.00000000e+00 -3.93801527e-04  2.32e-09 1.76e-09  6.69e-07     0s
+   6   0.00000000e+00 -4.33181682e-07  6.99e-12 1.94e-12  7.35e-10     0s
+
+Barrier solved model in 6 iterations and 0.02 seconds (0.01 work units)
+Optimal objective 0.00000000e+00
+
+Set parameter TimeLimit to value 2160
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  2160
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1532 rows, 285 columns and 7063 nonzeros
+Model fingerprint: 0xe8821f38
+Model has 4 quadratic constraints
+Variable types: 4 continuous, 281 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 1191 rows and 200 columns
+Presolve time: 0.01s
+Presolved: 341 rows, 85 columns, 2195 nonzeros
+Presolved model has 4 quadratic constraint(s)
+Variable types: 4 continuous, 81 integer (70 binary)
+Root relaxation presolve removed 0 rows and 7 columns
+Root relaxation presolved: 341 rows, 78 columns, 2192 nonzeros
+
+
+Root relaxation: objective 5.000000e+00, 8 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    6          -    5.00000      -     -    0s
+H    0     0                    2553.0000000    5.00000   100%     -    0s
+H    0     0                     140.0000000    5.00000  96.4%     -    0s
+H    0     0                     104.0000000    5.00000  95.2%     -    0s
+H    0     0                      89.0000000    5.00000  94.4%     -    0s
+     0     0    5.00000    0    2   89.00000    5.00000  94.4%     -    0s
+H    0     0                      52.0000000    5.00000  90.4%     -    0s
+H    0     0                      32.0000000    5.00000  84.4%     -    0s
+H    0     0                      25.0000000    5.00000  80.0%     -    0s
+H    0     0                      11.0000000    5.00000  54.5%     -    0s
+H    0     0                      10.0000000    5.00000  50.0%     -    0s
+H    0     0                       6.0000000    5.00000  16.7%     -    0s
+     0     0    6.00000    0    3    6.00000    6.00000  0.00%     -    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 2
+  Cover: 4
+  MIR: 2
+  StrongCG: 2
+  Flow cover: 18
+  RLT: 4
+
+Explored 1 nodes (28 simplex iterations) in 0.06 seconds (0.04 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 6 10 11 ... 2553
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+
+User-callback calls 1050, time in user-callback 0.00 sec
+Set parameter TimeLimit to value 1080
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1080
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1533 rows, 285 columns and 7067 nonzeros
+Model fingerprint: 0x5ee4732f
+Model has 4 quadratic constraints
+Variable types: 4 continuous, 281 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+
+MIP start from previous solve produced solution with objective 30 (0.00s)
+Loaded MIP start from previous solve with objective 30
+
+Presolve removed 1533 rows and 285 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 2: 3 30 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+
+User-callback calls 649, time in user-callback 0.00 sec
+Set parameter TimeLimit to value 360
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  360
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 1535 rows, 285 columns and 7131 nonzeros
+Model fingerprint: 0x6228432f
+Model has 4 quadratic constraints
+Variable types: 4 continuous, 281 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 1e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+
+MIP start from previous solve produced solution with objective 13 (0.00s)
+Loaded MIP start from previous solve with objective 13
+
+Presolve removed 1535 rows and 285 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 1: 13 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.300000000000e+01, best bound 1.300000000000e+01, gap 0.0000%
+
+User-callback calls 595, time in user-callback 0.00 sec

@@ -1,0 +1,18 @@
+2026-01-02 04:16:00,796 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_19.pkl
+2026-01-02 04:16:00,796 - INFO - ============================================================
+2026-01-02 04:16:00,796 - INFO - START EXPERIMENT 19
+2026-01-02 04:16:00,796 - INFO - ============================================================
+2026-01-02 04:16:00,796 - INFO - Starting time: 2026-01-02 04:16:00
+2026-01-02 04:16:00,796 - INFO - Parameters of the experiment:
+2026-01-02 04:16:00,796 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_19.pkl
+2026-01-02 04:16:00,796 - INFO -   broken_machine_id: 5
+2026-01-02 04:16:00,796 - INFO -   disruption_time: 11
+2026-01-02 04:16:00,796 - INFO -   time_limit: 3600
+2026-01-02 04:16:00,796 - INFO - Job number: 6
+2026-01-02 04:16:00,796 - INFO - Machine number: 7
+2026-01-02 04:16:00,797 - INFO - Unique machines: []
+2026-01-02 04:16:00,797 - INFO - Starting rescheduling with MILP model...
+2026-01-02 04:16:02,550 - INFO - Gantt chart saved in: /home/bazzo/Scrivania/fjsp_rescheduling/results/MILP/EX19/schedule_gantt_ex19_resch_nolin.png
+2026-01-02 04:16:02,551 - INFO - ============================================================
+2026-01-02 04:16:02,551 - INFO - END OF THE EXPERIMENT 19 - COMPLETED
+2026-01-02 04:16:02,551 - INFO - ============================================================

@@ -1,0 +1,242 @@
+
+Gurobi 12.0.3 (linux64) logging started Fri Jan  2 04:15:58 2026
+
+Set parameter LogFile to value "/home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs/EX18/gurobi_exp18.log"
+Set parameter OutputFlag to value 1
+Set parameter TimeLimit to value 2160
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  2160
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 758 rows, 461 columns and 2657 nonzeros
+Model fingerprint: 0x2759e14b
+Model has 5 quadratic constraints
+Variable types: 5 continuous, 456 integer (420 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+03]
+Presolve removed 470 rows and 314 columns
+Presolve time: 0.01s
+Presolved: 288 rows, 147 columns, 1408 nonzeros
+Presolved model has 5 quadratic constraint(s)
+Variable types: 5 continuous, 142 integer (124 binary)
+Root relaxation presolve removed 22 rows and 17 columns
+Root relaxation presolved: 266 rows, 130 columns, 1308 nonzeros
+
+
+Root relaxation: objective 3.757000e+03, 18 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    95286.000000 3757.00000  96.1%     -    0s
+*    0     0               0    95286.000000 3757.00000  96.1%     -    0s
+     0     0 3757.00000    0   17 95286.0000 3757.00000  96.1%     -    0s
+H    0     0                    90410.000000 3757.00000  95.8%     -    0s
+     0     0 4194.26782    0   23 90410.0000 4194.26782  95.4%     -    0s
+H    0     0                    78455.000000 7301.00000  90.7%     -    0s
+H    0     0                    73749.000000 7301.00000  90.1%     -    0s
+H    0     0                    65610.000000 7301.00000  88.9%     -    0s
+H    0     0                    63745.000000 7301.00000  88.5%     -    0s
+     0     0 7301.00000    0   23 63745.0000 7301.00000  88.5%     -    0s
+H    0     0                    60849.000000 7301.00000  88.0%     -    0s
+H    0     0                    34585.000000 7301.00000  78.9%     -    0s
+     0     0 9915.94863    0   27 34585.0000 9915.94863  71.3%     -    0s
+     0     0 9965.09044    0   20 34585.0000 9965.09044  71.2%     -    0s
+H    0     0                    29646.000000 11113.3035  62.5%     -    0s
+     0     0 12558.1933    0   27 29646.0000 12558.1933  57.6%     -    0s
+     0     0 15006.6948    0   23 29646.0000 15006.6948  49.4%     -    0s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+     0     0 15006.6948    0   23 29646.0000 15006.6948  49.4%     -    0s
+     0     0 15006.6948    0   30 29646.0000 15006.6948  49.4%     -    0s
+     0     0 15006.6948    0   25 29646.0000 15006.6948  49.4%     -    0s
+     0     2 15006.6948    0   22 29646.0000 15006.6948  49.4%     -    0s
+     1     4 15006.6948    1   12 29646.0000 15006.6948  49.4%  20.0    0s
+
+Cutting planes:
+  Learned: 19
+  Gomory: 12
+  Lift-and-project: 8
+  Cover: 16
+  Implied bound: 7
+  Projected implied bound: 2
+  MIR: 18
+  Mixing: 5
+  StrongCG: 16
+  Flow cover: 117
+  Zero half: 10
+  RLT: 7
+  Relax-and-lift: 2
+
+Explored 251 nodes (2865 simplex iterations) in 0.38 seconds (0.27 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 9: 29646 34585 60849 ... 95286
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.964600000000e+04, best bound 2.964600000000e+04, gap 0.0000%
+
+User-callback calls 1563, time in user-callback 0.00 sec
+Set parameter TimeLimit to value 1080
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1080
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 759 rows, 461 columns and 2662 nonzeros
+Model fingerprint: 0x2db86dea
+Model has 5 quadratic constraints
+Variable types: 5 continuous, 456 integer (420 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [5e-01, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+04]
+
+MIP start from previous solve produced solution with objective 19.5 (0.00s)
+Loaded MIP start from previous solve with objective 19.5
+
+Presolve removed 535 rows and 343 columns
+Presolve time: 0.01s
+Presolved: 224 rows, 118 columns, 1009 nonzeros
+Presolved model has 5 quadratic constraint(s)
+Found heuristic solution: objective 6.0000000
+Variable types: 5 continuous, 113 integer (97 binary)
+Root relaxation presolve removed 13 rows and 15 columns
+Root relaxation presolved: 211 rows, 103 columns, 944 nonzeros
+
+
+Root relaxation: objective 3.000000e+00, 22 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0    3    6.00000    3.00000  50.0%     -    0s
+     0     0    3.07332    0   11    6.00000    3.07332  48.8%     -    0s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+     0     0    3.07332    0    8    6.00000    3.07332  48.8%     -    0s
+     0     0    3.08654    0    8    6.00000    3.08654  48.6%     -    0s
+     0     0    3.22079    0    8    6.00000    3.22079  46.3%     -    0s
+     0     2    4.00000    0    8    6.00000    4.00000  33.3%     -    0s
+     1     4    4.00000    1   11    6.00000    4.00000  33.3%   8.0    0s
+
+Cutting planes:
+  Gomory: 9
+  Lift-and-project: 1
+  Cover: 1
+  Implied bound: 4
+  Projected implied bound: 1
+  Flow cover: 7
+  RLT: 2
+
+Explored 30 nodes (404 simplex iterations) in 0.12 seconds (0.07 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 6 19.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+
+User-callback calls 1425, time in user-callback 0.00 sec
+Set parameter TimeLimit to value 360
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  360
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 761 rows, 461 columns and 2706 nonzeros
+Model fingerprint: 0x5fb5ffa7
+Model has 5 quadratic constraints
+Variable types: 5 continuous, 456 integer (420 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 2e+03]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+04]
+
+MIP start from previous solve produced solution with objective 611 (0.00s)
+Loaded MIP start from previous solve with objective 611
+
+Presolve removed 532 rows and 342 columns
+Presolve time: 0.02s
+Presolved: 229 rows, 119 columns, 1030 nonzeros
+Presolved model has 5 quadratic constraint(s)
+Variable types: 5 continuous, 114 integer (97 binary)
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+Root relaxation presolve removed 15 rows and 14 columns
+Root relaxation presolved: 214 rows, 105 columns, 964 nonzeros
+
+
+Root relaxation: objective 5.260000e+02, 61 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  526.00000    0   17  611.00000  526.00000  13.9%     -    0s
+     0     0  526.00000    0   17  611.00000  526.00000  13.9%     -    0s
+     0     2  527.00000    0   15  611.00000  527.00000  13.7%     -    0s
+
+Cutting planes:
+  Learned: 10
+  Cover: 13
+  Implied bound: 7
+  MIR: 12
+  StrongCG: 16
+  Flow cover: 49
+  Zero half: 4
+  RLT: 13
+  Relax-and-lift: 8
+
+Explored 81 nodes (720 simplex iterations) in 0.11 seconds (0.06 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 611 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.110000000000e+02, best bound 6.110000000000e+02, gap 0.0000%
+
+User-callback calls 1533, time in user-callback 0.00 sec

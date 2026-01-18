@@ -1,0 +1,38 @@
+2026-01-13 23:03:40,352 - INFO - Environment loaded from: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_2.pkl
+2026-01-13 23:03:40,352 - INFO - ============================================================
+2026-01-13 23:03:40,352 - INFO - START EXPERIMENT 2
+2026-01-13 23:03:40,352 - INFO - ============================================================
+2026-01-13 23:03:40,352 - INFO - Starting time: 2026-01-13 23:03:40
+2026-01-13 23:03:40,352 - INFO - Parameters of the experiment:
+2026-01-13 23:03:40,352 - INFO -   file_path: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_2.pkl
+2026-01-13 23:03:40,352 - INFO -   broken_machine_id: 0
+2026-01-13 23:03:40,352 - INFO -   disruption_time: 1
+2026-01-13 23:03:40,352 - INFO - Job number: 10
+2026-01-13 23:03:40,352 - INFO - Machine number: 6
+2026-01-13 23:03:40,352 - INFO - Unique machines: [1, 4, 3]
+2026-01-13 23:03:40,352 - INFO - Starting rescheduling with NSGA-II...
+2026-01-14 00:35:00,715 - INFO - NSGA-II Optimization Results:
+2026-01-14 00:35:00,715 - INFO -   Number of generations completed: 76
+2026-01-14 00:35:00,715 - INFO -   Number of function evaluations: 3750
+2026-01-14 00:35:00,715 - INFO -   Pareto front size: 50
+2026-01-14 00:35:00,715 - INFO - Best solution selected (min_time_diff):
+2026-01-14 00:35:00,715 - INFO -   Time Differences: 1308.00
+2026-01-14 00:35:00,715 - INFO -   Assignment Differences: 14.00
+2026-01-14 00:35:00,715 - INFO -   Makespan: 40.00
+2026-01-14 00:35:00,715 - INFO - Pareto Front Statistics:
+2026-01-14 00:35:00,715 - INFO -   Time Differences range: 1308.00 - 1981.00
+2026-01-14 00:35:00,715 - INFO -   Assignment Differences range: 12.00 - 14.00
+2026-01-14 00:35:00,715 - INFO -   Makespan range: 40.00 - 44.00
+2026-01-14 00:35:00,715 - INFO - Generating and saving plots...
+2026-01-14 00:35:01,295 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/pareto_front.pdf
+2026-01-14 00:35:01,670 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/pareto_front_assessment.pdf
+2026-01-14 00:35:01,940 - INFO - Pareto front plot saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/pareto_front_normalized.pdf
+2026-01-14 00:35:02,504 - INFO - Gantt chart saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/gantt_chart_ex2.png
+2026-01-14 00:35:02,504 - INFO - Updated environment saved: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/rescheduled_environment_ex2.pkl
+2026-01-14 00:35:02,504 - INFO - ============================================================
+2026-01-14 00:35:02,504 - INFO - END OF THE EXPERIMENT 2 - COMPLETED
+2026-01-14 00:35:02,504 - INFO - ============================================================
+2026-01-14 00:35:02,505 - INFO - All results saved for experiment 2
+2026-01-14 00:35:02,505 - INFO -   Plots: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50/pareto_front_normalized.pdf
+2026-01-14 00:35:02,505 - INFO -   Data: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_50
+2026-01-14 00:35:02,505 - INFO -   Logs: /home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs/NSGA2/EX2/Pop_50

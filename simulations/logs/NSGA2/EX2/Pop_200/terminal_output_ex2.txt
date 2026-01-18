@@ -1,0 +1,2963 @@
+=== EXPERIMENT 2 STARTED AT 2026-01-14 01:37:42.327985 ===
+Population size: 200
+Data file: /home/bazzo/Scrivania/fjsp_rescheduling/results_scheduling/schedule_simulation_2.pkl
+--------------------------------------------------------------------------------
+
+Jobs: 10
+Machines: 6
+Ops per job: [6, 6, 6, 6, 6, 6, 5, 6, 5, 6]
+Starting NSGA-II.
+Population: 200
+Crossover rate: 0.8, Mutation rate: 0.1
+==========================================================================================
+n_gen  |  n_eval  | n_nds  |     cv_min    |     cv_avg    |      eps      |   indicator  
+==========================================================================================
+     1 |      200 |      2 |  0.000000E+00 |  0.000000E+00 |             - |             -
+     2 |      400 |      5 |  0.000000E+00 |  0.000000E+00 |  0.3333333333 |         ideal
+     3 |      600 |      6 |  0.000000E+00 |  0.000000E+00 |  0.2500000000 |         ideal
+     4 |      800 |      7 |  0.000000E+00 |  0.000000E+00 |  0.0625000000 |         ideal
+     5 |     1000 |      5 |  0.000000E+00 |  0.000000E+00 |  0.4000000000 |         ideal
+     6 |     1200 |     10 |  0.000000E+00 |  0.000000E+00 |  0.1111111111 |         ideal
+     7 |     1400 |      5 |  0.000000E+00 |  0.000000E+00 |  0.1000000000 |         ideal
+     8 |     1600 |      5 |  0.000000E+00 |  0.000000E+00 |  0.2307692308 |         ideal
+     9 |     1800 |      5 |  0.000000E+00 |  0.000000E+00 |  0.0454545455 |         ideal
+    10 |     2000 |      6 |  0.000000E+00 |  0.000000E+00 |  0.2500000000 |         ideal
+    11 |     2200 |      4 |  0.000000E+00 |  0.000000E+00 |  0.1868460389 |         ideal
+    12 |     2400 |      4 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    13 |     2600 |      4 |  0.000000E+00 |  0.000000E+00 |  0.6060000000 |         ideal
+    14 |     2800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.2000000000 |         nadir
+    15 |     3000 |      1 |  0.000000E+00 |  0.000000E+00 |  8.110000E+02 |         ideal
+    16 |     3200 |      1 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    17 |     3400 |      1 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    18 |     3600 |      2 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         ideal
+    19 |     3800 |      3 |  0.000000E+00 |  0.000000E+00 |  0.3028516643 |             f
+    20 |     4000 |      3 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    21 |     4200 |      3 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    22 |     4400 |      4 |  0.000000E+00 |  0.000000E+00 |  0.2443365696 |         ideal
+    23 |     4600 |      4 |  0.000000E+00 |  0.000000E+00 |  0.3205128205 |         nadir
+    24 |     4800 |      4 |  0.000000E+00 |  0.000000E+00 |  0.2935982340 |         ideal
+    25 |     5000 |      1 |  0.000000E+00 |  0.000000E+00 |  5.0000000000 |         ideal
+    26 |     5200 |      2 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         ideal
+    27 |     5400 |      2 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    28 |     5600 |      4 |  0.000000E+00 |  0.000000E+00 |  0.6699507389 |         ideal
+    29 |     5800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.1695549710 |             f
+    30 |     6000 |      5 |  0.000000E+00 |  0.000000E+00 |  0.2400000000 |         ideal
+    31 |     6200 |      3 |  0.000000E+00 |  0.000000E+00 |  0.2549668874 |         ideal
+    32 |     6400 |      4 |  0.000000E+00 |  0.000000E+00 |  0.0473186120 |         nadir
+    33 |     6600 |      4 |  0.000000E+00 |  0.000000E+00 |  0.2500000000 |         ideal
+    34 |     6800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.1755952381 |         ideal
+    35 |     7000 |      7 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         nadir
+    36 |     7200 |      6 |  0.000000E+00 |  0.000000E+00 |  0.3333333333 |         ideal
+    37 |     7400 |      5 |  0.000000E+00 |  0.000000E+00 |  0.0360360360 |         ideal
+    38 |     7600 |      4 |  0.000000E+00 |  0.000000E+00 |  0.8813559322 |         nadir
+    39 |     7800 |      4 |  0.000000E+00 |  0.000000E+00 |  0.5203252033 |         ideal
+    40 |     8000 |      4 |  0.000000E+00 |  0.000000E+00 |  1.0000000000 |         nadir
+    41 |     8200 |      4 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    42 |     8400 |      4 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    43 |     8600 |      5 |  0.000000E+00 |  0.000000E+00 |  0.1661016949 |         ideal
+    44 |     8800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.1631529001 |             f
+    45 |     9000 |      6 |  0.000000E+00 |  0.000000E+00 |  0.4898989899 |         nadir
+    46 |     9200 |      5 |  0.000000E+00 |  0.000000E+00 |  0.2666666667 |         ideal
+    47 |     9400 |      5 |  0.000000E+00 |  0.000000E+00 |  0.0344827586 |         nadir
+    48 |     9600 |      5 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    49 |     9800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.0224719101 |         ideal
+    50 |    10000 |      7 |  0.000000E+00 |  0.000000E+00 |  0.2476635514 |         nadir
+    51 |    10200 |      8 |  0.000000E+00 |  0.000000E+00 |  0.0594059406 |         nadir
+    52 |    10400 |      7 |  0.000000E+00 |  0.000000E+00 |  0.0063649222 |             f
+    53 |    10600 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    54 |    10800 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    55 |    11000 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    56 |    11200 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    57 |    11400 |      6 |  0.000000E+00 |  0.000000E+00 |  0.9803921569 |         nadir
+    58 |    11600 |      6 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    59 |    11800 |      5 |  0.000000E+00 |  0.000000E+00 |  0.2272727273 |         ideal
+    60 |    12000 |      5 |  0.000000E+00 |  0.000000E+00 |  0.0636363636 |             f
+    61 |    12200 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    62 |    12400 |      7 |  0.000000E+00 |  0.000000E+00 |  0.000000E+00 |             f
+    63 |    12600 |      6 |  0.000000E+00 |  0.000000E+00 |  0.0364963504 |         ideal
+    64 |    12800 |      6 |  0.000000E+00 |  0.000000E+00 |  0.1437500000 |         ideal
+    65 |    13000 |      2 |  0.000000E+00 |  0.000000E+00 |  5.4000000000 |         nadir
+
+============================================================
+PARETO FRONT DEFINITION
+============================================================
+Pareto front extracted from res.opt:
+  Solutions number: 2
+  Chromosome dimension: (2, 104)
+  Objectives dimension: (2, 3)
+  All the solutions are non dominated (valid front)
+============================================================
+
+Shape of Pareto Front before NDS: (2, 3)
+NDS ongoing
+Pareto Front after NDS: (2, 3)
+Combined Pareto solutions and objectives saved to CSV: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_solutions_full.csv
+Pareto solutions saved to JSON: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_solutions.json
+=============== PARETO FRONT ASSESSMENT ===============
+Size of X: (2, 104), Size of F: (2, 3)
+Found 2 total points, 2 unique points
+==========================================================
+UNIQUE INDIVIDUAL 1/2 (Original index: 0): [1 2 0 0 1 0 0 0 1 1 0 2 0 3 0 3 0 0 2 2 0 0 0 0 3 3 1 0 1 3 2 0 0 0 0 2 4
+ 3 3 0 3 0 3 1 0 2 1 0 0 0 0 0 4 6 3 7 0 1 9 3 1 6 0 1 2 5 7 0 9 8 4 5 3 8
+ 4 9 8 1 7 4 3 2 0 5 9 1 8 7 6 2 1 4 7 5 3 0 6 6 5 9 5 2 4 2]
+Value of the first objective: 580.0.
+Value of the second objective: 13.0.
+Value of the third objective: 39.0.
+
+============================================================
+SCHEDULE SUMMARY
+============================================================
+Op   Job  Machine  Start    End      Dur    Status      
+------------------------------------------------------------
+0    0    4        0.0      3.0      3.0    ONGOING     
+12   2    N/A      0.0      1.0      1.0    COMPLETED   
+18   3    5        0.0      3.0      3.0    ONGOING     
+41   7    2        0.0      3.0      3.0    ONGOING     
+47   8    1        0.0      6.0      6.0    ONGOING     
+52   9    3        0.0      3.0      3.0    ONGOING     
+1    0    2        3.0      7.0      4.0    TO_PROCESS  
+19   3    5        3.0      4.0      1.0    TO_PROCESS  
+24   4    4        3.0      6.0      3.0    TO_PROCESS  
+36   6    3        3.0      4.0      1.0    TO_PROCESS  
+6    1    5        4.0      5.0      1.0    TO_PROCESS  
+7    1    5        5.0      8.0      3.0    TO_PROCESS  
+20   3    1        6.0      12.0     6.0    TO_PROCESS  
+42   7    4        6.0      8.0      2.0    TO_PROCESS  
+2    0    3        7.0      10.0     3.0    TO_PROCESS  
+48   8    2        7.0      11.0     4.0    TO_PROCESS  
+30   5    5        8.0      11.0     3.0    TO_PROCESS  
+53   9    4        8.0      11.0     3.0    TO_PROCESS  
+25   4    3        10.0     15.0     5.0    TO_PROCESS  
+31   5    2        11.0     15.0     4.0    TO_PROCESS  
+37   6    4        11.0     13.0     2.0    TO_PROCESS  
+54   9    5        11.0     14.0     3.0    TO_PROCESS  
+13   2    1        12.0     16.0     4.0    TO_PROCESS  
+8    1    4        13.0     15.0     2.0    TO_PROCESS  
+49   8    5        14.0     15.0     1.0    TO_PROCESS  
+9    1    2        15.0     18.0     3.0    TO_PROCESS  
+21   3    3        15.0     18.0     3.0    TO_PROCESS  
+43   7    4        15.0     18.0     3.0    TO_PROCESS  
+50   8    5        15.0     18.0     3.0    TO_PROCESS  
+3    0    1        16.0     22.0     6.0    TO_PROCESS  
+14   2    2        18.0     20.0     2.0    TO_PROCESS  
+22   3    5        18.0     21.0     3.0    TO_PROCESS  
+26   4    3        18.0     21.0     3.0    TO_PROCESS  
+44   7    4        18.0     21.0     3.0    TO_PROCESS  
+51   8    2        20.0     23.0     3.0    TO_PROCESS  
+27   4    4        21.0     24.0     3.0    TO_PROCESS  
+55   9    3        21.0     22.0     1.0    TO_PROCESS  
+4    0    5        22.0     25.0     3.0    TO_PROCESS  
+10   1    1        22.0     23.0     1.0    TO_PROCESS  
+45   7    3        22.0     27.0     5.0    TO_PROCESS  
+11   1    2        23.0     26.0     3.0    TO_PROCESS  
+38   6    1        23.0     27.0     4.0    TO_PROCESS  
+32   5    4        24.0     26.0     2.0    TO_PROCESS  
+56   9    5        25.0     28.0     3.0    TO_PROCESS  
+15   2    4        26.0     28.0     2.0    TO_PROCESS  
+28   4    3        27.0     29.0     2.0    TO_PROCESS  
+33   5    1        27.0     31.0     4.0    TO_PROCESS  
+39   6    4        28.0     31.0     3.0    TO_PROCESS  
+57   9    5        28.0     29.0     1.0    TO_PROCESS  
+29   4    2        29.0     32.0     3.0    TO_PROCESS  
+46   7    3        29.0     31.0     2.0    TO_PROCESS  
+5    0    1        31.0     32.0     1.0    TO_PROCESS  
+23   3    3        31.0     32.0     1.0    TO_PROCESS  
+40   6    4        31.0     34.0     3.0    TO_PROCESS  
+16   2    3        32.0     33.0     1.0    TO_PROCESS  
+34   5    1        32.0     38.0     6.0    TO_PROCESS  
+17   2    4        34.0     37.0     3.0    TO_PROCESS  
+35   5    5        38.0     39.0     1.0    TO_PROCESS  
+
+------------------------------------------------------------
+PER-MACHINE SCHEDULE:
+------------------------------------------------------------
+Machine 0: 12(0-1)
+Machine 1: 47(0-6) → 20(6-12) → 13(12-16) → 3(16-22) → 10(22-23) → 38(23-27) → 33(27-31) → 5(31-32) → 34(32-38)
+Machine 2: 41(0-3) → 1(3-7) → 48(7-11) → 31(11-15) → 9(15-18) → 14(18-20) → 51(20-23) → 11(23-26) → 29(29-32)
+Machine 3: 52(0-3) → 36(3-4) → 2(7-10) → 25(10-15) → 21(15-18) → 26(18-21) → 55(21-22) → 45(22-27) → 28(27-29) → 46(29-31) → 23(31-32) → 16(32-33)
+Machine 4: 0(0-3) → 24(3-6) → 42(6-8) → 53(8-11) → 37(11-13) → 8(13-15) → 43(15-18) → 44(18-21) → 27(21-24) → 32(24-26) → 15(26-28) → 39(28-31) → 40(31-34) → 17(34-37)
+Machine 5: 18(0-3) → 19(3-4) → 6(4-5) → 7(5-8) → 30(8-11) → 54(11-14) → 49(14-15) → 50(15-18) → 22(18-21) → 4(22-25) → 56(25-28) → 57(28-29) → 35(38-39)
+
+Makespan: 39.0
+============================================================
+
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0x818b8c2b
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 6629 rows and 1447 columns
+Presolve time: 0.38s
+Presolved: 13229 rows, 2705 columns, 87942 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 2694 integer (2631 binary)
+Root relaxation presolve removed 132 rows and 52 columns
+Root relaxation presolved: 13097 rows, 2653 columns, 87374 nonzeros
+
+
+Root relaxation: objective 1.000000e+00, 707 iterations, 0.10 seconds (0.15 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.00000    0   39          -    1.00000      -     -    0s
+H    0     0                     989.0000000    7.94958  99.2%     -    2s
+H    0     0                     964.0000000    7.94958  99.2%     -    2s
+     0     0  161.39754    0   63  964.00000  161.39754  83.3%     -    2s
+H    0     0                     941.0000000  161.39754  82.8%     -    2s
+H    0     0                     901.0000000  161.39754  82.1%     -    2s
+     0     0  169.00000    0   66  901.00000  169.00000  81.2%     -    2s
+     0     0  169.00000    0   34  901.00000  169.00000  81.2%     -    4s
+     0     0  169.00000    0   60  901.00000  169.00000  81.2%     -    4s
+     0     0  169.00000    0   39  901.00000  169.00000  81.2%     -    5s
+H    0     0                     808.0000000  169.00000  79.1%     -    5s
+H    0     0                     783.0000000  169.00000  78.4%     -    5s
+     0     0  169.00000    0   59  783.00000  169.00000  78.4%     -    5s
+     0     0  169.00000    0   46  783.00000  169.00000  78.4%     -    6s
+     0     0  169.00000    0   46  783.00000  169.00000  78.4%     -    7s
+     0     2  169.00000    0   44  783.00000  169.00000  78.4%     -    7s
+H   43    68                     652.0000000  169.00000  74.1%   266    9s
+    78   157  169.04070   11  115  652.00000  169.00000  74.1%   207   10s
+H   94   157                     636.0000000  169.00000  73.4%   180   10s
+H  196   157                     633.0000000  169.00000  73.3%   147   10s
+H  205   197                     577.0000000  169.00000  70.7%   168   11s
+H  248   197                     556.0000000  169.00000  69.6%   174   11s
+H  314   244                     446.0000000  169.00000  62.1%   175   11s
+H  321   289                     437.0000000  169.00000  61.3%   176   12s
+H  438   347                     421.0000000  169.00000  59.9%   196   13s
+   559   403  169.00000   10   96  421.00000  169.00000  59.9%   203   15s
+H  566   422                     383.0000000  169.00000  55.9%   211   15s
+H  631   473                     376.0000000  169.00000  55.1%   213   16s
+H  778   575                     375.0000000  169.00000  54.9%   207   17s
+   917   648  169.00000    6  125  375.00000  169.00000  54.9%   210   20s
+  1053   716  170.46666    8  124  375.00000  169.00000  54.9%   239   25s
+  1182   791  169.91842   10  131  375.00000  169.00000  54.9%   278   30s
+  1295   853  169.52381   10  156  375.00000  169.00000  54.9%   312   36s
+  1339   878  169.03492   11  153  375.00000  169.00000  54.9%   335   40s
+  1538  1508  170.00000   10   81  375.00000  170.00000  54.7%   319   46s
+  2315  1510  171.00000   12   50  375.00000  170.00000  54.7%   235   50s
+  2318  1512  174.00000   15   43  375.00000  170.00000  54.7%   235   58s
+  2319  1513  213.00000   63  119  375.00000  170.00000  54.7%   235   61s
+  2321  1514  170.00000    9   90  375.00000  170.00000  54.7%   235   66s
+  2323  1516  173.00000   29  104  375.00000  170.00000  54.7%   235   70s
+  2325  1517  170.00000   10  129  375.00000  170.00000  54.7%   234   76s
+  2326  1518  176.00000   19   95  375.00000  170.00000  54.7%   234   80s
+  2328  1519  208.00000   31  115  375.00000  170.00000  54.7%   234   87s
+  2329  1520  171.00000   10  132  375.00000  170.00000  54.7%   234   90s
+  2330  1520  183.00000   54  144  375.00000  170.00000  54.7%   234   96s
+  2331  1521  237.00000   47  134  375.00000  170.00000  54.7%   234  101s
+  2355  1551  170.00000   14  107  375.00000  170.00000  54.7%   243  105s
+  2443  1583  215.00000   18   86  375.00000  170.00000  54.7%   248  112s
+  2459  1589  178.00000   19  130  375.00000  170.00000  54.7%   251  115s
+  2500  1635  174.00000   24   91  375.00000  170.00000  54.7%   263  120s
+  3010  1951  172.56869   24  125  375.00000  171.00000  54.4%   234  126s
+  3232  2055  174.00000   23  103  375.00000  171.00000  54.4%   233  130s
+  3487  2181  171.00000   20  145  375.00000  171.00000  54.4%   232  135s
+  3965  2475 infeasible   34       375.00000  171.00000  54.4%   221  141s
+  4203  2553  172.00000   22  110  375.00000  171.00000  54.4%   217  145s
+  4583  2809  171.00000   28  146  375.00000  171.00000  54.4%   210  150s
+  5152  3114  172.32896   33  125  375.00000  171.00000  54.4%   200  155s
+  5625  3420  175.00814   34  103  375.00000  171.00000  54.4%   192  161s
+  6145  3617  210.00000   33   65  375.00000  171.00000  54.4%   184  165s
+  6693  3867  171.11473   39  136  375.00000  171.00000  54.4%   178  171s
+  7218  4187 infeasible   31       375.00000  171.00000  54.4%   173  177s
+  7461  4392  206.23794   24  113  375.00000  171.00000  54.4%   172  180s
+  7742  4852  172.00000   25  111  375.00000  172.00000  54.1%   171  186s
+  8369  5240  175.00000   32   94  375.00000  172.00000  54.1%   166  191s
+  8883  5725  179.64421   41   61  375.00000  172.00000  54.1%   163  197s
+  9511  6138  272.00000   29   62  375.00000  172.00000  54.1%   158  202s
+ 10082  6468  181.01709   29  140  375.00000  172.00000  54.1%   155  207s
+ 10477  6909  172.00000   31  108  375.00000  172.00000  54.1%   154  212s
+ 11008  7476  194.00000   36   91  375.00000  172.00000  54.1%   151  217s
+ 11691  7885  172.00000   36  119  375.00000  172.00000  54.1%   146  222s
+ 12196  8388  174.00000   41  114  375.00000  172.00000  54.1%   145  227s
+ 12751  8838  172.00000   37  135  375.00000  172.00000  54.1%   142  234s
+ 13300  9292  176.00000   31  113  375.00000  172.00000  54.1%   141  239s
+ 13844  9668  180.00000   45   81  375.00000  172.00000  54.1%   140  247s
+ 14294 10038  172.74204   27  124  375.00000  172.00000  54.1%   139  255s
+ 14740 10482  172.02438   27  136  375.00000  172.00000  54.1%   138  261s
+ 15289 11230  172.72851   32  112  375.00000  172.00000  54.1%   137  269s
+ 16166 11833  172.00000   37   84  375.00000  172.00000  54.1%   134  274s
+ 16850 12379  175.00000   36  105  375.00000  172.00000  54.1%   132  281s
+ 17491 12877  175.00000   32  125  375.00000  172.00000  54.1%   131  287s
+ 18114 13409  172.00000   33  128  375.00000  172.00000  54.1%   130  294s
+ 18764 14168  172.00000   29  138  375.00000  172.00000  54.1%   129  301s
+ 19646 14889  172.00000   30  154  375.00000  172.00000  54.1%   127  309s
+ 20454 15561  172.00000   36  111  375.00000  172.00000  54.1%   126  317s
+ 21230 16311  176.00000   43  135  375.00000  172.00000  54.1%   125  326s
+ 22068 17083  174.00000   36  153  375.00000  172.00000  54.1%   124  334s
+ 22940 17684  173.21479   30  118  375.00000  172.00000  54.1%   124  342s
+ 23648 18454  172.43465   43  109  375.00000  172.00000  54.1%   123  351s
+ 24549 19251  176.00000   45  102  375.00000  172.00000  54.1%   123  360s
+ 25476 19974  210.00000   33   82  375.00000  172.00000  54.1%   122  370s
+ 26345 20679  173.22246   27  136  375.00000  172.00000  54.1%   122  378s
+ 27190 21365  172.00000   30  107  375.00000  172.00000  54.1%   121  388s
+ 28053 22095  172.00000   27  127  375.00000  172.00000  54.1%   121  397s
+ 28894 22783  172.31797   40  131  375.00000  172.00000  54.1%   121  407s
+ 29810 23529  172.10634   34  106  375.00000  172.00000  54.1%   120  417s
+ 30764 24146  197.00000   42   53  375.00000  172.00000  54.1%   119  425s
+ 31588 24864  172.19294   33  127  375.00000  172.00000  54.1%   119  435s
+H31907 24809                     353.0000000  172.00000  51.3%   119  435s
+ 32429 25415  173.00000   35  126  353.00000  172.00000  51.3%   118  444s
+ 33003 25415  172.00000   29  145  353.00000  172.00000  51.3%   118  445s
+ 33181 25943  172.00000   35  126  353.00000  172.00000  51.3%   119  453s
+ 33836 26620  172.00000   36  116  353.00000  172.00000  51.3%   119  464s
+ 34669 27375  174.00000   38   84  353.00000  172.00000  51.3%   119  475s
+ 35616 28163  172.00000   24  142  353.00000  172.00000  51.3%   119  484s
+ 36605 28839  199.00000   34   87  353.00000  172.00000  51.3%   118  495s
+ 37443 29074  172.00000   25  138  353.00000  172.00000  51.3%   118  505s
+H37552 29031                     346.0000000  172.00000  50.3%   118  505s
+ 37746 29747  172.45912   30  114  346.00000  172.00000  50.3%   119  516s
+H38522 29636                     338.0000000  172.00000  49.1%   119  516s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+ 38621 29881  189.00000   36  111  338.00000  172.00000  49.1%   119  529s
+ 38954 31092 infeasible   48       338.00000  172.00000  49.1%   120  559s
+ 40426 31765  173.00000   38   93  338.00000  172.00000  49.1%   119  581s
+ 41370 32528  223.00000   44   78  338.00000  172.00000  49.1%   119  601s
+ 42350 33304  197.00000   32   91  338.00000  172.00000  49.1%   119  622s
+ 43361 33929  241.00000   40   38  338.00000  172.00000  49.1%   119  640s
+ 44256 34330  174.00000   29   72  338.00000  172.00000  49.1%   119  653s
+ 44813 35073  184.00000   35   92  338.00000  172.00000  49.1%   118  674s
+ 45825 35638  172.00000   27   64  338.00000  172.00000  49.1%   118  693s
+ 46648 36121  202.00000   28   81  338.00000  172.00000  49.1%   118  711s
+ 47435 36674  176.00000   40   72  338.00000  172.00000  49.1%   118  729s
+ 48314 37377 infeasible   36       338.00000  172.00000  49.1%   118  750s
+ 49276 38012  200.00000   44   62  338.00000  172.00000  49.1%   118  770s
+ 50132 38622  185.00000   29   79  338.00000  172.00000  49.1%   118  789s
+ 51002 39262  196.00000   37   85  338.00000  172.00000  49.1%   118  809s
+ 51861 39865  176.00000   32  130  338.00000  172.00000  49.1%   118  827s
+ 52655 40544 infeasible   42       338.00000  172.00000  49.1%   118  847s
+ 53554 41295 infeasible   41       338.00000  172.00000  49.1%   118  867s
+ 54511 41859  185.00000   45   86  338.00000  172.00000  49.1%   118  885s
+ 55338 42500 infeasible   36       338.00000  172.00000  49.1%   118  905s
+ 56228 43102  173.00000   39   76  338.00000  172.00000  49.1%   118  924s
+ 57111 43826  179.00000   34   95  338.00000  172.00000  49.1%   118  944s
+ 58012 44482  172.00000   29  101  338.00000  172.00000  49.1%   117  963s
+ 58932 45006  176.00000   35   64  338.00000  172.00000  49.1%   117  979s
+ 59611 45627  181.00000   32   87  338.00000  172.00000  49.1%   117  998s
+ 60529 46124  185.00000   41   74  338.00000  172.00000  49.1%   117 1016s
+ 61298 46781  186.00000   26   90  338.00000  172.00000  49.1%   117 1035s
+ 62156 47380 infeasible   38       338.00000  172.00000  49.1%   117 1055s
+ 63024 48073  172.00000   30  113  338.00000  172.00000  49.1%   117 1075s
+ 63900 48754  176.00930   40  103  338.00000  172.00000  49.1%   117 1095s
+ 64815 49371  212.00000   36   50  338.00000  172.00000  49.1%   117 1114s
+ 65744 49872  176.00000   33   65  338.00000  172.00000  49.1%   117 1135s
+ 66444 50419  173.00000   39   79  338.00000  172.00000  49.1%   117 1154s
+ 67298 51049  176.01344   40   92  338.00000  172.00000  49.1%   117 1175s
+ 68201 51603  173.00000   41   90  338.00000  172.00000  49.1%   117 1196s
+ 69019 52221  229.00000   39   48  338.00000  172.00000  49.1%   117 1215s
+ 69927 52688  200.00000   36   84  338.00000  172.00000  49.1%   117 1235s
+ 70770 53143  193.00000   42   83  338.00000  172.00000  49.1%   118 1256s
+H71393 53134                     337.0000000  172.00000  49.0%   118 1256s
+ 71548 53560  196.00000   41   81  337.00000  172.00000  49.0%   118 1274s
+ 72377 53964 infeasible   40       337.00000  172.00000  49.0%   118 1293s
+ 73208 54455  183.00000   36   84  337.00000  172.00000  49.0%   119 1313s
+ 73996 55050  180.00000   29   69  337.00000  172.00000  49.0%   119 1328s
+ 74761 55619  197.00000   55   66  337.00000  172.00000  49.0%   119 1346s
+ 75472 56336  181.00000   45   62  337.00000  172.00000  49.0%   119 1366s
+ 76389 57050 infeasible   45       337.00000  172.00000  49.0%   118 1385s
+ 77242 57754  174.00000   31  105  337.00000  172.00000  49.0%   118 1405s
+ 78099 58357  176.00000   27   74  337.00000  172.00000  49.0%   118 1424s
+ 78973 58930  174.00000   33   67  337.00000  172.00000  49.0%   118 1444s
+ 79797 59533  174.00000   45   84  337.00000  172.00000  49.0%   118 1465s
+ 80608 60074  199.00000   36   57  337.00000  172.00000  49.0%   118 1485s
+ 81435 60794  176.00000   39   99  337.00000  172.00000  49.0%   118 1506s
+ 82323 61419 infeasible   39       337.00000  172.00000  49.0%   118 1526s
+ 83171 62110  195.00000   32   98  337.00000  172.00000  49.0%   118 1547s
+ 84096 62754 infeasible   43       337.00000  172.00000  49.0%   118 1566s
+ 84951 63459  192.00000   48   66  337.00000  172.00000  49.0%   118 1587s
+ 85845 64252  258.00000   45   60  337.00000  172.00000  49.0%   118 1607s
+ 86832 64875  204.00000   43   42  337.00000  172.00000  49.0%   118 1627s
+ 87714 65432  177.00000   37   81  337.00000  172.00000  49.0%   118 1646s
+ 88526 65956  173.04306   37   77  337.00000  173.00000  48.7%   117 1664s
+ 89260 66564  190.00000   43   41  337.00000  173.00000  48.7%   117 1684s
+ 90101 67179  173.00000   27   73  337.00000  173.00000  48.7%   117 1704s
+ 90989 67729  208.00000   48   54  337.00000  173.00000  48.7%   117 1724s
+ 91790 68244  181.00000   39   78  337.00000  173.00000  48.7%   117 1745s
+ 92596 68801  195.00000   51   90  337.00000  173.00000  48.7%   117 1764s
+ 93402 69437 infeasible   38       337.00000  173.00000  48.7%   117 1786s
+ 94313 69869  234.00000   51   67  337.00000  173.00000  48.7%   117 1800s
+
+Cutting planes:
+  Learned: 153
+  Gomory: 244
+  Lift-and-project: 261
+  Cover: 71
+  Implied bound: 4
+  Projected implied bound: 31
+  MIR: 2545
+  Mixing: 151
+  StrongCG: 1618
+  Flow cover: 7818
+  GUB cover: 3
+  Inf proof: 62
+  Zero half: 2432
+  RLT: 472
+  Relax-and-lift: 801
+  PSD: 2
+
+Explored 94919 nodes (11109895 simplex iterations) in 1800.05 seconds (1985.07 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 337 338 346 ... 446
+
+Time limit reached
+Best objective 3.370000000000e+02, best bound 1.730000000000e+02, gap 48.6647%
+
+User-callback calls 504947, time in user-callback 4.46 sec
+
+=== SOLUTION ===
+Cmax: 39.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=11.0, end=14.0, Machine 3
+ - Operation 3: start=15.0, end=21.0, Machine 1
+ - Operation 4: start=25.0, end=28.0, Machine 5
+ - Operation 5: start=28.0, end=29.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=14.0, end=16.0, Machine 4
+ - Operation 9: start=18.0, end=21.0, Machine 2
+ - Operation 10: start=21.0, end=22.0, Machine 1
+ - Operation 11: start=22.0, end=24.0, Machine 1
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=11.0, end=14.0, Machine 4
+ - Operation 14: start=24.0, end=26.0, Machine 2
+ - Operation 15: start=26.0, end=28.0, Machine 4
+ - Operation 16: start=30.0, end=31.0, Machine 3
+ - Operation 17: start=31.0, end=34.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=6.0, end=12.0, Machine 1
+ - Operation 21: start=15.0, end=18.0, Machine 2
+ - Operation 22: start=18.0, end=21.0, Machine 5
+ - Operation 23: start=24.0, end=25.0, Machine 3
+ - Operation 24: start=3.0, end=9.0, Machine 3
+ - Operation 25: start=12.0, end=15.0, Machine 1
+ - Operation 26: start=15.0, end=18.0, Machine 3
+ - Operation 27: start=18.0, end=24.0, Machine 3
+ - Operation 28: start=25.0, end=27.0, Machine 3
+ - Operation 29: start=27.0, end=30.0, Machine 2
+ - Operation 30: start=8.0, end=11.0, Machine 4
+ - Operation 31: start=11.0, end=15.0, Machine 2
+ - Operation 32: start=24.0, end=26.0, Machine 4
+ - Operation 33: start=28.0, end=31.0, Machine 4
+ - Operation 34: start=32.0, end=38.0, Machine 1
+ - Operation 35: start=38.0, end=39.0, Machine 5
+ - Operation 36: start=9.0, end=10.0, Machine 3
+ - Operation 37: start=22.0, end=24.0, Machine 4
+ - Operation 38: start=24.0, end=28.0, Machine 1
+ - Operation 39: start=29.0, end=31.0, Machine 1
+ - Operation 40: start=31.0, end=34.0, Machine 5
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=3.0, end=5.0, Machine 4
+ - Operation 43: start=16.0, end=19.0, Machine 4
+ - Operation 44: start=19.0, end=22.0, Machine 4
+ - Operation 45: start=22.0, end=25.0, Machine 5
+ - Operation 46: start=27.0, end=29.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=11.0, end=12.0, Machine 5
+ - Operation 50: start=12.0, end=15.0, Machine 5
+ - Operation 51: start=21.0, end=24.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=5.0, end=8.0, Machine 4
+ - Operation 54: start=8.0, end=11.0, Machine 5
+ - Operation 55: start=14.0, end=15.0, Machine 3
+ - Operation 56: start=15.0, end=18.0, Machine 5
+ - Operation 57: start=21.0, end=22.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 39.0
+Model cmax: 39.0
+
+ Objective values: cmax 39.0, quadratric delay 337.0, machine assignments 13
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 3
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 1
+   Operation 12 → Machine 0
+   Operation 13 → Machine 4
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 2
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 3
+   Operation 25 → Machine 1
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 4
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 1
+   Operation 39 → Machine 1
+   Operation 40 → Machine 5
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 4
+   Operation 44 → Machine 4
+   Operation 45 → Machine 5
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 4
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0x073b394c
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 6452 rows and 1269 columns
+Presolve time: 0.38s
+Presolved: 13406 rows, 2883 columns, 88492 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 2872 integer (2808 binary)
+Root relaxation presolve removed 131 rows and 51 columns
+Root relaxation presolved: 13275 rows, 2832 columns, 87935 nonzeros
+
+
+Root relaxation: objective 1.100000e+01, 1607 iterations, 0.23 seconds (0.38 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.00000    0   28          -   11.00000      -     -    0s
+     0     0   11.00000    0   21          -   11.00000      -     -    2s
+     0     0   11.00000    0   49          -   11.00000      -     -    2s
+     0     0   11.00000    0   21          -   11.00000      -     -    4s
+     0     0   11.00000    0   16          -   11.00000      -     -    4s
+     0     0   11.00000    0   17          -   11.00000      -     -    6s
+     0     0   11.00000    0   27          -   11.00000      -     -    6s
+     0     0   11.00000    0   15          -   11.00000      -     -    7s
+     0     0   11.00000    0   17          -   11.00000      -     -    7s
+     0     0   11.00000    0   33          -   11.00000      -     -    9s
+     0     0   11.00000    0   30          -   11.00000      -     -   10s
+     0     2   11.00000    0   18          -   11.00000      -     -   12s
+  1706  1500   12.00000   60   22          -   11.00000      -  14.2   15s
+  1712  1504   11.00000   53   44          -   11.00000      -  14.2   20s
+  1715  1506   11.00000   30   54          -   11.00000      -  14.2   25s
+  1719  1509   11.01316   57   65          -   11.00000      -  14.1   31s
+  1722  1511   12.00000   24   70          -   11.00000      -  14.1   35s
+  1725  1513   11.00000   11   34          -   11.00000      -  14.1   46s
+H 1808  1511                     116.0000000   11.00000  90.5%  20.2   48s
+H 1826  1830                     115.0000000   11.00000  90.4%  20.6   50s
+H 1826  1762                      15.0000000   11.00000  26.7%  20.6   50s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+H 2276  1935                      14.0000000   11.00000  21.4%  20.2   53s
+  2276  1935   13.00000   83   18   14.00000   11.00000  21.4%  20.2   53s
+  2878  1944   11.00000   65   26   14.00000   11.00000  21.4%  21.1   55s
+H 2973  1775                      13.0000000   11.00000  15.4%  21.6   55s
+  4052  2113   11.13450   61   41   13.00000   11.00000  15.4%  24.5   61s
+  4839  2216   11.00000   59   23   13.00000   11.00000  15.4%  26.2   66s
+  5516  2508   11.00000   66   26   13.00000   11.00000  15.4%  28.3   71s
+  6288  2915   11.00000   74   25   13.00000   11.00000  15.4%  30.1   76s
+  7048  3375   11.00000   53   28   13.00000   11.00000  15.4%  31.6   81s
+H 7244  1550                      12.0000000   11.00000  8.33%  31.8   81s
+  7385  1492   11.00000   53    9   12.00000   11.00000  8.33%  32.3   86s
+H 7386  1418                      11.0000000   11.00000  0.00%  32.3   88s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 18
+  Lift-and-project: 11
+  Implied bound: 3
+  Projected implied bound: 1
+  MIR: 27
+  Mixing: 4
+  StrongCG: 23
+  Flow cover: 64
+  Zero half: 8
+  RLT: 5
+  Relax-and-lift: 6
+
+Explored 7386 nodes (246697 simplex iterations) in 88.88 seconds (93.32 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 7: 11 12 13 ... 116
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+User-callback calls 42451, time in user-callback 0.23 sec
+
+=== SOLUTION ===
+Cmax: 39.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=7.0, end=10.0, Machine 3
+ - Operation 3: start=12.0, end=18.0, Machine 1
+ - Operation 4: start=24.0, end=27.0, Machine 5
+ - Operation 5: start=28.0, end=29.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=14.0, end=16.0, Machine 4
+ - Operation 9: start=17.0, end=20.0, Machine 2
+ - Operation 10: start=23.0, end=24.0, Machine 1
+ - Operation 11: start=24.0, end=26.0, Machine 1
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=11.0, end=17.0, Machine 2
+ - Operation 14: start=29.0, end=31.0, Machine 2
+ - Operation 15: start=32.0, end=34.0, Machine 4
+ - Operation 16: start=34.0, end=35.0, Machine 3
+ - Operation 17: start=35.0, end=38.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=6.0, end=12.0, Machine 1
+ - Operation 21: start=16.0, end=19.0, Machine 3
+ - Operation 22: start=19.0, end=22.0, Machine 5
+ - Operation 23: start=31.0, end=32.0, Machine 3
+ - Operation 24: start=3.0, end=6.0, Machine 4
+ - Operation 25: start=10.0, end=15.0, Machine 3
+ - Operation 26: start=19.0, end=22.0, Machine 3
+ - Operation 27: start=22.0, end=28.0, Machine 3
+ - Operation 28: start=29.0, end=31.0, Machine 3
+ - Operation 29: start=31.0, end=34.0, Machine 2
+ - Operation 30: start=18.0, end=21.0, Machine 4
+ - Operation 31: start=23.0, end=27.0, Machine 2
+ - Operation 32: start=27.0, end=29.0, Machine 4
+ - Operation 33: start=29.0, end=32.0, Machine 4
+ - Operation 34: start=32.0, end=38.0, Machine 1
+ - Operation 35: start=38.0, end=39.0, Machine 5
+ - Operation 36: start=5.0, end=6.0, Machine 3
+ - Operation 37: start=16.0, end=18.0, Machine 4
+ - Operation 38: start=19.0, end=23.0, Machine 1
+ - Operation 39: start=24.0, end=27.0, Machine 4
+ - Operation 40: start=30.0, end=33.0, Machine 5
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=9.0, end=11.0, Machine 4
+ - Operation 43: start=11.0, end=14.0, Machine 4
+ - Operation 44: start=21.0, end=24.0, Machine 4
+ - Operation 45: start=27.0, end=30.0, Machine 5
+ - Operation 46: start=32.0, end=34.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=12.0, end=13.0, Machine 5
+ - Operation 50: start=13.0, end=16.0, Machine 5
+ - Operation 51: start=20.0, end=23.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=6.0, end=9.0, Machine 4
+ - Operation 54: start=9.0, end=12.0, Machine 5
+ - Operation 55: start=15.0, end=16.0, Machine 3
+ - Operation 56: start=16.0, end=19.0, Machine 5
+ - Operation 57: start=22.0, end=23.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 39.0
+Model cmax: 39.0
+
+ Objective values: cmax 39.0, quadratric delay 580.0, machine assignments 11
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 3
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 1
+   Operation 12 → Machine 0
+   Operation 13 → Machine 2
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 3
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 4
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 4
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 1
+   Operation 39 → Machine 4
+   Operation 40 → Machine 5
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 4
+   Operation 44 → Machine 4
+   Operation 45 → Machine 5
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 4
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0x96f6611e
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 6515 rows and 1423 columns
+Presolve time: 0.39s
+Presolved: 13343 rows, 2729 columns, 91798 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 2718 integer (2655 binary)
+Root relaxation presolve removed 205 rows and 81 columns
+Root relaxation presolved: 13138 rows, 2648 columns, 90873 nonzeros
+
+
+Root relaxation: objective 2.721162e+01, 626 iterations, 0.09 seconds (0.14 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0   40          -   28.00000      -     -    1s
+     0     0   29.00000    0   42          -   29.00000      -     -    3s
+     0     0   29.00000    0   57          -   29.00000      -     -    3s
+     0     0   29.00000    0   52          -   29.00000      -     -    4s
+     0     0   29.00000    0   60          -   29.00000      -     -    4s
+     0     0   30.00000    0   41          -   30.00000      -     -    6s
+     0     0   30.00000    0   50          -   30.00000      -     -    6s
+     0     0   30.00000    0   37          -   30.00000      -     -    8s
+     0     0   30.08571    0  108          -   30.08571      -     -    8s
+     0     0   31.00000    0   47          -   31.00000      -     -    9s
+     0     0   31.00000    0   54          -   31.00000      -     -    9s
+     0     0   31.00000    0   37          -   31.00000      -     -   11s
+     0     0   31.00000    0   48          -   31.00000      -     -   11s
+     0     0   31.00000    0   42          -   31.00000      -     -   13s
+     0     0   31.00000    0   62          -   31.00000      -     -   13s
+     0     0   32.00000    0   29          -   32.00000      -     -   15s
+     0     0   32.00000    0   63          -   32.00000      -     -   16s
+     0     0   32.00000    0   60          -   32.00000      -     -   18s
+     0     0   32.00000    0   51          -   32.00000      -     -   18s
+     0     0   32.00000    0   30          -   32.00000      -     -   19s
+     0     0   32.00000    0   18          -   32.00000      -     -   20s
+     0     2   33.00000    0   18          -   33.00000      -     -   25s
+  2334  1719   33.00000   42    8          -   33.00000      -  18.0   30s
+  2338  1722   35.00000   45   30          -   33.00000      -  17.9   36s
+  2339  1722   33.00000   43   15          -   33.00000      -  17.9   40s
+  2341  1724   34.00000   38   27          -   33.00000      -  17.9   47s
+  2342  1724   33.00000   16   37          -   33.00000      -  17.9   50s
+  2344  1726   35.00000   61   48          -   33.00000      -  17.9   55s
+  2347  1728   36.00000   61   19          -   33.00000      -  17.9   62s
+  2429  2005   35.00000   15   34          -   33.00000      -  19.7   66s
+  3909  2748 infeasible   79               -   33.00000      -  16.6   70s
+H 4071  2494                      36.0000000   33.00000  8.33%  16.6   70s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+  4151  2823   34.00000   46   28   36.00000   33.00000  8.33%  16.4   72s
+  4989  3121   33.00000   27   47   36.00000   33.00000  8.33%  17.1   75s
+  6263  3455   34.00000   34   37   36.00000   33.00000  8.33%  18.8   80s
+  7432  3937   33.00000   33   56   36.00000   33.00000  8.33%  21.8   86s
+  8324  4427 infeasible   51        36.00000   33.00000  8.33%  23.1   90s
+  9566  5163   33.00000   41   64   36.00000   33.00000  8.33%  25.0   96s
+ 10309  5683   34.00000   34   49   36.00000   33.00000  8.33%  26.5  100s
+ 11679  6366   33.00000   46   42   36.00000   33.00000  8.33%  27.7  106s
+ 12922  7227   34.00000   39   32   36.00000   33.00000  8.33%  28.7  112s
+ 13732  7762 infeasible   40        36.00000   33.00000  8.33%  29.3  117s
+ 14608  8089   34.00000   42    8   36.00000   33.00000  8.33%  29.9  120s
+ 14613  8092   35.00000   42   14   36.00000   33.00000  8.33%  29.9  125s
+ 14615  8094   35.00000   30   14   36.00000   33.00000  8.33%  29.9  132s
+ 14617  8095   33.00000   70   24   36.00000   33.00000  8.33%  29.9  137s
+ 14618  8096   34.00000   28   46   36.00000   33.00000  8.33%  29.8  141s
+ 14620  8097   34.00000   31   35   36.00000   33.00000  8.33%  29.8  148s
+ 14621  8098   34.00000   27   25   36.00000   33.00000  8.33%  29.8  152s
+ 14624  8103   33.00000   19   24   36.00000   33.00000  8.33%  30.2  155s
+H14822  8031                      35.0000000   33.00000  5.71%  30.3  157s
+ 15052  8106   33.00000   41   29   35.00000   33.00000  5.71%  30.3  160s
+ 16160  8702   33.00000   31   29   35.00000   33.00000  5.71%  30.8  167s
+ 16601  8842   33.00000   39   31   35.00000   33.00000  5.71%  31.3  170s
+ 17462  9169   34.00000   41   57   35.00000   33.00000  5.71%  32.5  176s
+ 18169  9424 infeasible   48        35.00000   33.00000  5.71%  34.3  182s
+ 18570  9584   33.00000   70   36   35.00000   33.00000  5.71%  35.0  185s
+ 19501  9689   33.00000   52   22   35.00000   33.00000  5.71%  35.8  192s
+ 19950  9733   33.00000   47   33   35.00000   33.00000  5.71%  36.6  195s
+ 20801  9834   33.00000   63   35   35.00000   33.00000  5.71%  37.8  201s
+ 21863  9759   33.00000   56   38   35.00000   33.00000  5.71%  38.4  207s
+ 22324  9729   33.00000   59   33   35.00000   33.00000  5.71%  38.8  210s
+ 23047  9797   33.00000   59   31   35.00000   33.00000  5.71%  40.0  215s
+ 23844  9797   33.00000   63   42   35.00000   33.00000  5.71%  40.7  222s
+ 24610  9818   34.00000   71   37   35.00000   33.00000  5.71%  41.5  227s
+ 24987  9801   34.00000   59   36   35.00000   33.00000  5.71%  42.0  230s
+ 25814  9835   34.00000   66   38   35.00000   33.00000  5.71%  42.8  237s
+ 26190  9871 infeasible   69        35.00000   33.00000  5.71%  43.3  240s
+ 26997  9888   33.00000   69   40   35.00000   33.00000  5.71%  44.5  248s
+ 27382  9962   33.00000   61   33   35.00000   33.00000  5.71%  45.0  252s
+ 27844 10021   33.00000   37   34   35.00000   33.00000  5.71%  45.5  256s
+ 28339 10042   34.00000   51   46   35.00000   33.00000  5.71%  45.9  261s
+ 28863  9977 infeasible   58        35.00000   33.00000  5.71%  46.4  266s
+ 29385 10024   33.00000   48   36   35.00000   33.00000  5.71%  46.9  271s
+ 29898 10146   33.00000   57   49   35.00000   33.00000  5.71%  47.4  276s
+ 30519 10266 infeasible   69        35.00000   33.00000  5.71%  47.8  283s
+ 31463 10184 infeasible   76        35.00000   33.00000  5.71%  47.8  288s
+ 32042 10187   33.00000   40   39   35.00000   33.00000  5.71%  48.5  295s
+ 32647 10377   33.00000   47   39   35.00000   33.00000  5.71%  49.2  301s
+ 33494 10386   34.00000   35   49   35.00000   33.00000  5.71%  49.4  308s
+ 34323 10392 infeasible   58        35.00000   33.00000  5.71%  49.8  315s
+ 34995 10399 infeasible   48        35.00000   33.00000  5.71%  50.3  322s
+ 35952 10418   33.00000   55   47   35.00000   33.00000  5.71%  50.3  330s
+ 36896 10538 infeasible   69        35.00000   33.00000  5.71%  50.5  338s
+ 37857 10641   33.00000   64   21   35.00000   33.00000  5.71%  50.6  346s
+ 38781 11018   33.00000   49   32   35.00000   33.00000  5.71%  50.7  353s
+ 39586 11400   33.00000   57   29   35.00000   33.00000  5.71%  50.9  360s
+ 40410 11747 infeasible   58        35.00000   33.00000  5.71%  51.1  367s
+ 41128 12187   33.02500   60   63   35.00000   33.00000  5.71%  51.3  374s
+ 42011 12604   33.00000   57   31   35.00000   33.00000  5.71%  51.4  381s
+ 42942 12952   33.00000   57   31   35.00000   33.00000  5.71%  51.5  388s
+ 43810 13230   34.00000   70   39   35.00000   33.00000  5.71%  51.7  395s
+ 44607 13643 infeasible   58        35.00000   33.00000  5.71%  52.0  403s
+ 45452 14087   34.00000   60   32   35.00000   33.00000  5.71%  52.2  411s
+ 46319 14477   33.00625   54   57   35.00000   33.00000  5.71%  52.3  419s
+ 47198 14747   33.00000   48   32   35.00000   33.00000  5.71%  52.3  426s
+ 47897 15035 infeasible   49        35.00000   33.00000  5.71%  52.6  433s
+ 48654 15498   33.00000   50   24   35.00000   33.00000  5.71%  52.8  441s
+ 49568 15765 infeasible   59        35.00000   33.00000  5.71%  52.8  449s
+ 50504 16107 infeasible   44        35.00000   33.00000  5.71%  52.8  456s
+ 51294 16407 infeasible   69        35.00000   33.00000  5.71%  53.0  463s
+ 52020 16820 infeasible   57        35.00000   33.00000  5.71%  53.3  471s
+ 52851 17072   33.00000   43   25   35.00000   33.00000  5.71%  53.4  478s
+ 53660 17334   33.00000   50   56   35.00000   33.00000  5.71%  53.5  485s
+ 54426 17602   33.00000   29   24   35.00000   33.00000  5.71%  53.7  493s
+ 55269 17900 infeasible   32        35.00000   33.00000  5.71%  53.8  499s
+ 55969 18336   33.00000   58   21   35.00000   33.00000  5.71%  54.2  508s
+ 56871 18742   33.00000   71   36   35.00000   33.00000  5.71%  54.1  515s
+ 57649 19110   33.00000   56   31   35.00000   33.00000  5.71%  54.2  522s
+ 58387 19557   34.00000   47   32   35.00000   33.00000  5.71%  54.5  530s
+ 59192 19814   33.00000   65   27   35.00000   33.00000  5.71%  54.5  537s
+ 59870 20258 infeasible   47        35.00000   33.00000  5.71%  54.7  545s
+ 60793 20642   33.00000   34   54   35.00000   33.00000  5.71%  54.9  553s
+ 61471 20971   33.00000   38   27   35.00000   33.00000  5.71%  55.0  560s
+ 62135 21349   33.00000   50   35   35.00000   33.00000  5.71%  55.4  568s
+ 62830 21760 infeasible   71        35.00000   33.00000  5.71%  55.7  575s
+ 63553 22037   33.00000   62   37   35.00000   33.00000  5.71%  56.1  584s
+ 64315 22401 infeasible   65        35.00000   33.00000  5.71%  56.5  593s
+ 65304 22933   33.00000   49   35   35.00000   33.00000  5.71%  56.5  603s
+ 66264 23534 infeasible   64        35.00000   33.00000  5.71%  56.6  612s
+ 67178 23953   34.00000   54   20   35.00000   33.00000  5.71%  56.7  619s
+ 67845 24441   33.00000   49   36   35.00000   33.00000  5.71%  57.0  628s
+ 68609 24968   33.00000   39   44   35.00000   33.00000  5.71%  57.2  637s
+ 69440 25494   34.00000   35   45   35.00000   33.00000  5.71%  57.3  646s
+ 70203 26001   33.00000   42   44   35.00000   33.00000  5.71%  57.5  655s
+ 71021 26477   34.00000   51   45   35.00000   33.00000  5.71%  57.7  663s
+ 71850 26980   34.00000   57   47   35.00000   33.00000  5.71%  57.8  673s
+ 72685 27431   33.00000   51   39   35.00000   33.00000  5.71%  57.9  681s
+ 73351 27824 infeasible   59        35.00000   33.00000  5.71%  58.2  690s
+ 74055 28269   33.08333   58   52   35.00000   33.00000  5.71%  58.4  698s
+ 74865 28818 infeasible   55        35.00000   33.00000  5.71%  58.5  708s
+ 75738 29288   33.00000   56   44   35.00000   33.00000  5.71%  58.6  717s
+ 76488 29717   33.00000   63   47   35.00000   33.00000  5.71%  58.8  725s
+ 77361 30089   34.00000   35   63   35.00000   33.00000  5.71%  58.9  735s
+ 78236 30556   33.00000   70   32   35.00000   33.00000  5.71%  59.0  744s
+ 79225 30904 infeasible   91        35.00000   33.00000  5.71%  59.0  753s
+ 80000 31373   33.00000   39   43   35.00000   33.00000  5.71%  59.1  763s
+ 80837 31784 infeasible   55        35.00000   33.00000  5.71%  59.2  771s
+ 81593 32344   33.00000   31   37   35.00000   33.00000  5.71%  59.4  780s
+ 82392 32903   34.00000   41   34   35.00000   33.00000  5.71%  59.5  789s
+ 83163 33413   34.00000   45   35   35.00000   33.00000  5.71%  59.6  798s
+ 83883 33892 infeasible   58        35.00000   33.00000  5.71%  59.7  808s
+ 84669 34297   34.00000   57   48   35.00000   33.00000  5.71%  59.9  817s
+ 85389 34828   33.00000   46   35   35.00000   33.00000  5.71%  60.0  826s
+ 86160 35270   34.00000   48   45   35.00000   33.00000  5.71%  60.1  835s
+ 86983 35746 infeasible   82        35.00000   33.00000  5.71%  60.2  845s
+ 87823 36132   34.00000   53   39   35.00000   33.00000  5.71%  60.2  853s
+ 88453 36639   34.00000   39   25   35.00000   33.00000  5.71%  60.3  863s
+ 89322 37129   33.00000   47   45   35.00000   33.00000  5.71%  60.5  873s
+ 90185 37580   34.00000   52   45   35.00000   33.00000  5.71%  60.6  884s
+ 91073 38051 infeasible   71        35.00000   33.00000  5.71%  60.7  893s
+ 91839 38572   33.00000   78   20   35.00000   33.00000  5.71%  60.9  902s
+ 92545 38980   33.00000   34   39   35.00000   33.00000  5.71%  61.1  912s
+ 93309 39487   33.00000   49   43   35.00000   33.00000  5.71%  61.3  922s
+ 94038 39988   34.00000   36   51   35.00000   33.00000  5.71%  61.5  932s
+ 94957 40462 infeasible   46        35.00000   33.00000  5.71%  61.6  944s
+ 95890 40985   34.00000   53   66   35.00000   33.00000  5.71%  61.6  955s
+ 96708 41258   33.00000   83   35   35.00000   33.00000  5.71%  61.7  967s
+ 97627 41515 infeasible   89        35.00000   33.00000  5.71%  61.7  976s
+ 98431 41953   33.00000   59   30   35.00000   33.00000  5.71%  61.9  986s
+ 99176 42463   33.00000   68   21   35.00000   33.00000  5.71%  62.0  996s
+ 100028 42876   34.00000   43   63   35.00000   33.00000  5.71%  62.1 1006s
+ 100956 43216   33.00000   73   38   35.00000   33.00000  5.71%  62.2 1017s
+ 101758 43449   33.00000   78   22   35.00000   33.00000  5.71%  62.3 1026s
+ 102743 43752 infeasible   87        35.00000   33.00000  5.71%  62.3 1036s
+ 103531 44118 infeasible   79        35.00000   33.00000  5.71%  62.3 1047s
+ 104285 44476   33.00000   68   31   35.00000   33.00000  5.71%  62.4 1056s
+ 105129 44724   33.00000   66   63   35.00000   33.00000  5.71%  62.4 1065s
+ 105900 45061   33.00000   66   31   35.00000   33.00000  5.71%  62.4 1074s
+ 106662 45268 infeasible   80        35.00000   33.00000  5.71%  62.5 1083s
+ 107537 45374 infeasible   90        35.00000   33.00000  5.71%  62.6 1092s
+ 108413 45554 infeasible   86        35.00000   33.00000  5.71%  62.6 1101s
+ 109255 45851   33.00000   45   41   35.00000   33.00000  5.71%  62.7 1111s
+ 110222 46082 infeasible   89        35.00000   33.00000  5.71%  62.6 1120s
+ 111155 46286 infeasible   86        35.00000   33.00000  5.71%  62.6 1129s
+ 111973 46459   33.00000   47   49   35.00000   33.00000  5.71%  62.6 1139s
+ 112852 46653 infeasible   78        35.00000   33.00000  5.71%  62.6 1147s
+ 113625 46885   33.00000   48   52   35.00000   33.00000  5.71%  62.7 1156s
+ 114315 47164   33.00000   52   48   35.00000   33.00000  5.71%  62.8 1165s
+ 115198 47383   33.00000   79   39   35.00000   33.00000  5.71%  62.8 1174s
+ 116100 47645   33.00000   34   70   35.00000   33.00000  5.71%  62.7 1183s
+ 116916 47802   34.00000   59   40   35.00000   33.00000  5.71%  62.8 1192s
+ 117743 48043 infeasible   96        35.00000   33.00000  5.71%  62.8 1202s
+ 118523 48317   33.00000   40   44   35.00000   33.00000  5.71%  62.8 1212s
+ 119451 48584   33.00000   38   34   35.00000   33.00000  5.71%  62.7 1220s
+ 120289 48820 infeasible   48        35.00000   33.00000  5.71%  62.7 1229s
+ 121195 48935   33.00000   80   47   35.00000   33.00000  5.71%  62.7 1237s
+ 121948 49025 infeasible   94        35.00000   33.00000  5.71%  62.7 1246s
+ 122736 49292   33.00000   77   34   35.00000   33.00000  5.71%  62.7 1254s
+ 123320 49292 infeasible   90        35.00000   33.00000  5.71%  62.7 1255s
+ 123447 49535   33.00000   60   32   35.00000   33.00000  5.71%  62.7 1263s
+ 124250 49689   33.00000   44   55   35.00000   33.00000  5.71%  62.7 1272s
+ 124968 49917   33.00000   45   19   35.00000   33.00000  5.71%  62.7 1283s
+ 125846 50028 infeasible   95        35.00000   33.00000  5.71%  62.6 1292s
+ 126665 50167   33.00000   88   22   35.00000   33.00000  5.71%  62.7 1302s
+ 127532 50317   33.00000   52   53   35.00000   33.00000  5.71%  62.6 1312s
+ 128443 50529 infeasible   84        35.00000   33.00000  5.71%  62.6 1322s
+ 129251 50668 infeasible   88        35.00000   33.00000  5.71%  62.6 1331s
+ 130014 50957   33.00000   64   21   35.00000   33.00000  5.71%  62.6 1339s
+ 130760 51216   33.00000   58   28   35.00000   33.00000  5.71%  62.6 1350s
+ 131563 51532   34.00000   49   26   35.00000   33.00000  5.71%  62.6 1359s
+ 132314 51832   33.00000   53   36   35.00000   33.00000  5.71%  62.6 1369s
+ 133002 52309   33.00000   61   33   35.00000   33.00000  5.71%  62.6 1382s
+ 133817 52619   33.00000   50   59   35.00000   33.00000  5.71%  62.6 1393s
+ 134625 53025 infeasible   46        35.00000   33.00000  5.71%  62.7 1404s
+ 135418 53405 infeasible   56        35.00000   33.00000  5.71%  62.7 1415s
+ 136311 53724   33.00000   85   40   35.00000   33.00000  5.71%  62.7 1428s
+ 137158 54225   34.00000   56   26   35.00000   33.00000  5.71%  62.7 1440s
+ 138077 54596   33.00000   38   35   35.00000   33.00000  5.71%  62.7 1451s
+ 138878 55063   34.00000   46   48   35.00000   33.00000  5.71%  62.7 1462s
+ 139630 55491   33.00000   44   50   35.00000   33.00000  5.71%  62.7 1472s
+ 140332 55889   33.00000   69   37   35.00000   33.00000  5.71%  62.8 1484s
+ 141111 56295   33.00000   49   50   35.00000   33.00000  5.71%  62.9 1496s
+ 141931 56634   33.00000   63   31   35.00000   33.00000  5.71%  62.9 1506s
+ 142814 56936   33.00000   65   50   35.00000   33.00000  5.71%  62.9 1517s
+ 143556 57138 infeasible   51        35.00000   33.00000  5.71%  62.9 1527s
+ 144220 57512   33.00000   50   55   35.00000   33.00000  5.71%  63.0 1537s
+ 144877 57755   34.00000   60   38   35.00000   33.00000  5.71%  63.1 1547s
+ 145542 58085   34.00000   55   32   35.00000   33.00000  5.71%  63.2 1558s
+ 146168 58381   33.00000   61   47   35.00000   33.00000  5.71%  63.3 1570s
+ 146871 58612   33.00000   51   65   35.00000   33.00000  5.71%  63.5 1580s
+ 147478 59058   33.00000   30   50   35.00000   33.00000  5.71%  63.5 1593s
+ 148442 59391 infeasible   45        35.00000   33.00000  5.71%  63.5 1607s
+ 149243 59799   33.00000   35   52   35.00000   33.00000  5.71%  63.5 1619s
+ 149931 60170   34.00000   41   57   35.00000   33.00000  5.71%  63.7 1630s
+ 150751 60410   33.00000   51   50   35.00000   33.00000  5.71%  63.7 1642s
+ 151548 60763   33.00000   74   36   35.00000   33.00000  5.71%  63.8 1654s
+ 152454 61022   33.00000   76   52   35.00000   33.00000  5.71%  63.9 1667s
+ 153256 61332   33.00000   78   48   35.00000   33.00000  5.71%  63.9 1678s
+ 154121 61643 infeasible   79        35.00000   33.00000  5.71%  64.0 1692s
+ 154930 61957   33.00000   50   44   35.00000   33.00000  5.71%  64.1 1704s
+ 156060 62267 infeasible   69        35.00000   33.00000  5.71%  64.0 1716s
+ 156911 62412   33.00000   95   35   35.00000   33.00000  5.71%  64.0 1727s
+ 157886 62670 infeasible   74        35.00000   33.00000  5.71%  64.0 1740s
+ 158682 62953   33.00000   94   27   35.00000   33.00000  5.71%  64.1 1751s
+ 159578 63164 infeasible   73        35.00000   33.00000  5.71%  64.1 1762s
+ 160466 63383 infeasible   63        35.00000   33.00000  5.71%  64.1 1773s
+ 161163 63638   34.00000   55   50   35.00000   33.00000  5.71%  64.2 1783s
+ 161915 63796   33.00000   89   35   35.00000   33.00000  5.71%  64.3 1793s
+ 162515 63906 infeasible   95        35.00000   33.00000  5.71%  64.4 1800s
+
+Cutting planes:
+  Learned: 312
+  Gomory: 268
+  Lift-and-project: 148
+  Cover: 338
+  Implied bound: 150
+  Projected implied bound: 18
+  MIR: 1137
+  Mixing: 55
+  StrongCG: 1502
+  Flow cover: 3673
+  GUB cover: 9
+  Inf proof: 446
+  Zero half: 5829
+  RLT: 2558
+  Relax-and-lift: 2557
+  PSD: 7
+
+Explored 163046 nodes (10516242 simplex iterations) in 1800.20 seconds (1615.99 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 35 36 
+
+Time limit reached
+Best objective 3.500000000000e+01, best bound 3.300000000000e+01, gap 5.7143%
+
+User-callback calls 569137, time in user-callback 3.54 sec
+
+=== SOLUTION ===
+Cmax: 35.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=11.0, end=16.0, Machine 5
+ - Operation 3: start=16.0, end=22.0, Machine 1
+ - Operation 4: start=23.0, end=26.0, Machine 5
+ - Operation 5: start=34.0, end=35.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=13.0, end=15.0, Machine 4
+ - Operation 9: start=15.0, end=18.0, Machine 2
+ - Operation 10: start=22.0, end=23.0, Machine 1
+ - Operation 11: start=23.0, end=25.0, Machine 1
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=10.0, end=16.0, Machine 3
+ - Operation 14: start=18.0, end=20.0, Machine 2
+ - Operation 15: start=20.0, end=22.0, Machine 4
+ - Operation 16: start=26.0, end=27.0, Machine 3
+ - Operation 17: start=28.0, end=31.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=6.0, end=12.0, Machine 1
+ - Operation 21: start=26.0, end=29.0, Machine 2
+ - Operation 22: start=30.0, end=33.0, Machine 5
+ - Operation 23: start=33.0, end=34.0, Machine 3
+ - Operation 24: start=4.0, end=10.0, Machine 3
+ - Operation 25: start=12.0, end=15.0, Machine 1
+ - Operation 26: start=23.0, end=26.0, Machine 3
+ - Operation 27: start=27.0, end=30.0, Machine 5
+ - Operation 28: start=30.0, end=32.0, Machine 3
+ - Operation 29: start=32.0, end=35.0, Machine 2
+ - Operation 30: start=8.0, end=11.0, Machine 4
+ - Operation 31: start=11.0, end=15.0, Machine 2
+ - Operation 32: start=18.0, end=20.0, Machine 4
+ - Operation 33: start=20.0, end=26.0, Machine 2
+ - Operation 34: start=28.0, end=34.0, Machine 1
+ - Operation 35: start=34.0, end=35.0, Machine 5
+ - Operation 36: start=3.0, end=4.0, Machine 3
+ - Operation 37: start=11.0, end=13.0, Machine 4
+ - Operation 38: start=17.0, end=23.0, Machine 3
+ - Operation 39: start=25.0, end=28.0, Machine 4
+ - Operation 40: start=32.0, end=35.0, Machine 4
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=3.0, end=5.0, Machine 4
+ - Operation 43: start=15.0, end=18.0, Machine 4
+ - Operation 44: start=22.0, end=25.0, Machine 4
+ - Operation 45: start=25.0, end=28.0, Machine 1
+ - Operation 46: start=28.0, end=30.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=16.0, end=17.0, Machine 5
+ - Operation 50: start=17.0, end=20.0, Machine 5
+ - Operation 51: start=29.0, end=32.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=5.0, end=8.0, Machine 4
+ - Operation 54: start=8.0, end=11.0, Machine 5
+ - Operation 55: start=16.0, end=17.0, Machine 3
+ - Operation 56: start=20.0, end=23.0, Machine 5
+ - Operation 57: start=26.0, end=27.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 35.0
+Model cmax: 35.0
+
+ Objective values: cmax 35.0, quadratric delay 580.0, machine assignments 13
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 5
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 1
+   Operation 12 → Machine 0
+   Operation 13 → Machine 3
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 2
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 3
+   Operation 25 → Machine 1
+   Operation 26 → Machine 3
+   Operation 27 → Machine 5
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 2
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 3
+   Operation 39 → Machine 4
+   Operation 40 → Machine 4
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 4
+   Operation 44 → Machine 4
+   Operation 45 → Machine 1
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 4
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+==========================================================
+UNIQUE INDIVIDUAL 2/2 (Original index: 1): [1 1 0 0 1 0 0 0 1 1 0 2 0 3 0 3 0 0 2 2 0 0 0 0 1 3 1 3 1 3 2 0 0 0 0 2 4
+ 0 3 0 3 3 3 1 0 2 1 3 0 0 0 0 6 0 3 4 5 3 7 0 1 9 6 7 1 2 0 4 9 1 7 8 8 5
+ 4 3 8 3 9 4 5 7 0 1 3 8 1 6 9 6 5 4 1 2 7 5 0 2 9 6 2 2 5 4]
+Value of the first objective: 605.0.
+Value of the second objective: 11.0.
+Value of the third objective: 38.0.
+
+============================================================
+SCHEDULE SUMMARY
+============================================================
+Op   Job  Machine  Start    End      Dur    Status      
+------------------------------------------------------------
+0    0    4        0.0      3.0      3.0    ONGOING     
+12   2    N/A      0.0      1.0      1.0    COMPLETED   
+18   3    5        0.0      3.0      3.0    ONGOING     
+41   7    2        0.0      3.0      3.0    ONGOING     
+47   8    1        0.0      6.0      6.0    ONGOING     
+52   9    3        0.0      3.0      3.0    ONGOING     
+1    0    2        3.0      7.0      4.0    TO_PROCESS  
+19   3    5        3.0      4.0      1.0    TO_PROCESS  
+24   4    4        3.0      6.0      3.0    TO_PROCESS  
+36   6    3        3.0      4.0      1.0    TO_PROCESS  
+6    1    5        4.0      5.0      1.0    TO_PROCESS  
+53   9    5        5.0      11.0     6.0    TO_PROCESS  
+20   3    1        6.0      12.0     6.0    TO_PROCESS  
+25   4    3        6.0      11.0     5.0    TO_PROCESS  
+30   5    4        6.0      9.0      3.0    TO_PROCESS  
+2    0    2        7.0      10.0     3.0    TO_PROCESS  
+42   7    4        9.0      11.0     2.0    TO_PROCESS  
+48   8    2        10.0     14.0     4.0    TO_PROCESS  
+7    1    5        11.0     14.0     3.0    TO_PROCESS  
+26   4    3        11.0     14.0     3.0    TO_PROCESS  
+37   6    4        11.0     13.0     2.0    TO_PROCESS  
+13   2    1        12.0     16.0     4.0    TO_PROCESS  
+43   7    4        13.0     16.0     3.0    TO_PROCESS  
+21   3    3        14.0     17.0     3.0    TO_PROCESS  
+31   5    2        14.0     18.0     4.0    TO_PROCESS  
+54   9    5        14.0     17.0     3.0    TO_PROCESS  
+3    0    1        16.0     22.0     6.0    TO_PROCESS  
+8    1    4        16.0     18.0     2.0    TO_PROCESS  
+49   8    5        17.0     18.0     1.0    TO_PROCESS  
+55   9    3        17.0     18.0     1.0    TO_PROCESS  
+9    1    2        18.0     21.0     3.0    TO_PROCESS  
+27   4    3        18.0     24.0     6.0    TO_PROCESS  
+44   7    4        18.0     21.0     3.0    TO_PROCESS  
+50   8    5        18.0     21.0     3.0    TO_PROCESS  
+22   3    5        21.0     24.0     3.0    TO_PROCESS  
+32   5    4        21.0     23.0     2.0    TO_PROCESS  
+51   8    2        21.0     24.0     3.0    TO_PROCESS  
+10   1    1        22.0     23.0     1.0    TO_PROCESS  
+38   6    1        23.0     27.0     4.0    TO_PROCESS  
+45   7    4        23.0     27.0     4.0    TO_PROCESS  
+4    0    5        24.0     27.0     3.0    TO_PROCESS  
+11   1    2        24.0     27.0     3.0    TO_PROCESS  
+23   3    3        24.0     25.0     1.0    TO_PROCESS  
+28   4    3        25.0     27.0     2.0    TO_PROCESS  
+14   2    2        27.0     29.0     2.0    TO_PROCESS  
+33   5    1        27.0     31.0     4.0    TO_PROCESS  
+39   6    4        27.0     30.0     3.0    TO_PROCESS  
+46   7    3        27.0     29.0     2.0    TO_PROCESS  
+56   9    5        27.0     30.0     3.0    TO_PROCESS  
+29   4    2        29.0     32.0     3.0    TO_PROCESS  
+15   2    4        30.0     32.0     2.0    TO_PROCESS  
+57   9    5        30.0     31.0     1.0    TO_PROCESS  
+34   5    1        31.0     37.0     6.0    TO_PROCESS  
+40   6    5        31.0     34.0     3.0    TO_PROCESS  
+16   2    3        32.0     33.0     1.0    TO_PROCESS  
+17   2    4        33.0     36.0     3.0    TO_PROCESS  
+5    0    1        37.0     38.0     1.0    TO_PROCESS  
+35   5    5        37.0     38.0     1.0    TO_PROCESS  
+
+------------------------------------------------------------
+PER-MACHINE SCHEDULE:
+------------------------------------------------------------
+Machine 0: 12(0-1)
+Machine 1: 47(0-6) → 20(6-12) → 13(12-16) → 3(16-22) → 10(22-23) → 38(23-27) → 33(27-31) → 34(31-37) → 5(37-38)
+Machine 2: 41(0-3) → 1(3-7) → 2(7-10) → 48(10-14) → 31(14-18) → 9(18-21) → 51(21-24) → 11(24-27) → 14(27-29) → 29(29-32)
+Machine 3: 52(0-3) → 36(3-4) → 25(6-11) → 26(11-14) → 21(14-17) → 55(17-18) → 27(18-24) → 23(24-25) → 28(25-27) → 46(27-29) → 16(32-33)
+Machine 4: 0(0-3) → 24(3-6) → 30(6-9) → 42(9-11) → 37(11-13) → 43(13-16) → 8(16-18) → 44(18-21) → 32(21-23) → 45(23-27) → 39(27-30) → 15(30-32) → 17(33-36)
+Machine 5: 18(0-3) → 19(3-4) → 6(4-5) → 53(5-11) → 7(11-14) → 54(14-17) → 49(17-18) → 50(18-21) → 22(21-24) → 4(24-27) → 56(27-30) → 57(30-31) → 40(31-34) → 35(37-38)
+
+Makespan: 38.0
+============================================================
+
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0xf494d653
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 16742 rows and 2938 columns
+Presolve time: 0.26s
+Presolved: 3116 rows, 1214 columns, 17796 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 1203 integer (1148 binary)
+Root relaxation presolve removed 37 rows and 15 columns
+Root relaxation presolved: 3079 rows, 1199 columns, 17703 nonzeros
+
+
+Root relaxation: objective 2.000000e+00, 290 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.00000    0   45          -    2.00000      -     -    0s
+     0     0  144.00000    0   55          -  144.00000      -     -    0s
+     0     0  144.00000    0   64          -  144.00000      -     -    0s
+     0     0  144.00000    0   46          -  144.00000      -     -    1s
+     0     0  144.00000    0   62          -  144.00000      -     -    1s
+H    0     0                    1269.0000000  144.00000  88.7%     -    2s
+H    0     0                    1246.0000000  144.00000  88.4%     -    2s
+H    0     0                    1093.0000000  144.00000  86.8%     -    2s
+H    0     0                     973.0000000  144.00000  85.2%     -    2s
+     0     0  144.00000    0   44  973.00000  144.00000  85.2%     -    2s
+H    0     0                     922.0000000  144.00000  84.4%     -    2s
+H    0     0                     899.0000000  144.00000  84.0%     -    2s
+H    0     0                     882.0000000  144.00000  83.7%     -    2s
+H    0     0                     869.0000000  144.00000  83.4%     -    2s
+H    0     0                     858.0000000  144.00000  83.2%     -    2s
+     0     0  144.00220    0   44  858.00000  144.00220  83.2%     -    2s
+     0     0  145.00000    0   27  858.00000  145.00000  83.1%     -    3s
+H    0     0                     849.0000000  145.00000  82.9%     -    3s
+     0     0  145.00000    0   36  849.00000  145.00000  82.9%     -    3s
+H    0     0                     842.0000000  145.00000  82.8%     -    3s
+     0     0  145.00000    0   49  842.00000  145.00000  82.8%     -    3s
+     0     0  145.00000    0   54  842.00000  145.00000  82.8%     -    4s
+     0     0  145.00000    0   31  842.00000  145.00000  82.8%     -    4s
+     0     0  145.00000    0   31  842.00000  145.00000  82.8%     -    4s
+H    0     0                     706.0000000  145.00000  79.5%     -    4s
+     0     2  145.00000    0   31  706.00000  145.00000  79.5%     -    4s
+     3     8  145.00000    2   86  706.00000  145.00000  79.5%   201    5s
+H   35    26                     691.0000000  146.00000  78.9%   490    5s
+H  133    84                     671.0000000  147.00000  78.1%   307    6s
+H  216   128                     658.0000000  148.00000  77.5%   356    7s
+H  276   170                     649.0000000  148.00000  77.2%   345    8s
+   352   199  149.45537   12  154  649.00000  148.00000  77.2%   409   10s
+H  494   407                     644.0000000  149.00000  76.9%   343   11s
+H  529   407                     586.0000000  149.00000  74.6%   325   11s
+H  715   444                     579.0000000  149.00000  74.3%   263   11s
+H  723   444                     548.0000000  149.00000  72.8%   262   11s
+H 1110   688                     529.0000000  149.00000  71.8%   255   14s
+  1307   812  177.42855   22  102  529.00000  149.00000  71.8%   240   15s
+H 1317   811                     508.0000000  149.00000  70.7%   239   15s
+H 1602  1070                     497.0000000  150.00000  69.8%   220   16s
+  1982  1158  245.00000   47   40  497.00000  150.00000  69.8%   198   20s
+H 1983  1101                     492.0000000  150.00000  69.5%   198   20s
+H 1986  1047                     486.0000000  150.00000  69.1%   197   23s
+  1989  1049  311.00000   32   88  486.00000  150.00000  69.1%   197   26s
+  1994  1052  154.00000   24  151  486.00000  150.00000  69.1%   197   31s
+  2000  1061  150.00000   16  156  486.00000  150.00000  69.1%   204   35s
+H 2026  1025                     478.0000000  150.00000  68.6%   207   36s
+H 2027   975                     471.0000000  150.00000  68.2%   208   36s
+  2123  1010  185.09290   23   78  471.00000  150.00000  68.2%   226   41s
+H 2160   968                     463.0000000  150.00000  67.6%   232   42s
+  2269  1035  158.09172   28  137  463.00000  151.05470  67.4%   245   45s
+  2578  1186  165.00000   29  100  463.00000  155.00000  66.5%   266   50s
+  2945  1431  160.97296   32  118  463.00000  157.00000  66.1%   270   55s
+  3659  1886  159.00000   28   69  463.00000  158.00000  65.9%   253   60s
+  4428  2318  160.00000   26   97  463.00000  158.00000  65.9%   237   65s
+  5260  3042  159.00000   29   98  463.00000  159.00000  65.7%   220   70s
+  6266  3986  161.00000   34  109  463.00000  160.00000  65.4%   204   75s
+  7242  4811  171.00000   31   88  463.00000  160.00000  65.4%   195   81s
+  8025  5471  170.00000   31  100  463.00000  161.00000  65.2%   189   86s
+  8808  6312  169.00000   23  147  463.00000  162.00000  65.0%   185   90s
+ 10676  7914  239.00000   32   56  463.00000  163.00000  64.8%   171   97s
+ 11327  8220 infeasible   29       463.00000  163.00000  64.8%   168  101s
+H11787  8785                     458.0000000  163.00000  64.4%   167  103s
+H12366  9437                     442.0000000  164.00000  62.9%   165  106s
+H13267 10062                     434.0000000  164.00000  62.2%   161  109s
+ 13976 10452  165.00000   37  112  434.00000  164.00000  62.2%   158  112s
+H14174 10406                     404.0000000  164.00000  59.4%   158  112s
+ 14508 11026  177.00000   33   77  404.00000  164.00000  59.4%   158  116s
+ 16008 12186  175.00000   31  132  404.00000  164.00000  59.4%   154  122s
+ 16820 12702  169.00000   33   74  404.00000  165.00000  59.2%   153  126s
+ 17456 13287  165.00000   34  137  404.00000  165.00000  59.2%   152  131s
+ 18171 14103  216.00000   34   81  404.00000  165.00000  59.2%   152  135s
+ 20098 15367  328.00000   38   32  404.00000  166.00000  58.9%   149  143s
+ 20886 16038 infeasible   40       404.00000  166.00000  58.9%   149  148s
+ 21757 16732  202.00000   34   80  404.00000  166.00000  58.9%   148  152s
+ 22611 17514  204.00000   31  116  404.00000  166.00000  58.9%   148  157s
+ 23637 18449  178.00000   33   80  404.00000  167.00000  58.7%   147  162s
+ 24853 19243  169.00000   33  119  404.00000  167.00000  58.7%   145  167s
+ 25837 20118  167.00000   30  118  404.00000  167.00000  58.7%   144  172s
+ 26895 21069  231.00000   34   78  404.00000  167.00000  58.7%   144  178s
+ 28077 21832  235.00000   30   61  404.00000  167.00000  58.7%   143  184s
+ 29035 22577  180.00000   34   82  404.00000  167.00000  58.7%   142  192s
+ 30033 23708  171.81151   37  107  404.00000  168.00000  58.4%   141  198s
+ 31550 24992  169.00000   33   97  404.00000  168.00000  58.4%   140  206s
+ 33155 25764  168.00000   30  115  404.00000  168.00000  58.4%   139  211s
+ 34132 26932  176.00000   32  117  404.00000  168.00000  58.4%   138  218s
+ 35547 28315  170.00000   39  110  404.00000  168.00000  58.4%   138  226s
+ 37259 29677  292.00000   30   58  404.00000  168.00000  58.4%   137  235s
+ 39069 31199  176.00000   36  136  404.00000  168.00000  58.4%   136  243s
+ 41157 32974  220.00000   49   49  404.00000  169.00000  58.2%   135  252s
+ 43495 34398  177.00000   40   93  404.00000  169.00000  58.2%   133  261s
+ 45344 36037  178.00000   39   63  404.00000  169.00000  58.2%   132  270s
+ 47357 37554  214.00000   37   78  404.00000  169.00000  58.2%   131  278s
+ 49229 39251  184.00000   35  124  404.00000  169.00000  58.2%   131  287s
+ 51462 40813  187.00000   38   95  404.00000  169.00000  58.2%   129  296s
+ 53558 42245  173.00000   42   65  404.00000  170.00000  57.9%   128  304s
+ 55420 43040  174.00000   30  113  404.00000  170.00000  57.9%   128  311s
+ 56422 44527  170.00000   33   95  404.00000  170.00000  57.9%   127  319s
+ 58336 45858  174.00000   34   90  404.00000  170.00000  57.9%   127  328s
+ 59969 47202  177.00000   34  134  404.00000  170.00000  57.9%   127  336s
+ 61732 48670  170.15966   38  138  404.00000  170.00000  57.9%   127  345s
+ 63714 50074  171.00000   38   99  404.00000  171.00000  57.7%   126  354s
+ 65638 51468  253.00000   42   68  404.00000  171.00000  57.7%   125  362s
+ 67430 52788  171.00000   33   84  404.00000  171.00000  57.7%   125  371s
+ 69036 54337  171.00000   33  124  404.00000  171.00000  57.7%   125  380s
+ 71047 55703 infeasible   35       404.00000  171.00000  57.7%   124  389s
+ 72784 57225  172.23921   37  126  404.00000  171.00000  57.7%   124  398s
+ 74862 59046  172.00000   45   60  404.00000  172.00000  57.4%   124  408s
+ 77203 60379  175.42012   40   88  404.00000  172.00000  57.4%   123  417s
+ 78991 62012  198.00000   44   59  404.00000  172.00000  57.4%   122  425s
+ 81069 63415  174.00000   46   74  404.00000  172.00000  57.4%   122  434s
+ 82889 64757  254.00000   38   58  404.00000  172.00000  57.4%   122  442s
+ 84616 66078  173.21822   36   74  404.00000  172.00000  57.4%   121  452s
+ 86379 67164 infeasible   40       404.00000  172.00000  57.4%   121  460s
+ 87872 69004  172.00000   39  123  404.00000  172.00000  57.4%   121  470s
+ 90351 70349  174.00000   41   63  404.00000  173.00000  57.2%   121  479s
+ 92150 71158  204.00000   38   88  404.00000  173.00000  57.2%   120  486s
+ 93267 72274 infeasible   40       404.00000  173.00000  57.2%   120  496s
+ 94845 73612  175.00000   33  145  404.00000  173.00000  57.2%   120  505s
+ 96581 74889  173.00000   41   82  404.00000  173.00000  57.2%   120  514s
+ 98280 75416  180.00000   32   98  404.00000  173.00000  57.2%   120  522s
+ 99065 76689  278.00000   31   61  404.00000  173.00000  57.2%   120  531s
+ 100720 78135  173.94315   37  121  404.00000  173.00000  57.2%   120  541s
+ 102590 79513  174.00000   37  146  404.00000  173.00000  57.2%   121  553s
+ 104551 81116  174.00000   42   60  404.00000  174.00000  56.9%   120  563s
+ 106731 82391  222.00000   45   56  404.00000  174.00000  56.9%   120  573s
+ 108411 83608  174.00000   38  110  404.00000  174.00000  56.9%   120  582s
+ 110042 85013  270.00000   34   58  404.00000  174.00000  56.9%   120  591s
+ 112014 86263  174.00000   35  145  404.00000  174.00000  56.9%   120  601s
+ 113631 87727  176.00000   36   48  404.00000  174.00000  56.9%   120  610s
+ 115531 88900  176.00000   34  118  404.00000  174.00000  56.9%   120  618s
+ 117029 90148  185.00000   36  116  404.00000  174.00000  56.9%   120  629s
+ 118724 91777  175.00000   37   79  404.00000  174.00000  56.9%   120  639s
+ 120991 93306  211.00000   39   43  404.00000  175.00000  56.7%   120  648s
+ 122954 94662  177.00000   39   91  404.00000  175.00000  56.7%   119  658s
+ 124638 96265 infeasible   38       404.00000  175.00000  56.7%   119  667s
+ 126750 96802  180.00000   42   66  404.00000  175.00000  56.7%   119  675s
+ 127440 97940  208.00000   47   56  404.00000  175.00000  56.7%   119  685s
+ 128970 99366 infeasible   39       404.00000  175.00000  56.7%   119  694s
+ 130767 100491  175.00000   37  115  404.00000  175.00000  56.7%   119  704s
+ 132142 102086  177.00000   41   75  404.00000  175.00000  56.7%   119  714s
+ 134205 103230  177.00000   37   60  404.00000  175.00000  56.7%   119  724s
+ 135702 104696  176.00000   37   78  404.00000  175.00000  56.7%   119  734s
+ 137669 106480  176.94693   35  117  404.00000  175.00000  56.7%   119  745s
+ 140157 107915  228.00000   39   62  404.00000  176.00000  56.4%   118  755s
+ 142140 109373  176.00000   43   60  404.00000  176.00000  56.4%   118  765s
+ 144162 110920  177.00000   34  129  404.00000  176.00000  56.4%   118  774s
+ 146156 112313  193.00000   33   79  404.00000  176.00000  56.4%   117  783s
+ 147923 113686  187.00000   37   86  404.00000  176.00000  56.4%   117  793s
+ 149754 114716  209.00000   45   84  404.00000  176.00000  56.4%   117  802s
+ 151199 116307  179.00000   35   93  404.00000  176.00000  56.4%   117  813s
+ 153306 117572 infeasible   48       404.00000  176.00000  56.4%   117  824s
+ 155068 118681  186.00000   33   71  404.00000  176.00000  56.4%   117  835s
+ 156515 119982  177.00000   33   68  404.00000  176.00000  56.4%   117  846s
+ 158253 121441  178.00000   37   93  404.00000  176.00000  56.4%   117  858s
+ 160115 123424  185.00000   33  101  404.00000  176.00000  56.4%   118  870s
+ 162887 124783 infeasible   37       404.00000  177.00000  56.2%   117  881s
+ 164755 126221  272.00000   39   59  404.00000  177.00000  56.2%   117  891s
+ 166701 128072  180.00000   39  112  404.00000  177.00000  56.2%   117  901s
+ 169197 129345  178.00000   34   69  404.00000  177.00000  56.2%   116  910s
+ 170830 130461  177.00000   37   41  404.00000  177.00000  56.2%   116  919s
+ 172332 132126  181.00000   37  122  404.00000  177.00000  56.2%   116  930s
+ 174615 133001  198.00000   37  101  404.00000  177.00000  56.2%   116  938s
+ 175768 134515  177.00000   35   77  404.00000  177.00000  56.2%   116  949s
+ 177736 135977 infeasible   39       404.00000  177.00000  56.2%   116  959s
+ 179679 137360  205.00000   36   94  404.00000  177.00000  56.2%   116  968s
+ 181499 138692 infeasible   35       404.00000  177.00000  56.2%   116  979s
+ 183339 139914  184.00000   42   43  404.00000  177.00000  56.2%   116  989s
+ 184930 141451  180.00000   42  137  404.00000  177.00000  56.2%   116  999s
+ 187048 142859 infeasible   43       404.00000  178.00000  55.9%   115 1010s
+ 189062 143866  178.00000   39  112  404.00000  178.00000  55.9%   115 1021s
+ 190576 145589  212.00000   43   53  404.00000  178.00000  55.9%   115 1032s
+ 192914 146880  187.00000   39   53  404.00000  178.00000  55.9%   115 1041s
+ 194708 148143  178.00000   41   66  404.00000  178.00000  55.9%   114 1051s
+ 196415 148791  178.00000   32  108  404.00000  178.00000  55.9%   114 1058s
+ 197264 150169  182.00000   41  103  404.00000  178.00000  55.9%   114 1069s
+ 199126 151552  223.00000   45   35  404.00000  178.00000  55.9%   114 1079s
+ 200974 152989  181.00000   39   62  404.00000  178.00000  55.9%   114 1090s
+ 203016 154226  185.02804   36  103  404.00000  178.00000  55.9%   114 1100s
+ 204665 155432  198.00000   41   78  404.00000  178.00000  55.9%   114 1111s
+ 206332 156653  178.00000   30   88  404.00000  178.00000  55.9%   114 1122s
+ 208004 158012 infeasible   38       404.00000  178.00000  55.9%   114 1131s
+ 209853 159566  178.00000   30  117  404.00000  178.00000  55.9%   114 1143s
+ 212053 161033  184.00000   45   71  404.00000  179.00000  55.7%   114 1153s
+ 214095 162340  257.00000   44   92  404.00000  179.00000  55.7%   113 1162s
+ 216064 163561  179.00000   44   57  404.00000  179.00000  55.7%   113 1171s
+ 217732 164804  183.00000   45   89  404.00000  179.00000  55.7%   113 1179s
+ 219430 165925 infeasible   35       404.00000  179.00000  55.7%   113 1188s
+ 221053 167072  179.00000   31   70  404.00000  179.00000  55.7%   113 1197s
+ 222640 168231  215.00000   43  113  404.00000  179.00000  55.7%   113 1206s
+ 224287 169081 infeasible   42       404.00000  179.00000  55.7%   113 1216s
+ 225428 170270  189.00000   35   97  404.00000  179.00000  55.7%   113 1226s
+ 227065 171470  181.00000   33   92  404.00000  179.00000  55.7%   113 1236s
+ 228740 172794  189.00000   41  104  404.00000  179.00000  55.7%   112 1245s
+ 230479 174132  205.00000   38   67  404.00000  179.00000  55.7%   112 1255s
+ 232302 175147  181.18031   36  106  404.00000  179.00000  55.7%   112 1264s
+ 233647 176269  203.00000   41  121  404.00000  179.00000  55.7%   112 1274s
+ 235271 177426  179.00000   35  127  404.00000  179.00000  55.7%   112 1284s
+ 236998 178646  233.00000   38   84  404.00000  180.00000  55.4%   112 1294s
+ 238712 179985  189.00000   45   59  404.00000  180.00000  55.4%   112 1304s
+ 240611 181201 infeasible   46       404.00000  180.00000  55.4%   112 1313s
+ 242317 182701  211.00000   50   69  404.00000  180.00000  55.4%   112 1323s
+ 244298 183928  196.00000   43   98  404.00000  180.00000  55.4%   112 1333s
+ 246053 185124  197.00000   46   88  404.00000  180.00000  55.4%   111 1341s
+ 247672 186268  226.00000   47   62  404.00000  180.00000  55.4%   111 1353s
+ 249265 187471  243.00000   40   73  404.00000  180.00000  55.4%   111 1363s
+ 250851 188715  194.18635   41   74  404.00000  180.00000  55.4%   111 1372s
+ 252677 189977  196.00000   40   71  404.00000  180.00000  55.4%   111 1382s
+ 254247 191432  194.00000   34   81  404.00000  180.00000  55.4%   111 1392s
+ 256275 192767  180.00000   39   94  404.00000  180.00000  55.4%   111 1401s
+ 257976 193966  185.00000   49   88  404.00000  180.00000  55.4%   111 1410s
+ 259520 194431  210.00000   41   86  404.00000  180.00000  55.4%   111 1417s
+ 260123 195944  184.00000   42   74  404.00000  180.00000  55.4%   111 1429s
+ 262131 197024  253.00000   41   66  404.00000  180.00000  55.4%   111 1440s
+ 263576 198267  180.00000   38  108  404.00000  180.00000  55.4%   111 1454s
+ 265229 199996  212.09953   36   74  404.00000  180.00000  55.4%   111 1467s
+ 267630 201506 infeasible   38       404.00000  181.00000  55.2%   111 1478s
+ 269760 203089  184.00000   41   93  404.00000  181.00000  55.2%   111 1489s
+ 271975 204499  214.00000   40   59  404.00000  181.00000  55.2%   110 1500s
+ 273895 205539  183.00000   38   80  404.00000  181.00000  55.2%   110 1509s
+ 275291 207056  198.00000   43   63  404.00000  181.00000  55.2%   110 1520s
+ 277288 208366  283.00000   40   50  404.00000  181.00000  55.2%   110 1530s
+ 279029 209540  185.00000   42   47  404.00000  181.00000  55.2%   110 1540s
+ 280721 210802  196.00000   32   98  404.00000  181.00000  55.2%   110 1549s
+ 282412 212393  181.00000   36   87  404.00000  181.00000  55.2%   110 1560s
+ 284538 213632  183.00000   37  117  404.00000  181.00000  55.2%   110 1570s
+ 286188 215074  205.00000   46  109  404.00000  181.00000  55.2%   110 1579s
+ 288053 216260  216.00000   34   73  404.00000  181.00000  55.2%   110 1589s
+ 289668 217460  182.00000   41  108  404.00000  181.00000  55.2%   109 1598s
+ 291236 218871  191.44274   34  121  404.00000  181.00000  55.2%   109 1608s
+ 293155 219966  212.00000   47   55  404.00000  181.00000  55.2%   109 1618s
+ 294599 221034  186.00000   44   56  404.00000  181.00000  55.2%   109 1629s
+ 295991 222157  196.00000   39   88  404.00000  181.00000  55.2%   109 1639s
+ 297438 223337 infeasible   38       404.00000  181.00000  55.2%   109 1650s
+ 299073 224169  236.00000   35  106  404.00000  181.00000  55.2%   109 1659s
+ 300236 225985  184.00000   36  130  404.00000  181.00000  55.2%   110 1674s
+ 302961 227504  190.00000   39   44  404.00000  182.00000  55.0%   109 1685s
+ 305022 228568  221.00000   46   92  404.00000  182.00000  55.0%   109 1697s
+ 306529 230136  192.00000   42   87  404.00000  182.00000  55.0%   109 1708s
+ 308670 231419  187.00000   42   48  404.00000  182.00000  55.0%   109 1718s
+ 310398 232672  207.00000   48   52  404.00000  182.00000  55.0%   109 1728s
+ 312208 233950  182.00000   51   69  404.00000  182.00000  55.0%   109 1739s
+ 314018 235159  182.00000   42   63  404.00000  182.00000  55.0%   109 1749s
+ 315730 236402  201.00000   40   63  404.00000  182.00000  55.0%   109 1759s
+ 317529 237585  188.00000   37   73  404.00000  182.00000  55.0%   109 1769s
+ 319115 238803  182.00000   44   86  404.00000  182.00000  55.0%   109 1779s
+ 320757 240208 infeasible   42       404.00000  182.00000  55.0%   109 1789s
+ 322662 241145 infeasible   42       404.00000  182.00000  55.0%   108 1799s
+ 323994 241193  210.00000   47   72  404.00000  182.00000  55.0%   108 1800s
+
+Cutting planes:
+  Learned: 229
+  Gomory: 137
+  Lift-and-project: 241
+  Cover: 257
+  Implied bound: 131
+  Projected implied bound: 41
+  Clique: 12
+  MIR: 1538
+  Mixing: 140
+  StrongCG: 1762
+  Flow cover: 6473
+  GUB cover: 12
+  Inf proof: 72
+  Zero half: 2418
+  RLT: 438
+  Relax-and-lift: 3147
+  BQP: 2
+  PSD: 49
+
+Explored 324057 nodes (35166062 simplex iterations) in 1800.06 seconds (1223.84 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 404 434 442 ... 497
+
+Time limit reached
+Best objective 4.040000000000e+02, best bound 1.820000000000e+02, gap 54.9505%
+
+User-callback calls 880997, time in user-callback 8.16 sec
+
+=== SOLUTION ===
+Cmax: 38.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=11.0, end=14.0, Machine 2
+ - Operation 3: start=16.0, end=22.0, Machine 1
+ - Operation 4: start=25.0, end=28.0, Machine 5
+ - Operation 5: start=28.0, end=29.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=13.0, end=15.0, Machine 4
+ - Operation 9: start=18.0, end=21.0, Machine 2
+ - Operation 10: start=22.0, end=23.0, Machine 1
+ - Operation 11: start=23.0, end=25.0, Machine 1
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=4.0, end=10.0, Machine 3
+ - Operation 14: start=30.0, end=32.0, Machine 2
+ - Operation 15: start=32.0, end=34.0, Machine 4
+ - Operation 16: start=34.0, end=35.0, Machine 3
+ - Operation 17: start=35.0, end=38.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=6.0, end=12.0, Machine 1
+ - Operation 21: start=24.0, end=27.0, Machine 2
+ - Operation 22: start=28.0, end=31.0, Machine 5
+ - Operation 23: start=31.0, end=32.0, Machine 3
+ - Operation 24: start=3.0, end=6.0, Machine 4
+ - Operation 25: start=10.0, end=15.0, Machine 3
+ - Operation 26: start=15.0, end=18.0, Machine 3
+ - Operation 27: start=19.0, end=25.0, Machine 3
+ - Operation 28: start=25.0, end=27.0, Machine 3
+ - Operation 29: start=27.0, end=30.0, Machine 2
+ - Operation 30: start=8.0, end=11.0, Machine 4
+ - Operation 31: start=14.0, end=18.0, Machine 2
+ - Operation 32: start=21.0, end=23.0, Machine 4
+ - Operation 33: start=23.0, end=26.0, Machine 4
+ - Operation 34: start=29.0, end=35.0, Machine 1
+ - Operation 35: start=35.0, end=36.0, Machine 5
+ - Operation 36: start=3.0, end=4.0, Machine 3
+ - Operation 37: start=11.0, end=13.0, Machine 4
+ - Operation 38: start=15.0, end=18.0, Machine 4
+ - Operation 39: start=26.0, end=29.0, Machine 4
+ - Operation 40: start=29.0, end=32.0, Machine 4
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=6.0, end=8.0, Machine 4
+ - Operation 43: start=12.0, end=16.0, Machine 1
+ - Operation 44: start=18.0, end=21.0, Machine 4
+ - Operation 45: start=25.0, end=28.0, Machine 1
+ - Operation 46: start=28.0, end=30.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=17.0, end=18.0, Machine 5
+ - Operation 50: start=18.0, end=21.0, Machine 5
+ - Operation 51: start=21.0, end=24.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=8.0, end=14.0, Machine 5
+ - Operation 54: start=14.0, end=17.0, Machine 5
+ - Operation 55: start=18.0, end=19.0, Machine 3
+ - Operation 56: start=21.0, end=24.0, Machine 5
+ - Operation 57: start=24.0, end=25.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 38.0
+Model cmax: 38.0
+
+ Objective values: cmax 38.0, quadratric delay 404.0, machine assignments 11
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 2
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 1
+   Operation 12 → Machine 0
+   Operation 13 → Machine 3
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 2
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 4
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 4
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 4
+   Operation 39 → Machine 4
+   Operation 40 → Machine 4
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 1
+   Operation 44 → Machine 4
+   Operation 45 → Machine 1
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 5
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0xe8520481
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 6507 rows and 1290 columns
+Presolve time: 0.42s
+Presolved: 13351 rows, 2862 columns, 87059 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 2851 integer (2787 binary)
+Root relaxation presolve removed 167 rows and 65 columns
+Root relaxation presolved: 13184 rows, 2797 columns, 86312 nonzeros
+
+
+Root relaxation: objective 1.100000e+01, 1735 iterations, 0.26 seconds (0.38 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.00000    0   26          -   11.00000      -     -    1s
+     0     0   11.00000    0   29          -   11.00000      -     -    1s
+     0     0   11.00000    0   37          -   11.00000      -     -    1s
+     0     0   11.00000    0   27          -   11.00000      -     -    3s
+     0     0   11.00000    0   45          -   11.00000      -     -    3s
+     0     0   11.00000    0   37          -   11.00000      -     -    5s
+     0     0   11.00000    0   38          -   11.00000      -     -    5s
+     0     0   11.00000    0   41          -   11.00000      -     -    6s
+     0     0   11.00000    0   41          -   11.00000      -     -    7s
+H    0     0                      11.0000000   11.00000  0.00%     -    7s
+     0     0   11.00000    0   41   11.00000   11.00000  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 14
+  Lift-and-project: 8
+  MIR: 1
+  Flow cover: 17
+  Zero half: 2
+
+Explored 1 nodes (4844 simplex iterations) in 7.40 seconds (7.61 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+User-callback calls 4383, time in user-callback 0.02 sec
+
+=== SOLUTION ===
+Cmax: 38.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=16.0, end=19.0, Machine 3
+ - Operation 3: start=25.0, end=31.0, Machine 1
+ - Operation 4: start=34.0, end=37.0, Machine 5
+ - Operation 5: start=37.0, end=38.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=13.0, end=15.0, Machine 4
+ - Operation 9: start=15.0, end=18.0, Machine 2
+ - Operation 10: start=24.0, end=25.0, Machine 1
+ - Operation 11: start=26.0, end=29.0, Machine 2
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=15.0, end=18.0, Machine 4
+ - Operation 14: start=21.0, end=23.0, Machine 2
+ - Operation 15: start=23.0, end=25.0, Machine 4
+ - Operation 16: start=28.0, end=29.0, Machine 3
+ - Operation 17: start=31.0, end=34.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=10.0, end=16.0, Machine 1
+ - Operation 21: start=18.0, end=21.0, Machine 2
+ - Operation 22: start=21.0, end=24.0, Machine 5
+ - Operation 23: start=25.0, end=26.0, Machine 3
+ - Operation 24: start=3.0, end=6.0, Machine 4
+ - Operation 25: start=6.0, end=11.0, Machine 3
+ - Operation 26: start=12.0, end=15.0, Machine 3
+ - Operation 27: start=19.0, end=25.0, Machine 3
+ - Operation 28: start=26.0, end=28.0, Machine 3
+ - Operation 29: start=29.0, end=32.0, Machine 2
+ - Operation 30: start=8.0, end=11.0, Machine 4
+ - Operation 31: start=11.0, end=15.0, Machine 2
+ - Operation 32: start=18.0, end=20.0, Machine 4
+ - Operation 33: start=25.0, end=28.0, Machine 4
+ - Operation 34: start=31.0, end=37.0, Machine 1
+ - Operation 35: start=37.0, end=38.0, Machine 5
+ - Operation 36: start=3.0, end=4.0, Machine 3
+ - Operation 37: start=11.0, end=13.0, Machine 4
+ - Operation 38: start=20.0, end=24.0, Machine 1
+ - Operation 39: start=28.0, end=31.0, Machine 4
+ - Operation 40: start=34.0, end=37.0, Machine 4
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=6.0, end=8.0, Machine 4
+ - Operation 43: start=16.0, end=20.0, Machine 1
+ - Operation 44: start=20.0, end=23.0, Machine 4
+ - Operation 45: start=25.0, end=28.0, Machine 5
+ - Operation 46: start=29.0, end=31.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=14.0, end=15.0, Machine 5
+ - Operation 50: start=15.0, end=18.0, Machine 5
+ - Operation 51: start=23.0, end=26.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=6.0, end=10.0, Machine 1
+ - Operation 54: start=10.0, end=13.0, Machine 5
+ - Operation 55: start=15.0, end=16.0, Machine 3
+ - Operation 56: start=18.0, end=21.0, Machine 5
+ - Operation 57: start=24.0, end=25.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 38.0
+Model cmax: 38.0
+
+ Objective values: cmax 38.0, quadratric delay 605.0, machine assignments 11
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 3
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 2
+   Operation 12 → Machine 0
+   Operation 13 → Machine 4
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 2
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 4
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 4
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 1
+   Operation 39 → Machine 4
+   Operation 40 → Machine 4
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 1
+   Operation 44 → Machine 4
+   Operation 45 → Machine 5
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 1
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+Set parameter TimeLimit to value 1800
+Set parameter Presolve to value 2
+Set parameter MIPFocus to value 3
+Set parameter Heuristics to value 0.1
+Set parameter ImproveStartGap to value 0.5
+Set parameter Presolve to value 2
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  1800
+Heuristics  0.1
+MIPFocus  3
+Presolve  2
+ImproveStartGap  0.5
+
+Optimize a model with 19828 rows, 4151 columns and 96035 nonzeros
+Model fingerprint: 0x62c50c0e
+Model has 10 quadratic constraints
+Variable types: 10 continuous, 4141 integer (4012 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 3e+02]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+02]
+Presolve removed 16404 rows and 2778 columns
+Presolve time: 0.29s
+Presolved: 3454 rows, 1374 columns, 19900 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 11 continuous, 1363 integer (1308 binary)
+Root relaxation presolve removed 225 rows and 109 columns
+Root relaxation presolved: 3229 rows, 1265 columns, 19243 nonzeros
+
+
+Root relaxation: objective 2.731535e+01, 242 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   28.00000    0   49          -   28.00000      -     -    0s
+     0     0   29.00000    0   37          -   29.00000      -     -    1s
+     0     0   30.00000    0   74          -   30.00000      -     -    1s
+     0     0   30.00000    0   34          -   30.00000      -     -    2s
+     0     0   30.00000    0   44          -   30.00000      -     -    2s
+     0     0   31.00000    0   28          -   31.00000      -     -    3s
+     0     0   31.00000    0   52          -   31.00000      -     -    3s
+     0     0   31.00000    0   29          -   31.00000      -     -    4s
+     0     0   31.00000    0   75          -   31.00000      -     -    4s
+     0     0   31.00000    0   41          -   31.00000      -     -    5s
+     0     0   31.00000    0   41          -   31.00000      -     -    5s
+     0     0   32.00000    0   26          -   32.00000      -     -    6s
+     0     0   32.00000    0   27          -   32.00000      -     -    6s
+     0     0   32.00000    0   47          -   32.00000      -     -    6s
+     0     0   32.00000    0   30          -   32.00000      -     -    7s
+     0     0   32.00000    0   27          -   32.00000      -     -    7s
+     0     2   32.00000    0   25          -   32.00000      -     -    8s
+  2011  1457   32.00000    9   33          -   32.00000      -  16.9   10s
+  2017  1461   33.00000   30   22          -   33.00000      -  16.8   15s
+  2022  1464   33.00000   35   19          -   33.00000      -  16.8   20s
+  6325  4226   33.06504   31   49          -   33.00000      -  15.5   25s
+ 14800  8396   33.00000   66   15          -   33.00000      -  16.4   30s
+H14834  5693                      35.0000000   33.00000  5.71%  16.4   30s
+
+Resetting heuristic parameters to focus on improving solution
+(using Heuristics=0.5 and RINS=10)...
+
+ 14978  5788   33.00000   75   29   35.00000   33.00000  5.71%  16.4   30s
+ 21048  6518   33.00000   70   33   35.00000   33.00000  5.71%  18.2   35s
+ 21055  6523   34.00000   20   12   35.00000   33.00000  5.71%  18.2   40s
+ 23188  8094   33.00000   66   18   35.00000   33.00000  5.71%  18.8   45s
+ 28001  9269   33.00000   53   39   35.00000   33.00000  5.71%  20.3   50s
+ 38867  7427 infeasible   59        35.00000   33.00000  5.71%  20.5   55s
+ 46351  8655 infeasible   54        35.00000   33.00000  5.71%  20.9   60s
+ 51779 10581 infeasible   62        35.00000   33.00000  5.71%  21.8   65s
+ 58559 13409   33.00000   65   21   35.00000   33.00000  5.71%  22.7   70s
+ 66881 16685   34.00000   52   45   35.00000   33.00000  5.71%  23.5   76s
+ 71916 18314   34.00000   54   30   35.00000   33.00000  5.71%  23.9   80s
+ 78896 20936   33.00000   60   39   35.00000   33.00000  5.71%  24.4   85s
+ 85570 23142   33.00000   83   24   35.00000   33.00000  5.71%  24.8   90s
+ 92379 25464   33.00000   71   21   35.00000   33.00000  5.71%  25.1   95s
+ 99491 27349 infeasible   68        35.00000   33.00000  5.71%  25.4  100s
+ 106255 29373 infeasible   66        35.00000   33.00000  5.71%  25.7  105s
+ 113719 31040   33.00000   71   13   35.00000   33.00000  5.71%  25.6  110s
+ 120720 32881   33.00000   59   32   35.00000   33.00000  5.71%  25.6  115s
+ 129196 35191   33.00000   64   25   35.00000   33.00000  5.71%  25.6  120s
+ 134545 36491 infeasible   61        35.00000   33.00000  5.71%  25.6  125s
+ 142917 38425   33.00000   62   26   35.00000   33.00000  5.71%  25.6  130s
+ 151420 40526 infeasible   59        35.00000   33.00000  5.71%  25.6  135s
+ 156586 41384   33.00000   66   16   35.00000   33.00000  5.71%  25.6  140s
+ 163640 42707 infeasible   70        35.00000   33.00000  5.71%  25.6  145s
+ 172419 44133   33.00000   60   12   35.00000   33.00000  5.71%  25.5  150s
+ 179607 44989   33.00000   61   18   35.00000   33.00000  5.71%  25.4  155s
+ 187833 46504   33.00000   64   26   35.00000   33.00000  5.71%  25.4  160s
+ 196398 48308   33.00000   64   27   35.00000   33.00000  5.71%  25.6  165s
+ 204089 49714   33.00000   67   24   35.00000   33.00000  5.71%  25.5  170s
+ 210875 51120 infeasible   63        35.00000   33.00000  5.71%  25.5  175s
+ 218760 53061   34.00000   71   21   35.00000   33.00000  5.71%  25.6  180s
+ 224246 54351 infeasible   65        35.00000   33.00000  5.71%  25.6  185s
+ 232922 55854 infeasible   45        35.00000   33.00000  5.71%  25.7  190s
+ 242101 57073 infeasible   67        35.00000   33.00000  5.71%  25.6  195s
+ 249163 58218   33.00000   64   17   35.00000   33.00000  5.71%  25.5  200s
+ 257903 59050   33.00000   68   24   35.00000   33.00000  5.71%  25.4  205s
+ 266937 59951   33.00000   65   12   35.00000   33.00000  5.71%  25.3  210s
+ 274100 60643 infeasible   70        35.00000   33.00000  5.71%  25.2  215s
+ 284004 61742 infeasible   62        35.00000   33.00000  5.71%  25.1  220s
+ 292519 62904 infeasible   66        35.00000   33.00000  5.71%  25.0  225s
+ 301612 63714 infeasible   64        35.00000   33.00000  5.71%  24.8  230s
+ 310098 64692 infeasible   65        35.00000   33.00000  5.71%  24.8  235s
+ 318454 65540 infeasible   71        35.00000   33.00000  5.71%  24.7  240s
+ 325635 66056   33.00000   60   24   35.00000   33.00000  5.71%  24.7  245s
+ 334542 67148 infeasible   71        35.00000   33.00000  5.71%  24.6  250s
+ 345049 68292 infeasible   74        35.00000   33.00000  5.71%  24.5  255s
+ 352029 69078   33.00000   57   25   35.00000   33.00000  5.71%  24.5  260s
+ 361216 70219   33.00000   70   15   35.00000   33.00000  5.71%  24.4  265s
+ 370046 71296   33.00000   70   28   35.00000   33.00000  5.71%  24.4  270s
+ 377367 72086 infeasible   66        35.00000   33.00000  5.71%  24.3  275s
+ 386584 72950   33.00000   58   33   35.00000   33.00000  5.71%  24.3  280s
+ 395330 73788 infeasible   80        35.00000   33.00000  5.71%  24.2  285s
+ 403664 74950   33.00000   73   16   35.00000   33.00000  5.71%  24.2  290s
+ 412670 75863   33.00000   69   20   35.00000   33.00000  5.71%  24.2  295s
+ 421260 76969 infeasible   55        35.00000   33.00000  5.71%  24.1  300s
+ 428035 77849   33.00000   64   33   35.00000   33.00000  5.71%  24.1  305s
+ 436981 79256 infeasible   72        35.00000   33.00000  5.71%  24.1  310s
+ 446111 80736 infeasible   60        35.00000   33.00000  5.71%  24.0  315s
+ 453426 81577   34.00000   74   28   35.00000   33.00000  5.71%  24.0  320s
+ 462759 82482 infeasible   65        35.00000   33.00000  5.71%  23.9  325s
+ 473329 83000   33.00000   62   28   35.00000   33.00000  5.71%  23.9  330s
+ 479613 83989   33.00000   54   34   35.00000   33.00000  5.71%  23.9  335s
+ 488393 85079   34.00000   68   20   35.00000   33.00000  5.71%  23.9  340s
+ 496478 86373 infeasible   70        35.00000   33.00000  5.71%  23.9  345s
+ 503019 87508 infeasible   66        35.00000   33.00000  5.71%  23.9  350s
+ 511643 88664 infeasible   71        35.00000   33.00000  5.71%  24.0  355s
+ 518760 89493 infeasible   53        35.00000   33.00000  5.71%  24.0  360s
+ 525525 90231   33.00000   74   34   35.00000   33.00000  5.71%  24.1  365s
+ 534168 91069   33.00000   71   20   35.00000   33.00000  5.71%  24.2  370s
+ 542829 91848 infeasible   66        35.00000   33.00000  5.71%  24.2  375s
+ 548231 92455   33.00000   47   43   35.00000   33.00000  5.71%  24.2  380s
+ 556382 93634   33.00000   62   23   35.00000   33.00000  5.71%  24.3  385s
+ 563485 94719 infeasible   69        35.00000   33.00000  5.71%  24.3  390s
+ 570175 95591   33.00000   65   32   35.00000   33.00000  5.71%  24.4  395s
+ 576786 96598   33.00000   62   34   35.00000   33.00000  5.71%  24.5  400s
+ 585256 97613   33.00000   64   24   35.00000   33.00000  5.71%  24.6  405s
+ 590827 98214   33.00000   67   25   35.00000   33.00000  5.71%  24.6  410s
+ 599259 99622 infeasible   67        35.00000   33.00000  5.71%  24.7  415s
+ 606185 100755   33.00000   70   28   35.00000   33.00000  5.71%  24.8  420s
+ 613002 101860   33.00000   64   28   35.00000   33.00000  5.71%  24.8  426s
+ 619512 103114 infeasible   44        35.00000   33.00000  5.71%  24.9  430s
+ 626926 104020 infeasible   68        35.00000   33.00000  5.71%  24.9  435s
+ 633756 104907   33.00000   68   22   35.00000   33.00000  5.71%  24.9  441s
+ 640455 105925 infeasible   74        35.00000   33.00000  5.71%  25.0  445s
+ 647824 106662   34.00000   63   37   35.00000   33.00000  5.71%  25.0  450s
+ 654186 107530   34.00000   59   25   35.00000   33.00000  5.71%  25.1  455s
+ 663345 108783   33.00000   64   28   35.00000   33.00000  5.71%  25.1  461s
+ 670199 110255   33.00000   63   26   35.00000   33.00000  5.71%  25.2  466s
+ 675089 111234 infeasible   59        35.00000   33.00000  5.71%  25.2  470s
+ 683997 112304 infeasible   66        35.00000   33.00000  5.71%  25.3  475s
+ 691047 113331   33.00000   57   26   35.00000   33.00000  5.71%  25.3  480s
+ 695744 114102 infeasible   81        35.00000   33.00000  5.71%  25.3  485s
+ 704650 114982   33.00000   60   33   35.00000   33.00000  5.71%  25.4  490s
+ 711571 116337   33.00000   69   21   35.00000   33.00000  5.71%  25.4  495s
+ 718384 117506 infeasible   65        35.00000   33.00000  5.71%  25.5  500s
+ 727103 118579   34.00000   56   29   35.00000   33.00000  5.71%  25.5  506s
+ 733977 119361 infeasible   73        35.00000   33.00000  5.71%  25.5  510s
+ 740635 120124   33.00000   61   19   35.00000   33.00000  5.71%  25.5  515s
+ 747972 121070 infeasible   59        35.00000   33.00000  5.71%  25.6  520s
+ 757343 122393   33.00000   54   30   35.00000   33.00000  5.71%  25.5  525s
+ 764166 122976   33.00000   66   19   35.00000   33.00000  5.71%  25.5  530s
+ 773092 123853   33.00000   57   14   35.00000   33.00000  5.71%  25.5  535s
+ 781800 124478   33.00000   63   20   35.00000   33.00000  5.71%  25.5  540s
+ 788331 124840   33.00000   63   36   35.00000   33.00000  5.71%  25.5  545s
+ 798660 125363 infeasible   66        35.00000   33.00000  5.71%  25.5  550s
+ 805688 125615   33.00000   64   18   35.00000   33.00000  5.71%  25.5  555s
+ 812727 125874 infeasible   67        35.00000   33.00000  5.71%  25.5  560s
+ 823543 126002 infeasible   70        35.00000   33.00000  5.71%  25.4  565s
+ 830405 126130 infeasible   64        35.00000   33.00000  5.71%  25.4  570s
+ 839141 126604 infeasible   64        35.00000   33.00000  5.71%  25.4  575s
+ 847319 127016   33.00000   70   14   35.00000   33.00000  5.71%  25.4  580s
+ 856174 127378 infeasible   60        35.00000   33.00000  5.71%  25.4  585s
+ 863182 127519   33.00000   64   21   35.00000   33.00000  5.71%  25.4  590s
+ 871586 127895 infeasible   61        35.00000   33.00000  5.71%  25.4  595s
+ 880500 128256 infeasible   59        35.00000   33.00000  5.71%  25.4  600s
+ 887417 128632 infeasible   74        35.00000   33.00000  5.71%  25.4  605s
+ 897762 129310   33.00000   62   21   35.00000   33.00000  5.71%  25.4  610s
+ 906168 130011   33.00000   69   14   35.00000   33.00000  5.71%  25.4  615s
+ 913025 130556   33.00000   60   24   35.00000   33.00000  5.71%  25.4  620s
+ 921650 131168 infeasible   72        35.00000   33.00000  5.71%  25.4  625s
+ 928892 131479 infeasible   61        35.00000   33.00000  5.71%  25.3  630s
+ 937849 131910   33.00000   70   24   35.00000   33.00000  5.71%  25.3  635s
+ 946330 132153   33.00000   64   27   35.00000   33.00000  5.71%  25.3  640s
+ 954461 132596   33.00000   61   19   35.00000   33.00000  5.71%  25.3  645s
+ 962689 132943   33.00000   66   18   35.00000   33.00000  5.71%  25.3  650s
+ 970962 133215 infeasible   73        35.00000   33.00000  5.71%  25.3  655s
+ 980122 133779 infeasible   72        35.00000   33.00000  5.71%  25.3  660s
+ 987592 134020 infeasible   61        35.00000   33.00000  5.71%  25.3  665s
+ 996178 134556   33.00000   66   22   35.00000   33.00000  5.71%  25.3  670s
+ 1004848 135102 infeasible   67        35.00000   33.00000  5.71%  25.3  675s
+ 1011860 135376 infeasible   77        35.00000   33.00000  5.71%  25.3  680s
+ 1020622 135872   33.00000   45   29   35.00000   33.00000  5.71%  25.3  685s
+ 1028338 136397   33.00000   51   26   35.00000   33.00000  5.71%  25.3  690s
+ 1035087 136913 infeasible   69        35.00000   33.00000  5.71%  25.3  695s
+ 1043918 137441 infeasible   63        35.00000   33.00000  5.71%  25.3  700s
+ 1052709 138113 infeasible   66        35.00000   33.00000  5.71%  25.3  705s
+ 1059257 138908   33.00000   46   42   35.00000   33.00000  5.71%  25.3  710s
+ 1067812 139991   33.00000   38   39   35.00000   33.00000  5.71%  25.3  715s
+ 1074481 140747 infeasible   67        35.00000   33.00000  5.71%  25.4  720s
+ 1081333 141582   33.00000   60   23   35.00000   33.00000  5.71%  25.4  725s
+ 1090366 142469 infeasible   68        35.00000   33.00000  5.71%  25.4  730s
+ 1099706 143265 infeasible   70        35.00000   33.00000  5.71%  25.3  735s
+ 1104633 143648   33.00000   41   52   35.00000   33.00000  5.71%  25.3  740s
+ 1112069 145013 infeasible   65        35.00000   33.00000  5.71%  25.3  745s
+ 1118066 146514   33.00000   50   14   35.00000   33.00000  5.71%  25.3  750s
+ 1124322 148229   34.00000   43   60   35.00000   33.00000  5.71%  25.4  755s
+ 1132094 149682 infeasible   68        35.00000   33.00000  5.71%  25.4  760s
+ 1139175 151124   33.00000   42   35   35.00000   33.00000  5.71%  25.4  765s
+ 1145996 152462 infeasible   66        35.00000   33.00000  5.71%  25.4  770s
+ 1154975 153603   33.00000   69   24   35.00000   33.00000  5.71%  25.4  775s
+ 1162011 154461   33.00000   63   17   35.00000   33.00000  5.71%  25.4  780s
+ 1168873 155431 infeasible   62        35.00000   33.00000  5.71%  25.4  785s
+ 1177009 156872   34.00000   44   33   35.00000   33.00000  5.71%  25.4  790s
+ 1183797 157860   33.00000   59   25   35.00000   33.00000  5.71%  25.4  795s
+ 1190631 158714   33.00000   59   13   35.00000   33.00000  5.71%  25.4  800s
+ 1199612 159526   33.00000   40   30   35.00000   33.00000  5.71%  25.4  805s
+ 1208067 160638   33.00000   67   20   35.00000   33.00000  5.71%  25.4  810s
+ 1214531 161269   33.00000   58   27   35.00000   33.00000  5.71%  25.4  815s
+ 1223058 162726   33.00000   56   23   35.00000   33.00000  5.71%  25.4  820s
+ 1229647 163616 infeasible   68        35.00000   33.00000  5.71%  25.4  825s
+ 1237020 164461 infeasible   64        35.00000   33.00000  5.71%  25.4  830s
+ 1245711 165545 infeasible   75        35.00000   33.00000  5.71%  25.4  835s
+ 1252631 166136 infeasible   64        35.00000   33.00000  5.71%  25.4  840s
+ 1259852 166800 infeasible   61        35.00000   33.00000  5.71%  25.4  845s
+ 1268881 167343 infeasible   63        35.00000   33.00000  5.71%  25.3  850s
+ 1277175 168169 infeasible   61        35.00000   33.00000  5.71%  25.3  855s
+ 1282806 168470   33.00000   67   18   35.00000   33.00000  5.71%  25.3  860s
+ 1291240 169252 infeasible   71        35.00000   33.00000  5.71%  25.3  865s
+ 1300218 170093 infeasible   71        35.00000   33.00000  5.71%  25.3  870s
+ 1307005 170824 infeasible   63        35.00000   33.00000  5.71%  25.3  875s
+ 1315419 171606 infeasible   62        35.00000   33.00000  5.71%  25.3  880s
+ 1324326 172344   34.00000   62   37   35.00000   33.00000  5.71%  25.2  885s
+ 1331177 172941   33.00000   52   29   35.00000   33.00000  5.71%  25.2  890s
+ 1339841 173412   33.00000   65   35   35.00000   33.00000  5.71%  25.2  895s
+ 1347481 174250 infeasible   67        35.00000   33.00000  5.71%  25.2  900s
+ 1352656 175319   33.00000   69   22   35.00000   33.00000  5.71%  25.2  905s
+ 1361403 176093   33.00000   62   21   35.00000   33.00000  5.71%  25.2  910s
+ 1370097 177009   33.00000   65   19   35.00000   33.00000  5.71%  25.2  915s
+ 1377341 177688   33.00000   40   42   35.00000   33.00000  5.71%  25.2  920s
+ 1385393 178326   33.00000   65   16   35.00000   33.00000  5.71%  25.2  925s
+ 1392111 178963   33.00000   69   30   35.00000   33.00000  5.71%  25.2  930s
+ 1398588 179505 infeasible   63        35.00000   33.00000  5.71%  25.2  935s
+ 1407629 180265 infeasible   75        35.00000   33.00000  5.71%  25.2  940s
+ 1415189 180666   33.00000   58   27   35.00000   33.00000  5.71%  25.2  945s
+ 1422066 181266   33.00000   62   24   35.00000   33.00000  5.71%  25.2  950s
+ 1431021 181816   33.00000   66   28   35.00000   33.00000  5.71%  25.2  955s
+ 1439642 182364   34.00000   54   32   35.00000   33.00000  5.71%  25.2  960s
+ 1446993 182680 infeasible   67        35.00000   33.00000  5.71%  25.2  965s
+ 1457191 183002   33.00000   65   15   35.00000   33.00000  5.71%  25.2  970s
+ 1465693 183191 infeasible   61        35.00000   33.00000  5.71%  25.2  975s
+ 1473295 183425   33.00000   79   18   35.00000   33.00000  5.71%  25.1  980s
+ 1483307 183514   33.00000   67   13   35.00000   33.00000  5.71%  25.1  985s
+ 1492456 183617   33.00000   66   23   35.00000   33.00000  5.71%  25.1  990s
+ 1499293 183671 infeasible   68        35.00000   33.00000  5.71%  25.1  995s
+ 1509633 183715   33.00000   64   19   35.00000   33.00000  5.71%  25.1 1000s
+ 1518236 184167 infeasible   75        35.00000   33.00000  5.71%  25.0 1005s
+ 1525300 183999   33.00000   68   27   35.00000   33.00000  5.71%  25.0 1010s
+ 1536003 183975   33.00000   73   10   35.00000   33.00000  5.71%  25.0 1015s
+ 1544399 184029 infeasible   66        35.00000   33.00000  5.71%  25.0 1020s
+ 1551564 184200   33.00000   72   26   35.00000   33.00000  5.71%  24.9 1025s
+ 1562220 184315 infeasible   75        35.00000   33.00000  5.71%  24.9 1030s
+ 1570647 184908   33.00000   71   22   35.00000   33.00000  5.71%  24.9 1035s
+ 1577555 185500   33.00000   75   19   35.00000   33.00000  5.71%  24.9 1041s
+ 1584739 186067   33.00000   55   47   35.00000   33.00000  5.71%  24.9 1045s
+ 1591769 186764 infeasible   67        35.00000   33.00000  5.71%  24.9 1050s
+ 1600878 187501   33.00000   62   22   35.00000   33.00000  5.71%  24.9 1055s
+ 1610788 188161   33.00000   56   39   35.00000   33.00000  5.71%  24.8 1060s
+ 1617737 188787 infeasible   68        35.00000   33.00000  5.71%  24.8 1065s
+ 1626651 189404   33.00000   63   39   35.00000   33.00000  5.71%  24.8 1070s
+ 1635493 190140 infeasible   77        35.00000   33.00000  5.71%  24.8 1075s
+ 1644364 190894 infeasible   67        35.00000   33.00000  5.71%  24.8 1080s
+ 1651483 191377   33.00000   62   21   35.00000   33.00000  5.71%  24.8 1085s
+ 1662437 191995 infeasible   72        35.00000   33.00000  5.71%  24.8 1090s
+ 1671135 192545   33.00000   66   23   35.00000   33.00000  5.71%  24.7 1095s
+ 1677964 192978   33.00000   69   20   35.00000   33.00000  5.71%  24.7 1100s
+ 1688467 193552 infeasible   73        35.00000   33.00000  5.71%  24.7 1105s
+ 1697334 194094 infeasible   70        35.00000   33.00000  5.71%  24.7 1110s
+ 1704147 194593 infeasible   69        35.00000   33.00000  5.71%  24.7 1115s
+ 1713075 195437   33.00000   58   36   35.00000   33.00000  5.71%  24.7 1120s
+ 1721103 196299   34.00000   67   28   35.00000   33.00000  5.71%  24.7 1125s
+ 1728247 197222   33.00000   64   17   35.00000   33.00000  5.71%  24.7 1130s
+ 1736642 198508   33.00000   65   13   35.00000   33.00000  5.71%  24.7 1135s
+ 1743645 199502 infeasible   68        35.00000   33.00000  5.71%  24.7 1140s
+ 1750502 200546 infeasible   70        35.00000   33.00000  5.71%  24.7 1145s
+ 1760788 202011 infeasible   65        35.00000   33.00000  5.71%  24.7 1151s
+ 1767186 202788   33.00000   67   23   35.00000   33.00000  5.71%  24.7 1155s
+ 1774946 203424   33.00000   58   14   35.00000   33.00000  5.71%  24.7 1160s
+ 1783839 204288 infeasible   64        35.00000   33.00000  5.71%  24.7 1165s
+ 1791586 204987 infeasible   54        35.00000   33.00000  5.71%  24.7 1170s
+ 1798570 205531 infeasible   68        35.00000   33.00000  5.71%  24.7 1175s
+ 1807055 206095 infeasible   74        35.00000   33.00000  5.71%  24.7 1180s
+ 1816849 206692   33.00000   61   22   35.00000   33.00000  5.71%  24.7 1185s
+ 1823367 207252   33.00000   69   20   35.00000   33.00000  5.71%  24.7 1190s
+ 1831835 207925 infeasible   64        35.00000   33.00000  5.71%  24.7 1195s
+ 1838658 208447   33.00000   65   18   35.00000   33.00000  5.71%  24.7 1200s
+ 1847432 208953   33.00000   74   19   35.00000   33.00000  5.71%  24.8 1205s
+ 1855459 209733 infeasible   66        35.00000   33.00000  5.71%  24.8 1210s
+ 1862121 210404 infeasible   49        35.00000   33.00000  5.71%  24.8 1215s
+ 1869019 210848 infeasible   60        35.00000   33.00000  5.71%  24.8 1220s
+ 1879398 211774 infeasible   58        35.00000   33.00000  5.71%  24.8 1225s
+ 1886243 212582 infeasible   66        35.00000   33.00000  5.71%  24.8 1230s
+ 1892921 213233   33.00000   63   18   35.00000   33.00000  5.71%  24.8 1235s
+ 1903167 214235 infeasible   75        35.00000   33.00000  5.71%  24.8 1240s
+ 1909973 214829   33.00000   58   22   35.00000   33.00000  5.71%  24.8 1245s
+ 1916684 215365   33.00000   70   20   35.00000   33.00000  5.71%  24.9 1250s
+ 1926665 216148   33.00000   61   27   35.00000   33.00000  5.71%  24.9 1255s
+ 1933594 216661 infeasible   70        35.00000   33.00000  5.71%  24.9 1260s
+ 1940518 217233 infeasible   61        35.00000   33.00000  5.71%  24.9 1265s
+ 1950975 218225   33.00000   59   35   35.00000   33.00000  5.71%  24.9 1270s
+ 1957466 219303 infeasible   64        35.00000   33.00000  5.71%  24.9 1275s
+ 1964294 220183   33.00000   63   18   35.00000   33.00000  5.71%  24.9 1280s
+ 1972936 221369   33.00000   68   15   35.00000   33.00000  5.71%  24.9 1285s
+ 1979375 222469   33.00000   57   14   35.00000   33.00000  5.71%  24.9 1290s
+ 1986192 223238 infeasible   71        35.00000   33.00000  5.71%  25.0 1295s
+ 1994934 223978 infeasible   69        35.00000   33.00000  5.71%  25.0 1300s
+ 2003357 225052 infeasible   74        35.00000   33.00000  5.71%  25.0 1305s
+ 2009787 225646   33.00000   62   31   35.00000   33.00000  5.71%  25.0 1310s
+ 2018434 226381 infeasible   71        35.00000   33.00000  5.71%  25.0 1315s
+ 2025699 227025   33.00000   55   22   35.00000   33.00000  5.71%  25.0 1320s
+ 2032670 227610 infeasible   69        35.00000   33.00000  5.71%  25.0 1325s
+ 2041045 228616   33.00000   66   16   35.00000   33.00000  5.71%  25.0 1330s
+ 2048129 229402   33.00000   65   14   35.00000   33.00000  5.71%  25.0 1335s
+ 2055342 230114   33.00000   63   16   35.00000   33.00000  5.71%  25.1 1340s
+ 2062320 230765   34.00000   61   35   35.00000   33.00000  5.71%  25.1 1345s
+ 2069334 231360   33.00000   68   23   35.00000   33.00000  5.71%  25.1 1350s
+ 2076524 231911   33.00000   63   20   35.00000   33.00000  5.71%  25.1 1355s
+ 2084432 232780   33.00000   69   21   35.00000   33.00000  5.71%  25.1 1360s
+ 2093053 233871   33.00000   65   20   35.00000   33.00000  5.71%  25.1 1366s
+ 2098239 234589   33.00000   47   37   35.00000   33.00000  5.71%  25.1 1370s
+ 2106871 235549   33.00000   62   16   35.00000   33.00000  5.71%  25.1 1375s
+ 2113507 236629   33.00000   64   19   35.00000   33.00000  5.71%  25.1 1380s
+ 2120260 237834   33.00000   57   31   35.00000   33.00000  5.71%  25.1 1385s
+ 2128716 239092   33.00000   60   25   35.00000   33.00000  5.71%  25.1 1390s
+ 2135900 239880   34.00000   45   44   35.00000   33.00000  5.71%  25.1 1395s
+ 2142953 240705 infeasible   65        35.00000   33.00000  5.71%  25.1 1400s
+ 2150868 241902   33.00000   46   35   35.00000   33.00000  5.71%  25.2 1405s
+ 2158087 242594   33.00000   58   14   35.00000   33.00000  5.71%  25.2 1410s
+ 2164680 243656   34.00000   45   48   35.00000   33.00000  5.71%  25.2 1416s
+ 2171725 244568   33.00000   54   49   35.00000   33.00000  5.71%  25.2 1420s
+ 2179074 245750   33.00000   69   24   35.00000   33.00000  5.71%  25.2 1425s
+ 2185864 246474   34.00000   72   21   35.00000   33.00000  5.71%  25.2 1430s
+ 2194092 247527 infeasible   62        35.00000   33.00000  5.71%  25.2 1435s
+ 2202080 248083 infeasible   74        35.00000   33.00000  5.71%  25.2 1440s
+ 2210966 248688   33.00000   57   23   35.00000   33.00000  5.71%  25.2 1445s
+ 2219577 249116   33.00000   68   28   35.00000   33.00000  5.71%  25.2 1450s
+ 2228354 249491 infeasible   71        35.00000   33.00000  5.71%  25.2 1455s
+ 2236895 249586 infeasible   77        35.00000   33.00000  5.71%  25.2 1460s
+ 2249174 249845 infeasible   78        35.00000   33.00000  5.71%  25.2 1465s
+ 2257841 249752   33.00000   80   22   35.00000   33.00000  5.71%  25.1 1470s
+ 2266763 249837 infeasible   75        35.00000   33.00000  5.71%  25.1 1475s
+ 2278900 249785 infeasible   76        35.00000   33.00000  5.71%  25.1 1480s
+ 2288883 249608 infeasible   72        35.00000   33.00000  5.71%  25.1 1485s
+ 2295494 249630 infeasible   61        35.00000   33.00000  5.71%  25.1 1490s
+ 2307727 249671   33.00000   80   15   35.00000   33.00000  5.71%  25.1 1495s
+ 2317841 249745   33.00000   75   19   35.00000   33.00000  5.71%  25.1 1500s
+ 2324670 249851   33.00000   65   28   35.00000   33.00000  5.71%  25.1 1505s
+ 2334831 250313   33.00000   65   19   35.00000   33.00000  5.71%  25.1 1510s
+ 2341275 250784   33.00000   71   23   35.00000   33.00000  5.71%  25.1 1515s
+ 2349652 251306   33.00000   68   23   35.00000   33.00000  5.71%  25.1 1520s
+ 2358044 251980   33.00000   72   25   35.00000   33.00000  5.71%  25.1 1525s
+ 2366624 252854 infeasible   66        35.00000   33.00000  5.71%  25.1 1530s
+ 2371598 253346   33.00000   59   23   35.00000   33.00000  5.71%  25.1 1535s
+ 2380343 254041 infeasible   62        35.00000   33.00000  5.71%  25.1 1540s
+ 2388540 254978   33.00000   59   29   35.00000   33.00000  5.71%  25.2 1545s
+ 2393597 255430   33.00000   69   26   35.00000   33.00000  5.71%  25.2 1550s
+ 2402329 256103   33.00000   63   32   35.00000   33.00000  5.71%  25.2 1555s
+ 2410506 256462 infeasible   63        35.00000   33.00000  5.71%  25.2 1560s
+ 2417129 256934   33.00000   72   13   35.00000   33.00000  5.71%  25.2 1565s
+ 2423634 257582   34.00000   64   31   35.00000   33.00000  5.71%  25.2 1570s
+ 2429955 258532   33.00000   67   33   35.00000   33.00000  5.71%  25.3 1575s
+ 2437234 259718 infeasible   69        35.00000   33.00000  5.71%  25.3 1580s
+ 2443901 260836 infeasible   73        35.00000   33.00000  5.71%  25.3 1585s
+ 2449892 262335 infeasible   60        35.00000   33.00000  5.71%  25.3 1590s
+ 2456789 263880   34.00000   60   37   35.00000   33.00000  5.71%  25.4 1596s
+ 2463636 265577   34.00000   64   24   35.00000   33.00000  5.71%  25.4 1601s
+ 2470194 266867 infeasible   68        35.00000   33.00000  5.71%  25.4 1605s
+ 2475070 268075   34.00000   57   27   35.00000   33.00000  5.71%  25.5 1610s
+ 2481416 268044 infeasible   70        35.00000   33.87500  3.21%  25.5 1615s
+ 2491744 266941 infeasible   67        35.00000   34.00000  2.86%  25.5 1621s
+ 2500136 265940 infeasible   74        35.00000   34.00000  2.86%  25.5 1625s
+ 2509834 264925   34.00000   71   15   35.00000   34.00000  2.86%  25.4 1630s
+ 2518751 263866   34.00000   71    8   35.00000   34.00000  2.86%  25.4 1635s
+ 2527501 263097 infeasible   81        35.00000   34.00000  2.86%  25.4 1640s
+ 2534854 262678 infeasible   78        35.00000   34.00000  2.86%  25.3 1645s
+ 2544957 261876   34.00000   71   21   35.00000   34.00000  2.86%  25.3 1650s
+ 2553687 261008 infeasible   61        35.00000   34.00000  2.86%  25.3 1655s
+ 2562408 260567   34.00000   60   36   35.00000   34.00000  2.86%  25.3 1660s
+ 2573193 260215   34.00000   70   21   35.00000   34.00000  2.86%  25.2 1665s
+ 2580228 259765 infeasible   71        35.00000   34.00000  2.86%  25.2 1670s
+ 2590760 259278   34.00000   67   14   35.00000   34.00000  2.86%  25.2 1675s
+ 2599791 258656 infeasible   74        35.00000   34.00000  2.86%  25.2 1680s
+ 2608563 258099   34.00000   75   22   35.00000   34.00000  2.86%  25.1 1685s
+ 2618895 257436 infeasible   71        35.00000   34.00000  2.86%  25.1 1690s
+ 2626692 256849   34.00000   64   10   35.00000   34.00000  2.86%  25.1 1695s
+ 2635248 256328 infeasible   80        35.00000   34.00000  2.86%  25.1 1700s
+ 2645221 255889   34.00000   70   21   35.00000   34.00000  2.86%  25.0 1705s
+ 2653901 255400   34.00000   81   25   35.00000   34.00000  2.86%  25.0 1710s
+ 2661193 254988   34.00000   58   15   35.00000   34.00000  2.86%  25.0 1715s
+ 2671601 254633   34.00000   60   17   35.00000   34.00000  2.86%  25.0 1720s
+ 2681888 254532 infeasible   61        35.00000   34.00000  2.86%  25.0 1725s
+ 2689114 254411 infeasible   64        35.00000   34.00000  2.86%  24.9 1730s
+ 2699965 254439   34.00000   68   17   35.00000   34.00000  2.86%  24.9 1735s
+ 2710212 254133 infeasible   69        35.00000   34.00000  2.86%  24.9 1740s
+ 2718753 253766 infeasible   65        35.00000   34.00000  2.86%  24.9 1745s
+ 2729276 253540   34.00000   67   13   35.00000   34.00000  2.86%  24.8 1750s
+ 2738462 253134 infeasible   61        35.00000   34.00000  2.86%  24.8 1755s
+ 2747324 252377 infeasible   68        35.00000   34.00000  2.86%  24.8 1760s
+ 2757774 251787   34.00000   70   18   35.00000   34.00000  2.86%  24.7 1765s
+ 2766448 251169 infeasible   72        35.00000   34.00000  2.86%  24.7 1770s
+ 2774749 250807 infeasible   53        35.00000   34.00000  2.86%  24.7 1775s
+ 2783675 250351   34.00000   78   28   35.00000   34.00000  2.86%  24.7 1780s
+ 2794310 250232   34.00000   77   17   35.00000   34.00000  2.86%  24.7 1785s
+ 2802986 250037   34.00000   62   25   35.00000   34.00000  2.86%  24.7 1790s
+ 2812255 249894   34.00000   74   10   35.00000   34.00000  2.86%  24.6 1795s
+ 2823120 250011   34.00000   61   20   35.00000   34.00000  2.86%  24.6 1800s
+
+Cutting planes:
+  Learned: 31
+  Gomory: 64
+  Lift-and-project: 14
+  Cover: 49
+  Implied bound: 5
+  Projected implied bound: 1
+  Clique: 2
+  MIR: 23
+  Mixing: 3
+  StrongCG: 33
+  Flow cover: 296
+  GUB cover: 6
+  Inf proof: 9
+  Zero half: 47
+  RLT: 39
+  Relax-and-lift: 39
+
+Explored 2823737 nodes (69488820 simplex iterations) in 1800.02 seconds (1098.31 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 1: 35 
+
+Time limit reached
+Best objective 3.500000000000e+01, best bound 3.400000000000e+01, gap 2.8571%
+
+User-callback calls 6063485, time in user-callback 14.66 sec
+
+=== SOLUTION ===
+Cmax: 35.0
+
+Operations:
+ - Operation 0: start=0.0, end=3.0, Machine 4
+ - Operation 1: start=3.0, end=7.0, Machine 2
+ - Operation 2: start=10.0, end=13.0, Machine 3
+ - Operation 3: start=16.0, end=22.0, Machine 1
+ - Operation 4: start=28.0, end=31.0, Machine 5
+ - Operation 5: start=32.0, end=33.0, Machine 1
+ - Operation 6: start=4.0, end=5.0, Machine 5
+ - Operation 7: start=5.0, end=8.0, Machine 5
+ - Operation 8: start=24.0, end=26.0, Machine 4
+ - Operation 9: start=26.0, end=29.0, Machine 2
+ - Operation 10: start=31.0, end=32.0, Machine 1
+ - Operation 11: start=33.0, end=35.0, Machine 1
+ - Operation 12: start=0.0, end=1.0, Machine 0
+ - Operation 13: start=12.0, end=16.0, Machine 1
+ - Operation 14: start=18.0, end=20.0, Machine 2
+ - Operation 15: start=26.0, end=28.0, Machine 4
+ - Operation 16: start=29.0, end=30.0, Machine 3
+ - Operation 17: start=31.0, end=34.0, Machine 4
+ - Operation 18: start=0.0, end=3.0, Machine 5
+ - Operation 19: start=3.0, end=4.0, Machine 5
+ - Operation 20: start=6.0, end=12.0, Machine 1
+ - Operation 21: start=15.0, end=18.0, Machine 2
+ - Operation 22: start=21.0, end=24.0, Machine 5
+ - Operation 23: start=28.0, end=29.0, Machine 3
+ - Operation 24: start=4.0, end=10.0, Machine 3
+ - Operation 25: start=13.0, end=18.0, Machine 3
+ - Operation 26: start=18.0, end=21.0, Machine 3
+ - Operation 27: start=22.0, end=28.0, Machine 3
+ - Operation 28: start=30.0, end=32.0, Machine 3
+ - Operation 29: start=32.0, end=35.0, Machine 2
+ - Operation 30: start=8.0, end=11.0, Machine 4
+ - Operation 31: start=11.0, end=15.0, Machine 2
+ - Operation 32: start=19.0, end=21.0, Machine 4
+ - Operation 33: start=21.0, end=24.0, Machine 4
+ - Operation 34: start=25.0, end=31.0, Machine 1
+ - Operation 35: start=31.0, end=32.0, Machine 5
+ - Operation 36: start=3.0, end=4.0, Machine 3
+ - Operation 37: start=11.0, end=13.0, Machine 4
+ - Operation 38: start=15.0, end=21.0, Machine 5
+ - Operation 39: start=28.0, end=31.0, Machine 4
+ - Operation 40: start=32.0, end=35.0, Machine 5
+ - Operation 41: start=0.0, end=3.0, Machine 2
+ - Operation 42: start=3.0, end=5.0, Machine 4
+ - Operation 43: start=13.0, end=16.0, Machine 4
+ - Operation 44: start=16.0, end=19.0, Machine 4
+ - Operation 45: start=22.0, end=25.0, Machine 1
+ - Operation 46: start=32.0, end=34.0, Machine 3
+ - Operation 47: start=0.0, end=6.0, Machine 1
+ - Operation 48: start=7.0, end=11.0, Machine 2
+ - Operation 49: start=11.0, end=12.0, Machine 5
+ - Operation 50: start=12.0, end=15.0, Machine 5
+ - Operation 51: start=20.0, end=23.0, Machine 2
+ - Operation 52: start=0.0, end=3.0, Machine 3
+ - Operation 53: start=5.0, end=8.0, Machine 4
+ - Operation 54: start=8.0, end=11.0, Machine 5
+ - Operation 55: start=21.0, end=22.0, Machine 3
+ - Operation 56: start=24.0, end=27.0, Machine 5
+ - Operation 57: start=27.0, end=28.0, Machine 5
+
+[DEBUG]
+TRUE makespan from C[i]: 35.0
+Model cmax: 35.0
+
+ Objective values: cmax 35.0, quadratric delay 605.0, machine assignments 11
+
+ Machine Assignments (X[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 3
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 1
+   Operation 12 → Machine 0
+   Operation 13 → Machine 1
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 2
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 3
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 4
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 5
+   Operation 39 → Machine 4
+   Operation 40 → Machine 5
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 4
+   Operation 44 → Machine 4
+   Operation 45 → Machine 1
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 4
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+
+ Machine Assignments (X_old[i,k]=1):
+   Operation 0 → Machine 4
+   Operation 1 → Machine 2
+   Operation 2 → Machine 0
+   Operation 3 → Machine 1
+   Operation 4 → Machine 5
+   Operation 5 → Machine 1
+   Operation 6 → Machine 5
+   Operation 7 → Machine 5
+   Operation 8 → Machine 4
+   Operation 9 → Machine 2
+   Operation 10 → Machine 1
+   Operation 11 → Machine 0
+   Operation 12 → Machine 0
+   Operation 13 → Machine 0
+   Operation 14 → Machine 2
+   Operation 15 → Machine 4
+   Operation 16 → Machine 3
+   Operation 17 → Machine 4
+   Operation 18 → Machine 5
+   Operation 19 → Machine 5
+   Operation 20 → Machine 1
+   Operation 21 → Machine 0
+   Operation 22 → Machine 5
+   Operation 23 → Machine 3
+   Operation 24 → Machine 0
+   Operation 25 → Machine 3
+   Operation 26 → Machine 3
+   Operation 27 → Machine 3
+   Operation 28 → Machine 3
+   Operation 29 → Machine 2
+   Operation 30 → Machine 4
+   Operation 31 → Machine 2
+   Operation 32 → Machine 4
+   Operation 33 → Machine 0
+   Operation 34 → Machine 1
+   Operation 35 → Machine 5
+   Operation 36 → Machine 3
+   Operation 37 → Machine 4
+   Operation 38 → Machine 0
+   Operation 39 → Machine 4
+   Operation 40 → Machine 0
+   Operation 41 → Machine 2
+   Operation 42 → Machine 4
+   Operation 43 → Machine 0
+   Operation 44 → Machine 4
+   Operation 45 → Machine 0
+   Operation 46 → Machine 3
+   Operation 47 → Machine 1
+   Operation 48 → Machine 2
+   Operation 49 → Machine 5
+   Operation 50 → Machine 5
+   Operation 51 → Machine 2
+   Operation 52 → Machine 3
+   Operation 53 → Machine 0
+   Operation 54 → Machine 5
+   Operation 55 → Machine 3
+   Operation 56 → Machine 5
+   Operation 57 → Machine 5
+Optimal Pareto Front size (before Non Dominated Sorting): (6, 3)
+[[337.  13.  39.]
+ [580.  11.  39.]
+ [580.  13.  35.]
+ [404.  11.  38.]
+ [605.  11.  38.]
+ [605.  11.  35.]]
+
+Filtered Pareto front size: (4, 3)
+[[337.  13.  39.]
+ [580.  13.  35.]
+ [404.  11.  38.]
+ [605.  11.  35.]]
+Metrics saved to /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/metrics.json
+Shape of Pareto Front before NDS: (2, 3)
+NDS ongoing
+Pareto Front after NDS: (2, 3)
+Combined Pareto solutions and objectives saved to CSV: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_solutions_full.csv
+Pareto solutions saved to JSON: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_solutions.json
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_front.pdf
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_front_assessment.pdf
+📊 Pareto front 3D (matplotlib) saved to: /home/bazzo/Scrivania/fjsp_rescheduling/results/NSGA2/EX2/Pop_200/pareto_front_normalized.pdf
+
+=== EXPERIMENT 2 COMPLETED ===
+End time: 2026-01-14 03:39:37.024218
+Duration: 2:01:54.696233
+================================================================================
