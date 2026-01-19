@@ -51,7 +51,7 @@ from NSGA2.utils import (plot_pareto_front_3d_matplotlib, select_best_solution,
                          )
 from NSGA2.src.random_initialization import RandomInitializer
 from visualization.gantt_chart import plot
-from simulations.run_experiments_mo_nolin import get_data_break
+from simulations.run_MILP_resch import get_data_break
 
 
 class Tee(io.TextIOBase):

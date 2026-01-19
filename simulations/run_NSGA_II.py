@@ -11,8 +11,15 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-matplotlib.use('Agg')   # backend non interattivo
-matplotlib.rcParams['interactive'] = False  # Disabilita modalità interattiva
+
+# Use non-interactive backend for plotting
+matplotlib.use('Agg')  
+matplotlib.rcParams['interactive'] = False  
+
+
+# ==============================
+# Paths and project structure
+# ==============================
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 
@@ -32,6 +39,7 @@ print(f"NSGA2_DIR: {NSGA2_DIR}")
 print(f"SRC_DIR: {SRC_DIR}")
 print(f"MILP_DIR: {MILP_DIR}")
 
+# Add project paths
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(SIMULATIONS_DIR))
 sys.path.insert(0, str(NSGA2_DIR))
@@ -39,12 +47,16 @@ sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(MILP_DIR))
 
 
+# ==============================
+# Imports
+# ==============================
+
 from simulations.experiment_logging import (
     setup_experiment_logging, close_experiment_logging, log_experiment_start,
     log_experiment_end, load_environment, log_environment_info
 )
 
-from NSGA2.nsga_ii import run_nsga2_with_my_operators, MySampling, assess_pareto_front
+from NSGA2.nsga_ii import run_nsga2_with_my_operators, assess_pareto_front
 from NSGA2.utils import (plot_pareto_front_3d_matplotlib, select_best_solution,
                          update_environment_with_solution, save_results,
                          compute_distances, compute_distances_full, save_optimal_pareto_front_log,
@@ -55,10 +67,17 @@ from NSGA2.src.decode import Decoder
 from NSGA2.src.schedule_manager import ScheduleManager
 from scheduling_environment.jobShop import JobShop
 from visualization.gantt_chart import plot
-from simulations.run_experiments_mo_nolin import get_data_break
+from simulations.run_MILP_resch import get_data_break
 
+
+# ==============================
+# Utility class for logging
+# ==============================
 
 class Tee(io.TextIOBase):
+    """
+    Duplicate stdout/stderr to multiple streams (file + console).
+    """
     def __init__(self, *streams):
         self.streams = streams
 
@@ -73,8 +92,14 @@ class Tee(io.TextIOBase):
             s.flush()
 
 
+# ==============================
+# Logging utilities
+# ==============================
+
 def log_nsga2_results(logger, res, best_objectives, selection_method):
-    """Log NSGA-II specific results"""
+    """
+    Log summary statistics of the NSGA-II execution.
+    """
     logger.info("NSGA-II Optimization Results:")
     logger.info(f"  Number of generations completed: {res.algorithm.n_gen}")
     logger.info(f"  Number of function evaluations: {res.algorithm.evaluator.n_eval}")
@@ -93,27 +118,30 @@ def log_nsga2_results(logger, res, best_objectives, selection_method):
         logger.info(f"  Makespan range: {res.F[:, 2].min():.2f} - {res.F[:, 2].max():.2f}")
 
 
-def run_nsga2_experiment(exp_num: int, n_pop: int, file_path, n_gen: int):
-    """
-    Run NSGA-II experiment, assess the Pareto front and save all results in the specified directories
 
+# ==============================
+# Main experiment function
+# ==============================
 
+def run_nsga2_experiment(exp_num: int, n_pop: int, file_path):
     """
-    seed_str = f"{exp_num}_{n_pop}_{n_gen}"
+    Run a complete NSGA-II experiment:
+    - Load environment
+    - Run optimization
+    - Evaluate Pareto front
+    - Save results and plots
+    """
+    seed_str = f"{exp_num}_{n_pop}"
     seed = int(hashlib.sha256(seed_str.encode()).hexdigest(), 16) % (2 ** 32)
 
-    # Directory dove vogliamo salvare i log
-    actual_log_dir = SAVE_LOGS / f"EX{exp_num}" / f"Pop_{n_pop}" / "test1"
+    # Directory for logs 
+    actual_log_dir = SAVE_LOGS / f"EX{exp_num}" / f"Pop_{n_pop}" 
     os.makedirs(actual_log_dir, exist_ok=True)
 
-    # DEBUG: Stampa i percorsi
-    print(f"Actual log directory: {actual_log_dir}")
-
-    # CHIAMATA MODIFICATA: Passiamo SAVE_LOGS come base_dir, ma specifichiamo log_filename con percorso completo
     logger = setup_experiment_logging(
-        log_dir=SAVE_LOGS,  # Directory base (come si aspetta la funzione)
+        log_dir=SAVE_LOGS, 
         exp_num=exp_num,
-        log_filename=str(actual_log_dir / f"experiment_{exp_num}.txt")  # Percorso completo del file
+        log_filename=str(actual_log_dir / f"experiment_{exp_num}.txt") 
     )
 
     terminal_output_file = actual_log_dir / f"terminal_output_ex{exp_num}.txt"
@@ -372,10 +400,7 @@ def run_nsga2_experiment(exp_num: int, n_pop: int, file_path, n_gen: int):
 
                 except Exception as inner_e:
                     traceback.print_exc()
-                    raise inner_e  # Rilancia l'eccezione
-                    logger.error(f"Error during NSGA-II experiment {exp_num}: {str(e)}")
-                    log_experiment_end(logger, exp_num, success=False, message=str(e))
-                    raise
+                    raise inner_e 
 
     except Exception as e:
         end_time = datetime.datetime.now()
@@ -392,7 +417,6 @@ def run_nsga2_experiment(exp_num: int, n_pop: int, file_path, n_gen: int):
         raise
     finally:
         close_experiment_logging(logger)
-        # Aggiungi info di completamento al file di output
         end_time = datetime.datetime.now()
         duration = end_time - start_time
         with open(terminal_output_file, 'a', encoding='utf-8') as term_file:

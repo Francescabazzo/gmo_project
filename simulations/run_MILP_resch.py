@@ -43,7 +43,7 @@ from simulations.experiment_logging import (
 from simulations.break_machine import break_machine
 
 # Import the model for this script
-from MILP.model_MILP_reschedule_changed import FJS_reschedule
+from MILP.model_MILP_reschedule import FJS_reschedule
 
 data_break = {
     'EX1': {
@@ -57,77 +57,15 @@ data_break = {
     'EX3': {
         'broken_machine_id': 5,
         'disruption_time': 75
-    },
-    'EX4': {
-        'broken_machine_id': 3,
-        'disruption_time': 310
-    },
-    'EX5': {
-        'broken_machine_id': 9,
-        'disruption_time': 2
-    },
-    'EX6': {
-        'broken_machine_id': 6,
-        'disruption_time': 10
-    },
-    'EX7': {
-        'broken_machine_id': 5,
-        'disruption_time': 9
-    },
-    'EX15': {
-        'broken_machine_id': 1,
-        'disruption_time': 0
-    },
-    'EX16': {
-        'broken_machine_id': 5,
-        'disruption_time': 3
-    },
-    'EX17': {
-        'broken_machine_id': 5,
-        'disruption_time': 106
-    },
-    'EX18': {
-        'broken_machine_id': 1,
-        'disruption_time': 31
-    },
-    'EX19': {
-        'broken_machine_id': 5,
-        'disruption_time': 11
-    },
-    'EX20': {
-        'broken_machine_id': 5,
-        'disruption_time': 77
-    },
-    'EX21': {
-        'broken_machine_id': 1,
-        'disruption_time': 214
-    },
-    'EX22': {
-        'broken_machine_id': 1,
-        'disruption_time': 124
-    },
-    'EX23': {
-        'broken_machine_id': 6,
-        'disruption_time': 148
-    },
-    'EX24': {
-        'broken_machine_id': 6,
-        'disruption_time': 429
-    },
-    'EX25': {
-        'broken_machine_id': 6,
-        'disruption_time': 15
-    },
-    'EX26': {
-        'broken_machine_id': 1,
-        'disruption_time': 420
     }
 }
 
 
 
 def run_milp_experiment(exp_num, file_path, time_limit=1200, n_sim=1):
-    """Run an experiment using the specific MILP model."""
+    """
+    Run an experiment using the specific MILP model.
+    """
     
     # Setup log directory
     log_dir = setup_logging_directory(LOG_DIR, log_dir_name="")
@@ -348,90 +286,11 @@ def get_data_break():
 if __name__ == "__main__":
     print(f"Working directory: {RESULTS_DIR}")
     
-    """# Experiment 1
-    # un_milp_experiment(1, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_1.pkl"), time_limit=3600)
+    # Experiment 1
+    run_milp_experiment(1, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_1.pkl"), time_limit=3600)
     
     # Experiment 2
-    #run_milp_experiment(2, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_2.pkl"), time_limit=3600, n_sim=5)
+    run_milp_experiment(2, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_2.pkl"), time_limit=3600)
 
     # Experiment 3
-    #run_milp_experiment(3, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_3.pkl"), time_limit=3600, n_sim=5)
-    
-    # Experiment 4
-    #run_milp_experiment(4, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_4.pkl"), time_limit=3600, n_sim=5)
-    
-    # Experiment 5
-    #run_milp_experiment(5, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_5.pkl"), time_limit=3600, n_sim=5)
-
-    # Experiment 8
-    run_milp_experiment(8, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_8.pkl"), time_limit=3600)
-
-    # Experiment 9
-    run_milp_experiment(9, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_9.pkl"), time_limit=3600)
-
-    # Experiment 10
-    run_milp_experiment(10, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_10.pkl"), time_limit=3600)
-
-    # Experiment 11
-    run_milp_experiment(11, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_11.pkl"), time_limit=3600)
-
-    # Experiment 12
-    run_milp_experiment(12, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_12.pkl"), time_limit=3600)
-
-    # Experiment 13
-    run_milp_experiment(13, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_13.pkl"), time_limit=3600)
-
-    # Experiment 14
-    run_milp_experiment(14, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_14.pkl"), time_limit=3600)
-
-    # Experiment 15
-    run_milp_experiment(15, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_15.pkl"), time_limit=3600)
-
-    # Experiment 16
-    run_milp_experiment(16, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_16.pkl"), time_limit=3600)
-
-    # Experiment 17
-    run_milp_experiment(17, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_17.pkl"), time_limit=3600)
-
-    # Experiment 18
-    run_milp_experiment(18, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_18.pkl"), time_limit=3600)
-
-    # Experiment 19
-    run_milp_experiment(19, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_19.pkl"), time_limit=3600)
-
-    # Experiment 20
-    run_milp_experiment(20, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_20.pkl"), time_limit=3600)
-
-    # Experiment 21
-    run_milp_experiment(21, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_21.pkl"), time_limit=3600)
-
-    # Experiment 22
-    run_milp_experiment(22, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_22.pkl"), time_limit=3600)
-
-    # Experiment 23
-    run_milp_experiment(23, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_23.pkl"), time_limit=3600)
-
-    # Experiment 24
-    run_milp_experiment(24, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_24.pkl"), time_limit=3600)
-
-    # Experiment 25
-    run_milp_experiment(25, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_25.pkl"), time_limit=3600)
-
-    # Experiment 26
-    run_milp_experiment(26, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_26.pkl"), time_limit=3600)
-
-    # Experiment 27
-    run_milp_experiment(27, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_27.pkl"), time_limit=3600)
-
-    # Experiment 28
-    run_milp_experiment(28, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_28.pkl"), time_limit=3600)
-
-    # Experiment 29
-    run_milp_experiment(29, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_29.pkl"), time_limit=3600)"""
-
-    # Experiment 30
-    run_milp_experiment(30, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_30.pkl"), time_limit=3600)
-
-
-    print(f"\nAll experiments completed!")
-    print(f"Log files saved in: {LOG_DIR}")
+    run_milp_experiment(3, os.path.join(RESULTS_SCH_DIR, "schedule_simulation_3.pkl"), time_limit=3600)
