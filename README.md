@@ -16,6 +16,7 @@ This project was developed for the final exam of the course of Global and Multi-
 
 ## Project Structure
 
+```
 gmo_project/
 │
 └── data /
@@ -67,6 +68,7 @@ gmo_project/
 |
 └── README.md
 └── requirements.txt 
+```
 
 
 ## Requirements 
@@ -101,4 +103,5 @@ This will automatically compute the following actions on three benchmark dataset
 ## Bibliography
 
 The folders solution_methods, visualization, and scheduling environment were taken from
+
 Reijnen, R., van Straaten, K., Bukhsh, Z., & Zhang, Y. (2023). **Job Shop Scheduling Benchmark: Environments and Instances for Learning and Non-learning Methods**. arXiv preprint arXiv:2308.12794. https://doi.org/10.48550/arXiv.2308.12794
