@@ -26,7 +26,6 @@ gmo_project/
 │
 ├── NSGA2/
 │ ├── nsga_ii.py
-
 │ ├── src/
 │ │ ├── decode.py
 │ │ ├── operators.py
@@ -44,7 +43,6 @@ gmo_project/
 │ └── model_MILP_assessment.py
 │
 ├── results/
-
 ├── results_scheduling/
 |
 ├── simulations/
