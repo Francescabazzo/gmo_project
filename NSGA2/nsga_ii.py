@@ -1,24 +1,30 @@
 import matplotlib
 matplotlib.use('TkAgg')
+
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
 from pathlib import Path
 
-# Directory of this file (fjsp_rescheduling/NSGA2)
+
+# ============================================================
+# PATH CONFIGURATION
+# ============================================================
+
+# Directory conntaining this file 
 SCRIPT_DIR = Path(__file__).resolve().parent
 
-# Root of the project (fjsp_rescheduling)
+# Root directory of the project 
 PROJECT_ROOT = SCRIPT_DIR.parent
 
-# Directories used in this file
+# Relevant project directories
 SRC_DIR = SCRIPT_DIR / "src"
 RESULTS_DIR = PROJECT_ROOT / "results"
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
 MILP_DIR = PROJECT_ROOT / "MILP"
 
-# Print debug
+# Debug information 
 print(f"SCRIPT_DIR: {SCRIPT_DIR}")
 print(f"PROJECT_ROOT: {PROJECT_ROOT}")
 print(f"SRC_DIR: {SRC_DIR}")
@@ -30,6 +36,11 @@ sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(SCRIPT_DIR))
 sys.path.insert(0, str(MILP_DIR))
+
+
+# ============================================================
+# PROJECT IMPORTS 
+# ============================================================
 
 # Pymoo imports
 from pymoo.algorithms.moo.nsga2 import NSGA2
@@ -46,21 +57,17 @@ from pymoo.util.nds.non_dominated_sorting import NonDominatedSorting
 # MILP import (for assessment)
 from MILP.model_MILP_assessment import FJS_reschedule
 
-from MILP.model_MILP_assessment_changed import FJS_reschedule_ass
-
 # NSGA2 imports
 from NSGA2.src.operators import GeneticOperators
 from NSGA2.src.random_initialization import RandomInitializer
 from NSGA2.src.decode import Decoder
 from NSGA2.src.schedule_manager import ScheduleManager
-
 from NSGA2.utils import (
     select_best_solution,
     update_environment_with_solution,
     print_pareto_statistics,
     save_results, find_max_ms_needed
 )
-
 from NSGA2.plot import (
     plot_pareto_front_2d,
     plot_pareto_front_3d_matplotlib
@@ -85,12 +92,11 @@ class MySampling(Sampling):
         super().__init__()
         self.initializer = initializer
 
-    def _do(self, problem, n_samples, **kwargs):
+    def _do(self, n_samples):
         """
         Generates a set of random individuals.
 
         Args:
-            problem: The pymoo problem instance.
             n_samples (int): Number of samples to generate.
 
         Returns:
@@ -101,7 +107,7 @@ class MySampling(Sampling):
 
 class MyCrossover(Crossover):
     """
-     Custom crossover operator adapted for pymoo. Applies crossover with a
+    Custom crossover operator adapted for pymoo. Applies crossover with a
     given probability using the GeneticOperators module.
 
     Args:
@@ -114,12 +120,11 @@ class MyCrossover(Crossover):
         self.operators = operators
         self.crossover_rate = crossover_rate
 
-    def _do(self, problem, x, **kwargs):
+    def _do(self, x ):
         """
         Applies customized crossover to each mating pair.
 
         Args:
-            problem: Pymoo problem instance.
             x (np.ndarray): Parents array of shape (2, n_matings, n_variables).
 
         Returns:
@@ -159,12 +164,11 @@ class MyMutation(Mutation):
         self.operators = operators
         self.mutation_rate = mutation_rate
 
-    def _do(self, problem, x, **kwargs):
+    def _do(self, x):
         """
         Applies mutation to each individual.
 
         Args:
-            problem: pymoo problem instance.
             x (np.ndarray): population to mutate.
 
         Returns:
@@ -183,11 +187,6 @@ class ReschedulingProblem(ElementwiseProblem):
     """
     Pymoo problem formulation for job shop rescheduling. Each solution
     represents machine-selection and operation-sequence variables.
-
-    Args:
-        decoder (Decoder): Converts decision vectors into objective values.
-        nr_op (int): Number of machine-selection variables.
-        nr_os (int): Number of operation-sequence variables.
     """
 
     def __init__(self, decoder, nr_op, nr_os, max_job_id, max_ms_value):
@@ -223,7 +222,7 @@ class ReschedulingProblem(ElementwiseProblem):
         )
 
 
-    def _evaluate(self, x, out, *args, **kwargs):
+    def _evaluate(self, x, out):
         """
         Evaluates a candidate solution using the decoder.
 
@@ -265,11 +264,10 @@ def run_nsga2_with_my_operators(
         jobshop (JobShop): Current job shop environment.
         broken_machine (int): ID of the machine that has failed.
         current_time (int): Rescheduling start time.
-        pop_size (int): Size of the population.
-        n_gen (int): Number of generations.
-        crossover_rate (float): Probability of crossover.
-        mutation_rate (float): Probability of mutation.
-        termination_method (str): Termination criterion method.
+        pop_size (int, optional): Size of the population.
+        crossover_rate (float, optional): Probability of crossover.
+        mutation_rate (float, optional): Probability of mutation.
+        termination_method (str, optional): Termination criterion method.
 
     Returns:
         tuple: (result, decoder, operators)
@@ -283,7 +281,6 @@ def run_nsga2_with_my_operators(
     operations_toprocess, operation_times = initializer.extract_sets()
     decoder = Decoder(jobshop, broken_machine, current_time,
                       initializer, schedule_manager)
-
     max_job_id = jobshop.nr_of_jobs
 
     # Prepare custom operators
@@ -300,7 +297,13 @@ def run_nsga2_with_my_operators(
     nr_op = len(operations_toprocess)
     nr_os = nr_op
     max_ms_value = find_max_ms_needed(my_operators)
-    problem = ReschedulingProblem(decoder, nr_op, nr_os, max_job_id, max_ms_value)
+    problem = ReschedulingProblem(
+        decoder, 
+        nr_op, 
+        nr_os, 
+        max_job_id, 
+        max_ms_value
+    )
 
     # Configures NSGA-II with custom operators
     algorithm = NSGA2(
@@ -377,6 +380,10 @@ def run_nsga2_with_my_operators(
     return res, decoder, my_operators
 
 
+# =============================================================================
+# Utilities
+# =============================================================================
+
 def test_initial_population(jobshop: JobShop, machine_id: int, broken_time: int, pop_size: int):
     """
     Tests the initial population by analyzing Pareto front relationships.
@@ -389,17 +396,16 @@ def test_initial_population(jobshop: JobShop, machine_id: int, broken_time: int,
 
     Returns:
         tuple: (X, F, fronts)
-            - X: Population decision vectors.
-            - F: Objective values.
-            - fronts: Non-dominated sorting fronts.
+            - X: Population decision vectors
+            - F: Objective values
+            - fronts: Non-dominated sorting frontS
     """
-    print("================================================================")
-    print("TEST PARETO FRONT ON INITIAL POPULATION: ")
-    print("================================================================")
+    print("=" * 70)
+    print("INITIAL POPULATION ANALYSIS")
+    print("=" * 70)
 
     schedule = ScheduleManager(jobshop)
     initializer = RandomInitializer(jobshop, broken_time, machine_id)
-    operations_toprocess, operations_ongoing = initializer.extract_sets()
     decoder = Decoder(jobshop, machine_id, broken_time, initializer, schedule)
 
     my_sampling = MySampling(initializer)
@@ -415,12 +421,11 @@ def test_initial_population(jobshop: JobShop, machine_id: int, broken_time: int,
 
     F = np.array(F)
 
-    print(f"\nResults analysis:")
+    print(f"\nObjective ranges:")
     print(f"Time Differences:     {F[:, 0].min():.1f} - {F[:, 0].max():.1f}")
     print(f"Assignment Differences: {F[:, 1].min():.1f} - {F[:, 1].max():.1f}")
     print(f"Makespan:             {F[:, 2].min():.1f} - {F[:, 2].max():.1f}")
 
-    # Non-dominated sorting with pymoo
     nds = NonDominatedSorting()
     fronts = nds.do(F)
 
@@ -437,8 +442,24 @@ def test_initial_population(jobshop: JobShop, machine_id: int, broken_time: int,
     return X, F, fronts
 
 
-def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_machine_id: int, disruption_time: int):
+def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_machine_id: int, disruption_time: int, obj1_lb = None):
+    """
+    Evaluates Pareto solutions by solving MILP models with fixed objectives.
 
+    Args:
+        X (np.ndarray): Decision variables of Pareto solutions.
+        F (np.ndarray): Objective values of Pareto solutions.
+        jobshop (JobShop): Job shop environment.
+        broken_machine_id (int): Failed machine ID.
+        disruption_time (int): Time of disruption.
+        obj1_lb: Lower bound for the first objective 
+
+    Returns:
+        tuple:
+            - optimal_pareto_front (np.ndarray): MILP-refined Pareto front.
+            - optimal_filtered_front (np.ndarray): Non-dominated subset.
+            - optimal_points_found (list): Detailed solution data.
+    """
     print("=============== PARETO FRONT ASSESSMENT ===============")
     # Debug
     print(f"Size of X: {X.shape}, Size of F: {F.shape}")
@@ -483,19 +504,16 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
         print(f"Value of the third objective: {obj_cmax}.")
 
         individual = unique_X[idx]
-        X, Y, S, C, E, Z, Z_aux = decoder.extract_sets(individual, debug=True)
 
         reschedule1 = FJS_reschedule(jobshop, broken_machine_id, disruption_time)
         reschedule1.extract_info()
-        reschedule1.create_model()
-        new_td, _, _ = reschedule1.run_model(
-            1800,
-            obj2_value=obj_mach_assignm,
-            obj3_value=obj_cmax,
-            X_start=X,
-            S_start=S,
-            C_start=C
-        )
+        if obj1_lb is not None:
+            reschedule1.create_model(obj2_value=obj_mach_assignm,
+                obj3_value=obj_cmax, obj1_lb=obj1_lb)
+        else:
+            reschedule1.create_model(obj2_value=obj_mach_assignm,
+                                     obj3_value=obj_cmax)
+        new_td, _, _ = reschedule1.run_model(1200)
         reschedule1.print_results()
         new_point1 = np.array([new_td, obj_mach_assignm, obj_cmax])
         optimal_pareto_front.append(new_point1)
@@ -503,19 +521,8 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
 
         reschedule2 = FJS_reschedule(jobshop, broken_machine_id, disruption_time)
         reschedule2.extract_info()
-        reschedule2.create_model()
-        _, new_ad, _ = reschedule2.run_model(
-            1800,
-            obj1_value=obj_quadr_delay,
-            obj3_value=obj_cmax,
-            X_start=X,
-            S_start=S,
-            C_start=C,
-            Y_start=Y,
-            E_start=E,
-            Z_start=Z,
-            Z_aux_start=Z_aux
-        )
+        reschedule2.create_model(obj1_value=obj_quadr_delay, obj3_value=obj_cmax)
+        _, new_ad, _ = reschedule2.run_model(1200)
         reschedule2.print_results()
         new_point2 = np.array([obj_quadr_delay, new_ad, obj_cmax])
         optimal_pareto_front.append(new_point2)
@@ -523,19 +530,8 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
 
         reschedule3 = FJS_reschedule(jobshop, broken_machine_id, disruption_time)
         reschedule3.extract_info()
-        reschedule3.create_model()
-        _, _, new_cmax = reschedule3.run_model(
-            1800,
-            obj1_value=obj_quadr_delay,
-            obj2_value=obj_mach_assignm,
-            X_start=X,
-            S_start=S,
-            C_start=C,
-            Y_start=Y,
-            E_start=E,
-            Z_start=Z,
-            Z_aux_start=Z_aux
-        )
+        reschedule3.create_model(obj1_value=obj_quadr_delay, obj2_value=obj_mach_assignm)
+        _, _, new_cmax = reschedule3.run_model(1800)
         reschedule3.print_results()
         new_point3 = np.array([obj_quadr_delay, obj_mach_assignm, new_cmax])
         optimal_pareto_front.append(new_point3)
@@ -556,15 +552,6 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
 
     optimal_pareto_front = np.array(optimal_pareto_front)
 
-    num_rows, num_col = optimal_pareto_front.shape
-
-    #for i in range(num_rows):
-    #    print(f"\nIndividual {X[i]}, with objectives {F[i]}.")
-    #    print(f"Distances: {distances[i]}")
-
-    print(f"Optimal Pareto Front size (before Non Dominated Sorting): {optimal_pareto_front.shape}")
-    print(optimal_pareto_front)
-
     nds = NonDominatedSorting()
     fronts= nds.do(optimal_pareto_front)
 
@@ -575,26 +562,7 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
     else:
         optimal_front_filtered = optimal_pareto_front
 
-    print(f"\nFiltered Pareto front size: {optimal_front_filtered.shape}")
-    print(optimal_front_filtered)
-
     return optimal_pareto_front, optimal_front_filtered, optimal_points_found
-
-
-def compute_upper_bound(
-    jobshop,
-    broken_machine_id,
-    disruption_time,
-    X_start,
-    objective_to_minimize
-):
-    res = FJS_reschedule_ass(jobshop, broken_machine_id, disruption_time)
-    res.extract_info()
-    res.create_model()
-
-    quadr_delay, mach_ass, cmax = res.run_model(time_limit=1800, objective_name=objective_to_minimize, X_start=X_start)
-
-    return quadr_delay, mach_ass, cmax
 
 
 
@@ -606,55 +574,17 @@ if __name__ == "__main__":
     """
     Main execution script for NSGA-II rescheduling optimization.
     """
-    file_path = os.path.join(RESULTS_SCH_DIR, "schedule_simulation_2.pkl")
+    file_path = os.path.join(RESULTS_SCH_DIR, "schedule_simulation_1.pkl")
     jobshop = load_environment(file_path)
     broken_machine = 0
     current_time = 1
-
-    # Test initial population
-    X, F, fronts = test_initial_population(
-        jobshop=jobshop,
-        machine_id=broken_machine,
-        broken_time=current_time,
-        pop_size=100
-    )
-
-    pareto_indices = fronts[0]
-    pareto_F = F[pareto_indices]
-
-    # Plot initial population (debug)
-    # plot_pareto_front_3d_matplotlib(pareto_F)
-
-    # Recreate objects for NSGA-II
-    schedule_manager = ScheduleManager(jobshop)
-    initializer = RandomInitializer(jobshop, current_time, broken_machine)
-    operations_toprocess, operation_times = initializer.extract_sets()
-    decoder = Decoder(jobshop, broken_machine, current_time,
-                      initializer, schedule_manager)
-
-    test_operators = GeneticOperators(
-        jobshop=jobshop,
-        mutation_rate=0.1,
-        crossover_rate=0.8,
-        operations_toprocess=operations_toprocess,
-        operation_times=operation_times,
-        broken_machine=broken_machine
-    )
-
-    """# Analyze possible unique combinations
-    n_unique = analyze_possible_combinations(
-        decoder=decoder,
-        operators=test_operators,
-        initializer=initializer,
-        n_samples=500  # Test 500 random solutions
-    )"""
 
     # Execute NSGA-II with customized operators
     res, decoder, operators = run_nsga2_with_my_operators(
         jobshop=jobshop,
         broken_machine=broken_machine,
         current_time=current_time,
-        pop_size=100,
+        pop_size=200,
         crossover_rate=0.8,
         mutation_rate=0.1,
         termination_method="improvement"
@@ -665,20 +595,8 @@ if __name__ == "__main__":
     print(f"Total population size: {len(res.X)}")
     print(f"Pareto front size: {len(res.F)}")
 
-
-    # Check if Pareto front equals population size
-    if len(res.F) == len(res.X):
-        print("WARNING: Pareto front size = Population size")
-        print("   This means that all the individuals of the population are non-dominated!")
-
     pareto_front = res.F
     pareto_solutions = res.X
-
-    print("\n========= PARETO FRONT DEBUG =========")
-    print(pareto_front.shape)
-
-    nds = NonDominatedSorting()
-    final_fronts = nds.do(res.F)
 
     optimal_front, optimal_filtered_front= assess_pareto_front(
         pareto_solutions,
@@ -687,29 +605,6 @@ if __name__ == "__main__":
         broken_machine,
         current_time
     )
-
-    normalized_pareto_front, normalized_optimal_front, stats_normalized = decoder.normalize_pareto_front(
-        pareto_front,
-        optimal_filtered_front
-    )
-
-    print("\n=== DEBUG NON-DOMINATED SORTING ON FINAL POPULATION ===")
-    print(f"Total number of solutions in final population: {len(res.F)}")
-    print(f"Number of fronts found: {len(final_fronts)}")
-    print(f"Size of first (Pareto) front: {len(final_fronts[0])}")
-
-    if len(final_fronts) == 1:
-        print("✅ All solutions in the final population are non-dominated!")
-    else:
-        print("⚠️ Some solutions are dominated.")
-
-    # Show best solutions
-    for i, (solution, objectives) in enumerate(zip(pareto_solutions[:5], pareto_front[:5])):
-        print(f"Solution {i + 1}:")
-        print(f"  Time Differences: {objectives[0]:.1f}")
-        print(f"  Assignment Differences: {objectives[1]:.1f}")
-        print(f"  Makespan: {objectives[2]:.1f}")
-        print()
 
     initializer = RandomInitializer(jobshop, current_time, broken_machine)
 
@@ -723,13 +618,11 @@ if __name__ == "__main__":
         jobshop, best_solution, decoder, initializer, current_time
     )
 
-    # metrics = calculate_metrics(pareto_front)
-
     # Save everything
-    save_results(res, decoder, os.path.join(RESULTS_DIR, "NSGA2", "EX2"))
+    save_results(res, decoder, os.path.join(RESULTS_DIR, "NSGA2", "EX_main"))
 
     plot(updated_jobshop)
-    save_path = os.path.join(RESULTS_DIR, "NSGA2", "EX2", "schedule_gantt_2")
+    save_path = os.path.join(RESULTS_DIR, "NSGA2", "EX_main", "schedule_gantt_1")
     plt.savefig(save_path, dpi=300)
     plt.show()
 
@@ -739,8 +632,5 @@ if __name__ == "__main__":
     # Visualization (3D)
     plot_pareto_front_3d_matplotlib(pareto_front)
     plot_pareto_front_3d_matplotlib(pareto_front, assess=True, optimal_pareto_front=optimal_filtered_front)
-
-    # Visualization (2D)
-    plot_pareto_front_2d(pareto_front)
 
     print("NSGA-II completed successfully!")

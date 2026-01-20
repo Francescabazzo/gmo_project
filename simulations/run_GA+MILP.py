@@ -13,7 +13,6 @@ import os.path
 import pickle
 import matplotlib
 
-matplotlib.use("Agg")  # backend non-GUI
 import matplotlib.pyplot as plt
 import sys
 import time
@@ -21,14 +20,24 @@ from pathlib import Path
 import logging
 logging.getLogger('gurobipy').setLevel(logging.WARNING)
 
-# /home/bazzo/Scrivania/fjsp_rescheduling/simulations
-SCRIPT_DIR = Path(__file__).resolve().parent
-# /home/bazzo/Scrivania/fjsp_rescheduling/
-PROJECT_ROOT = SCRIPT_DIR.parent
+# Use non-interactive backend for plotting
+matplotlib.use('Agg')  
+matplotlib.rcParams['interactive'] = False  
 
-# /home/bazzo/Scrivania/fjsp_rescheduling/simulations/logs
+
+# ==============================
+# Paths and project structure
+# ==============================
+
+# gmo_project/simulations
+SCRIPT_DIR = Path(__file__).resolve().parent
+# gmo_project/
+PROJECT_ROOT = SCRIPT_DIR.parent
+# gmo_project/logs
 LOG_DIR = SCRIPT_DIR / "logs"
+# gmo_project/results/GA+MILP
 RESULTS_DIR = PROJECT_ROOT / "results" / "GA+MILP"
+# gmo_project/results_scheduling
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
 
 print(f"SCRIPT_DIR; {SCRIPT_DIR}")
@@ -37,11 +46,16 @@ print(f"LOG_DIR: {LOG_DIR}")
 print(f"RESULTS_DIR: {RESULTS_DIR}")
 print(f"RESULTS_SCH_DIR: {RESULTS_SCH_DIR}")
 
+# Add project paths
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(LOG_DIR))
 sys.path.insert(0, str(RESULTS_DIR))
 sys.path.insert(0, str(RESULTS_SCH_DIR))
 
+
+# ==============================
+# Imports
+# ==============================
 
 from data.data_parsers.parser_fjsp import parse_fjsp
 from MILP.model_MILP import FJS_schedule

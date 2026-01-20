@@ -186,7 +186,7 @@ class FJS_reschedule(JobShop):
         gantt_chart.plot(self._original_env)
 
 
-    def create_model(self):
+    def create_model(self, obj1_value=None, obj2_value=None, obj3_value=None, obj1_lb=None):
         """
         Creates the MILP model to reschedule the production plan after a machine breakdown.
         """
@@ -221,6 +221,7 @@ class FJS_reschedule(JobShop):
         Y = {}      # set of sequences, y_ii': binary variable equal to 1 if operation i is assigned before operation i'
         S = {}      # set of starting times of operations, s_i: int variable that defines the starting time of operation i
         E = {}      # set of auxiliary variables for X
+        U = {}
         Z = {}      # set of auxiliary variables for complete times of job
         Z_aux = {}  # set of auxiliary variable for the squared of the delay in the complete times of jobs
         C = {}  # c_i: end time of the operations
@@ -240,11 +241,29 @@ class FJS_reschedule(JobShop):
                     Y[i, h] = model.addVar(lb=0, vtype=gb.GRB.BINARY, name=f"y_{i}_{h}")
 
         for i in self.operations_final:
+            U[i] = model.addVar(vtype=gb.GRB.BINARY, name=f"U_{i}")
             Z[i] = model.addVar(lb=0, vtype=gb.GRB.INTEGER, name=f"z_{i}")
             Z_aux[i] = model.addVar(lb=0, vtype=gb.GRB.CONTINUOUS, name=f"z_aux_{i}")
 
         cmax = model.addVar(
             lb=0, vtype=gb.GRB.INTEGER, name="cmax"
+        )
+
+        if obj1_lb is not None:
+            obj_quadr = model.addVar(
+                lb=obj1_lb,
+                vtype=gb.GRB.INTEGER,
+                name="obj_quadr_delay"
+            )
+        else:
+            obj_quadr = model.addVar(
+                lb=0,
+                vtype=gb.GRB.INTEGER,
+                name="obj_quadr_delay"
+            )
+
+        obj_mach_assignments = model.addVar(
+            lb=0, vtype=gb.GRB.INTEGER, name="obj_mach_assignments"
         )
 
         C_old = self.old_schedule["C_old"]
@@ -268,15 +287,77 @@ class FJS_reschedule(JobShop):
         Since the first objective is to minimise the  total delay of the final operations of the jobs, 
         """
 
-        # First objective (quadratic): minimising the lateness of the completion time of the jobs
-        self.obj_quadr = gb.quicksum(Z_aux[i] for i in self.operations_final)
+        tolerance = 0.001
 
-        # Second objective (machine assignments): minimising the change of machine assignments
-        self.obj_mach_assignments = (gb.quicksum(
-            E[i, k] for i in operation_ids for k in self.machine_allocations[i])) / 2
+        #   Optimize for the first objective
+        if obj1_value is None:
 
-        # Third objective: minimising the cmax
-        self.obj_cmax = cmax
+            model.setObjective(
+                obj_quadr, gb.GRB.MINIMIZE
+            )
+
+            model.addConstr(
+                obj_mach_assignments <= obj2_value * (1 + tolerance)
+            )
+            model.addConstr(
+                obj_mach_assignments >= obj2_value * (1 - tolerance)
+            )
+
+            model.addConstr(
+                cmax <= obj3_value * (1 + tolerance)
+            )
+
+            model.addConstr(
+                cmax >= obj3_value * (1 - tolerance)
+            )
+
+        # Optimize for the second objective
+        elif obj2_value is None:
+
+            model.setObjective(
+                obj_mach_assignments, gb.GRB.MINIMIZE
+            )
+
+            model.addConstr(
+                obj_quadr <= obj1_value * (1 + tolerance)
+            )
+
+            model.addConstr(
+                obj_quadr >= obj1_value * (1 - tolerance)
+            )
+
+            model.addConstr(
+                cmax <= obj3_value * (1 + tolerance)
+            )
+
+            model.addConstr(
+                cmax >= obj3_value * (1 - tolerance)
+            )
+
+        # Optimize for the third objective
+        elif obj3_value is None:
+
+            model.setObjective(
+                cmax, gb.GRB.MINIMIZE
+            )
+
+            model.addConstr(
+                obj_quadr <= obj1_value * (1 + tolerance)
+            )
+
+            model.addConstr(
+                obj_quadr >= obj1_value * (1 - tolerance)
+            )
+
+            model.addConstr(
+                obj_mach_assignments <= obj2_value * (1 + tolerance)
+            )
+            model.addConstr(
+                obj_mach_assignments >= obj2_value * (1 - tolerance)
+            )
+
+        else:
+            raise ValueError("Not valid values.")
 
 
         # ------ Constraints ------
@@ -303,6 +384,15 @@ class FJS_reschedule(JobShop):
                 S[i] >= self.time_broken,
                 name="start_toproc" + str(i)
             )
+
+        model.addConstr(
+            obj_quadr == gb.quicksum(Z_aux[i] for i in self.operations_final)
+        )
+
+        model.addConstr(
+            obj_mach_assignments == (gb.quicksum(
+                E[i, k] for i in operation_ids for k in self.machine_allocations[i])) / 2
+        )
 
         # Completion time = start time + processing time
         for i in self.operations_toprocess:
@@ -377,6 +467,21 @@ class FJS_reschedule(JobShop):
                 name="cmax_" + str(i)
             )
 
+        for i in self.operations_final:
+            model.addConstr(
+                cmax <= C[i] + M * (1 - U[i]),
+                name=f"cmax_upper_{i}"
+            )
+            model.addConstr(
+                cmax >= C[i],
+                name=f"cmax_lower_{i}"
+            )
+
+        model.addConstr(
+            gb.quicksum(U[i] for i in self.operations_final) == 1,
+            name="one_last_operation"
+        )
+
         # Auxiliary Z constraints for final operations (delay contribution)
         epsilon= 0.001
         for i in self.operations_final:
@@ -413,7 +518,7 @@ class FJS_reschedule(JobShop):
                 Z[i] >= 0
             )
             model.addQConstr(
-                Z_aux[i] >= Z[i] * Z[i],
+                Z_aux[i] == Z[i] * Z[i],
                 name="compl_op_aux_" + str(i)
             )
 
@@ -430,7 +535,7 @@ class FJS_reschedule(JobShop):
         self.model.update()
 
 
-    def run_model(self, time_limit=None, obj1_value=None, obj2_value=None, obj3_value=None, X_start=None, S_start=None,
+    def run_model(self, time_limit=None, X_start=None, S_start=None,
                   C_start=None, Y_start=None, E_start=None, Z_start=None, Z_aux_start=None):
         """
         Solve the Gurobi model by managing the multiple objectives using a lexicographic approach.
@@ -493,91 +598,7 @@ class FJS_reschedule(JobShop):
         self.model._start_time = time.time()
 
         self.model.Params.TimeLimit = time_limit
-
-        self.model.update()
-
-        objective_optimized = 0
-
-        tolerance = 0.001
-
-        #   Optimize for the first objective
-        if obj1_value is None:
-
-            objective_optimized = 1
-
-            self.model.setObjective(
-                self.obj_quadr, gb.GRB.MINIMIZE
-            )
-
-            tolerance = 0.001
-
-            self.model.addConstr(
-                self.obj_mach_assignments <= obj2_value * (1+tolerance)
-            )
-            self.model.addConstr(
-                self.obj_mach_assignments >= obj2_value * (1- tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_cmax <= obj3_value * (1+tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_cmax >= obj3_value * (1-tolerance)
-            )
-
-        # Optimize for the second objective
-        elif obj2_value is None:
-
-            objective_optimized = 2
-
-            self.model.setObjective(
-                self.obj_mach_assignments, gb.GRB.MINIMIZE
-            )
-
-            self.model.addConstr(
-                self.obj_quadr <= obj1_value *(1+tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_quadr >= obj1_value *(1-tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_cmax <= obj3_value *(1+tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_cmax >= obj3_value *(1-tolerance)
-            )
-
-        # Optimize for the third objective
-        elif obj3_value is None:
-
-            objective_optimized = 3
-
-            self.model.setObjective(
-                self.obj_cmax, gb.GRB.MINIMIZE
-            )
-
-            self.model.addConstr(
-                self.obj_quadr <= obj1_value * (1+tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_quadr >= obj1_value * (1-tolerance)
-            )
-
-            self.model.addConstr(
-                self.obj_mach_assignments <= obj2_value * (1+tolerance)
-            )
-            self.model.addConstr(
-                self.obj_mach_assignments >= obj2_value * (1-tolerance)
-            )
-
-        else:
-            raise ValueError("Not valid values.")
-
+        
         self.model.update()
 
         self.model.Params.Presolve = 2
@@ -680,6 +701,11 @@ class FJS_reschedule(JobShop):
             assigned_machines = [k for (ii, k), val in self.results["X"].items() if ii == i and val > 0.5]
             machine_str = f"Machine {assigned_machines[0]}" if assigned_machines else "N/A"
             print(f" - Operation {i}: start={s:.1f}, end={c:.1f}, {machine_str}")
+
+        true_makespan = max(self.results["C"].values())
+        print("\n[DEBUG]")
+        print("TRUE makespan from C[i]:", true_makespan)
+        print("Model cmax:", self.results["cmax"])
 
         print(f"\n Objective values: cmax {self.results['cmax']}, quadratric delay {self.results['quadratic_delay']}, "
               f"machine assignments {self.results['assignment_changes']}")

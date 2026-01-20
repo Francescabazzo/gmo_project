@@ -16,9 +16,11 @@ from plot import plot_pareto_front_2d, plot_pareto_front_3d_matplotlib
 from scheduling_environment.jobShop import JobShop
 
 
-def select_best_solution(pareto_front: np.ndarray,
-                         pareto_solutions: np.ndarray,
-                         method: str = "min_time_diff") -> Tuple[np.ndarray, np.ndarray]:
+def select_best_solution(
+        pareto_front: np.ndarray,
+        pareto_solutions: np.ndarray,
+        method: str = "min_time_diff"
+    ) -> Tuple[np.ndarray, np.ndarray]:
     """
     Implements different strategies for selecting a single solution from
     the Pareto front based on different optimization priorities.
@@ -174,6 +176,9 @@ def calculate_metrics(pareto_front):
 
 
 def calculate_GD(pareto_front, optimal_pareto_front):
+    """
+    Computes the generational distance 
+    """
     indicator = GD(optimal_pareto_front)
     gd_value = indicator(pareto_front)
     return gd_value
