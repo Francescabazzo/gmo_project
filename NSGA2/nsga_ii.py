@@ -1,10 +1,11 @@
 import matplotlib
-matplotlib.use('TkAgg')
+# matplotlib.use('TkAgg')
 
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
+import hashlib
 from pathlib import Path
 
 
@@ -23,13 +24,6 @@ SRC_DIR = SCRIPT_DIR / "src"
 RESULTS_DIR = PROJECT_ROOT / "results"
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
 MILP_DIR = PROJECT_ROOT / "MILP"
-
-# Debug information 
-print(f"SCRIPT_DIR: {SCRIPT_DIR}")
-print(f"PROJECT_ROOT: {PROJECT_ROOT}")
-print(f"SRC_DIR: {SRC_DIR}")
-print(f"RESULTS_DIR: {RESULTS_DIR}")
-print(f"MILP_DIR: {MILP_DIR}")
 
 # Extend the PYTHONPATH (cross-platform)
 sys.path.insert(0, str(PROJECT_ROOT))
@@ -92,7 +86,7 @@ class MySampling(Sampling):
         super().__init__()
         self.initializer = initializer
 
-    def _do(self, n_samples):
+    def _do(self, problem, n_samples, random_state=None, **kwargs):
         """
         Generates a set of random individuals.
 
@@ -120,7 +114,7 @@ class MyCrossover(Crossover):
         self.operators = operators
         self.crossover_rate = crossover_rate
 
-    def _do(self, x ):
+    def _do(self, problem, x, *args, random_state=None, **kwargs):
         """
         Applies customized crossover to each mating pair.
 
@@ -164,7 +158,7 @@ class MyMutation(Mutation):
         self.operators = operators
         self.mutation_rate = mutation_rate
 
-    def _do(self, x):
+    def _do(self, problem, x, *args, random_state=None, **kwargs):
         """
         Applies mutation to each individual.
 
@@ -251,6 +245,7 @@ def run_nsga2_with_my_operators(
         jobshop: JobShop,
         broken_machine: int,
         current_time: int,
+        seed: int, 
         pop_size=100,
         crossover_rate=0.8,
         mutation_rate=0.1,
@@ -538,8 +533,8 @@ def assess_pareto_front(X: np.ndarray, F: np.ndarray, jobshop: JobShop, broken_m
         distance3 = np.linalg.norm(point - new_point3)
 
         optimal_points_found.append({
-            "Time differences": obj_quadr_delay,
-            "Assignment differences": obj_mach_assignm,
+            "Time Differences": obj_quadr_delay,
+            "Assignment Differences": obj_mach_assignm,
             "Makespan": obj_cmax,
             "Optimal Time Differences": new_td,
             "Optimal Assignment Differences": new_ad,
@@ -578,6 +573,9 @@ if __name__ == "__main__":
     jobshop = load_environment(file_path)
     broken_machine = 0
     current_time = 1
+
+    seed_str = f"200_1"
+    seed = int(hashlib.sha256(seed_str.encode()).hexdigest(), 16) % (2 ** 32)
 
     # Execute NSGA-II with customized operators
     res, decoder, operators = run_nsga2_with_my_operators(

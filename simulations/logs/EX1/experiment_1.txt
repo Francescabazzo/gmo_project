@@ -1,0 +1,18 @@
+2026-01-20 18:27:34,584 - INFO - Environment loaded from: C:\Users\utente\Desktop\gmo_project\results_scheduling\schedule_simulation_1.pkl
+2026-01-20 18:27:34,584 - INFO - ============================================================
+2026-01-20 18:27:34,585 - INFO - START EXPERIMENT 1
+2026-01-20 18:27:34,585 - INFO - ============================================================
+2026-01-20 18:27:34,586 - INFO - Starting time: 2026-01-20 18:27:34
+2026-01-20 18:27:34,586 - INFO - Parameters of the experiment:
+2026-01-20 18:27:34,587 - INFO -   file_path: C:\Users\utente\Desktop\gmo_project\results_scheduling\schedule_simulation_1.pkl
+2026-01-20 18:27:34,588 - INFO -   broken_machine_id: 1
+2026-01-20 18:27:34,588 - INFO -   disruption_time: 4
+2026-01-20 18:27:34,589 - INFO -   time_limit: 3600
+2026-01-20 18:27:34,589 - INFO - Job number: 4
+2026-01-20 18:27:34,590 - INFO - Machine number: 5
+2026-01-20 18:27:34,590 - INFO - Unique machines: []
+2026-01-20 18:27:34,591 - INFO - Starting rescheduling with MILP model...
+2026-01-20 18:27:36,595 - INFO - Gantt chart saved in: C:\Users\utente\Desktop\gmo_project\results\MILP\EX1\schedule_gantt_ex1_resch_nolin.png
+2026-01-20 18:27:36,603 - INFO - ============================================================
+2026-01-20 18:27:36,603 - INFO - END OF THE EXPERIMENT 1 - COMPLETED
+2026-01-20 18:27:36,604 - INFO - ============================================================

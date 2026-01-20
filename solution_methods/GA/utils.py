@@ -55,7 +55,7 @@ def output_dir_exp_name(parameters):
     return output_dir, exp_name
 
 
-def plot_fitness_progress_time(fitness_progress, save_path=None, show_plot=True):
+def plot_fitness_progress_time(fitness_progress, save_path=None, show_plot=False):
     """
     Plot the fitness improvement over time. 
     """
@@ -76,7 +76,7 @@ def plot_fitness_progress_time(fitness_progress, save_path=None, show_plot=True)
     return plt
 
 
-def plot_fitness_progress_gen(fitness_progress, save_path=None, show_plot=True):
+def plot_fitness_progress_gen(fitness_progress, save_path=None, show_plot=False):
     """
     Plot the fitness improvement over the generations. 
     """
@@ -93,6 +93,8 @@ def plot_fitness_progress_gen(fitness_progress, save_path=None, show_plot=True):
 
     if show_plot:
         plt.show()
+
+    plt.close() 
 
     return plt
 

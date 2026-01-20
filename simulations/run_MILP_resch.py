@@ -26,11 +26,6 @@ LOG_DIR = SCRIPT_DIR / "logs"
 RESULTS_DIR = PROJECT_ROOT / "results" / "MILP"
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
 
-print(f"PROJECT_ROOT: {PROJECT_ROOT}")
-print(f"LOG_DIR: {LOG_DIR}")
-print(f"RESULTS_DIR: {RESULTS_DIR}")
-print(f"RESULTS_SCH_DIR: {RESULTS_SCH_DIR}")
-
 # Add project paths
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(LOG_DIR))
@@ -123,10 +118,14 @@ def run_milp_experiment(exp_num, file_path, time_limit=1200):
 
         reschedule.run_model(time_limit=time_limit)
 
-        reschedule.update_environment()
-
         EXP_DIR = RESULTS_DIR / f"EX{exp_num}"
         os.makedirs(EXP_DIR, exist_ok=True)
+
+        save_path = os.path.join(EXP_DIR, "results.json")
+
+        reschedule.save_objectives(save_path)
+
+        reschedule.update_environment()
 
         reschedule.plot_incumbent(EXP_DIR)
 
@@ -136,6 +135,7 @@ def run_milp_experiment(exp_num, file_path, time_limit=1200):
         gantt_path = os.path.join(RESULTS_DIR, f"EX{exp_num}", f"schedule_gantt_ex{exp_num}_resch_nolin.png")
         plt.savefig(gantt_path, dpi=300)
         logger.info(f"Gantt chart saved in: {gantt_path}")
+        plt.close() 
 
         reschedule.print_results()
 

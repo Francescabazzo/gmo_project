@@ -1,5 +1,6 @@
 {
-    "GD": 0.15938946574565463,
-    "Hypervolume": 0.5357333333333333,
-    "Hypervolume_opt": 1.172
+    "GD": 0.0,
+    "Hypervolume": 0.3279999999999999,
+    "Hypervolume_opt": 0.3279999999999999,
+    "Duration_seconds": 2.594772
 }

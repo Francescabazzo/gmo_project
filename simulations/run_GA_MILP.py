@@ -40,12 +40,6 @@ RESULTS_DIR = PROJECT_ROOT / "results" / "GA+MILP"
 # gmo_project/results_scheduling
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
 
-print(f"SCRIPT_DIR; {SCRIPT_DIR}")
-print(f"PROJECT_ROOT: {PROJECT_ROOT}")
-print(f"LOG_DIR: {LOG_DIR}")
-print(f"RESULTS_DIR: {RESULTS_DIR}")
-print(f"RESULTS_SCH_DIR: {RESULTS_SCH_DIR}")
-
 # Add project paths
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(LOG_DIR))

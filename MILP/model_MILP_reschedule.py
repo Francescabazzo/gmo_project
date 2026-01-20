@@ -2,6 +2,9 @@
 import time
 import os
 import gurobipy as gb
+import json
+import os
+
 from scheduling_environment.jobShop import JobShop
 from visualization import gantt_chart
 from MILP.incumbent_mo import Incumbent, add_current_sol
@@ -742,6 +745,25 @@ class FJS_reschedule(JobShop):
                 Z_val = model_relax.getVarByName(f"z_{i}").X
                 print(
                     f"  Z[{i}] = {Z_val:.1f} (should be max(0, {C_val:.1f} - {C_old_val:.1f}) = {max(0, C_val - C_old_val):.1f})")
+
+
+    def save_objectives(self, save_path):
+        """
+        Save only the objective values to a JSON file.
+
+        Args:
+            save_path (str): Path to output JSON file.
+        """
+        objectives = {
+            "quadratic_delay": self.results["quadratic_delay"],
+            "assignment_changes": self.results["assignment_changes"],
+            "cmax": self.results["cmax"]
+        }
+
+        with open(save_path, "w") as f:
+            json.dump(objectives, f, indent=4)
+
+        print(f"Objective values saved to: {save_path}")
 
 
     def update_environment(self):

@@ -1,13 +1,20 @@
-import os
+import os 
+os.environ["MPLBACKEND"] = "Agg"
+os.environ["DISPLAY"] = ""
+
+import sys
+sys.modules["tkinter"] = None
+
+import matplotlib
+matplotlib.use("Agg", force=True)
+
+import matplotlib.pyplot as plt
+plt.ioff()
+
+import matplotlib.pyplot as plt
+
 from pathlib import Path
 
-# ============================================================
-# IMPORTS FROM PROJECT MODULES
-# ============================================================
-
-from simulations.run_GA_MILP import run_ga_milp 
-from simulations.run_MILP_resch import run_milp_experiment
-from simulations.run_NSGA_II import run_nsga2_experiment
 
 
 # ============================================================
@@ -16,6 +23,20 @@ from simulations.run_NSGA_II import run_nsga2_experiment
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RESULTS_SCH_DIR = PROJECT_ROOT / "results_scheduling"
+SIMULATIONS_DIR = PROJECT_ROOT / "simulations"
+
+# Add project paths
+sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(SIMULATIONS_DIR))
+sys.path.insert(0, str(RESULTS_SCH_DIR))
+
+# ============================================================
+# IMPORTS FROM PROJECT MODULES
+# ============================================================
+
+from simulations.run_GA_MILP import run_ga_milp 
+from simulations.run_MILP_resch import run_milp_experiment
+from simulations.run_NSGA_II import run_nsga2_experiment
 
 
 # ============================================================
@@ -100,6 +121,8 @@ def run_full_pipeline():
                 n_pop=pop,
                 file_path=str(schedule_file)
             )
+        sys.stdout = sys.__stdout__
+        sys.stderr = sys.__stderr__
 
     print("\nFULL SIMULATION COMPLETED SUCCESSFULLY")
     print("=" * 80)
