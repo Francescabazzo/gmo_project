@@ -8,7 +8,6 @@ class RandomInitializer:
     Class that creates a random initial population for the GAs NSGA-II and NSGA-III using the MSOS representation.
     """
 
-
     def __init__(self, jobshop: JobShop, current_time: int, broken_machine: int):
         self.env = jobshop
         self.time = current_time
@@ -28,7 +27,6 @@ class RandomInitializer:
         """
         Categorizes operations based on their status and the current time (moment in which the machine breaks).
         """
-
         for job in self.env.jobs:
             operations = [operation.operation_id for operation in job.operations]
             self.operations_final.append(operations[-1])

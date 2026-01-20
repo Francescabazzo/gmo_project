@@ -42,37 +42,9 @@ class Decoder:
         self.job_times = {}
         self.last_real_objectives = []
 
-        self.ideal_point = None
-        self.nadir_point = None
-        self.normalization_history = []
-
 
     def start_new_generation(self):
         self.last_real_objectives = []
-
-
-    def update_reference_points(self, population_objectives: np.ndarray):
-        """
-        Updates ideal point and nadir point.
-
-        Args:
-            population_objectives: Array of shape (n_individuals, n_objectives) with all the objectives of the generation.
-        """
-        if len(population_objectives) == 0:
-            return
-
-        # Compute current ideal and nadir point of the population.
-        current_ideal = np.min(population_objectives, axis=0)
-        current_nadir = np.max(population_objectives, axis=0)
-
-        # For the ideal point, take the minimum between the current ideal point and the minimum in the history
-        if self.ideal_point is None:
-            self.ideal_point = current_ideal.copy()
-        else:
-            self.ideal_point = np.minimum(self.ideal_point, current_ideal)
-
-        # Take the current nadir point
-        self.nadir_point = current_nadir.copy()
 
 
     def decode(self, individual: np.ndarray) -> np.ndarray:
@@ -105,8 +77,6 @@ class Decoder:
 
         objectives = self._calculate_objectives(job_completion_times, machine_assignments)
 
-        # normalized_objectives = self._normalize_objectives(objectives)
-
         # Calculate the three objective functions
         return objectives
 
@@ -135,11 +105,10 @@ class Decoder:
         self.simulate_schedule(operation_sequence, machine_assignments)
         job_completion_times = self._get_job_completion_times()
 
-        # Vincolo: new_end >= old_end per ogni job
+        # Constraint : new_end >= old_end for each job
         original_schedule = self.schedule_manager.get_original_schedule()
         old_job_ct = original_schedule["job_completion_times"]
 
-        # g = max(old_end - new_end)  -> se >0 c'è almeno un anticipo
         g = -np.inf
         for job_id, new_end in job_completion_times.items():
             old_end = old_job_ct.get(job_id)
@@ -149,7 +118,6 @@ class Decoder:
         if g == -np.inf:
             g = 0.0
 
-        # Obiettivi originali
         objectives = self._calculate_objectives(job_completion_times, machine_assignments)
         return objectives, g
 
@@ -545,32 +513,5 @@ class Decoder:
         }
 
         return normalized_original, normalized_optimal, stats
-
-
-    def _normalize_objectives(self, real_objectives: np.ndarray) -> np.ndarray:
-        """
-        Normalize objective values using the reference points.
-
-        Args:
-            real_objectives: values of the non-normalized objectives
-
-        Returns:
-            np.ndarray: normalized objectives
-        """
-        if self.ideal_point is None or self.nadir_point is None:
-            return real_objectives
-
-        # Normalization: (value - ideal point) / (nadir - ideal point)
-        normalized = (real_objectives - self.ideal_point) / (self.nadir_point - self.ideal_point)
-
-        # For debug
-        self.normalization_history.append({
-            'real': real_objectives.copy(),
-            'normalized': normalized.copy(),
-            'ideal': self.ideal_point.copy(),
-            'nadir': self.nadir_point.copy()
-        })
-
-        return normalized
 
 

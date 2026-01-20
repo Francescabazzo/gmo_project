@@ -5,7 +5,7 @@ from pathlib import Path
 # IMPORTS FROM PROJECT MODULES
 # ============================================================
 
-from simulations.run_GA_MILP import run_ga_milp
+from simulations.run_GA_MILP import run_ga_milp 
 from simulations.run_MILP_resch import run_milp_experiment
 from simulations.run_NSGA_II import run_nsga2_experiment
 

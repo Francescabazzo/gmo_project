@@ -33,7 +33,12 @@ class GeneticOperators:
         self.operation_times = operation_times
 
 
-    def crossover(self, parent1: np.ndarray, parent2: np.ndarray, apply_prob=True) -> Tuple[np.ndarray, np.ndarray]:
+    def crossover(
+            self, 
+            parent1: np.ndarray, 
+            parent2: np.ndarray, 
+            apply_prob=True
+        ) -> Tuple[np.ndarray, np.ndarray]:
         """
         Performs crossover on two parents to generate two children.
         Applies different crossover methods for MS and OS parts.
@@ -293,18 +298,19 @@ class GeneticOperators:
         for job in self.env.jobs:
             for operation in job.operations:
                 if operation.operation_id in self.operations_toprocess:
-                    # Apply mutation with probability equal to mutation rate
-                    if random.random() <= self.mutation_rate:
-                        # Get valid machines (excluding broken machine)
-                        valid_machines = [m for m in operation.optional_machines_id
-                                          if m != self.broken_machine]
-                        if valid_machines:
-                            # Find the machine with minimum processing time
-                            best_machine_idx = self._find_shortest_processing_machine(
-                                operation, valid_machines
-                            )
-                            random_machine_index = random.randint(0, len(valid_machines) - 1)
+                    # Get valid machines (excluding broken machine)
+                    valid_machines = [m for m in operation.optional_machines_id
+                                        if m != self.broken_machine]
+                    if valid_machines:
+                        # Find the machine with minimum processing time
+                        best_machine_idx = self._find_shortest_processing_machine(
+                            operation, valid_machines
+                        )
+                        random_machine_index = random.randint(0, len(valid_machines) - 1)
+                        if random.random() > 0.5: 
                             mutated_ms[op_idx] = random_machine_index
+                        else: 
+                            mutated_ms[op_idx] = best_machine_idx
 
                     op_idx += 1
 
@@ -350,11 +356,9 @@ class GeneticOperators:
 
         # Iterate through all positions in the sequence
         for i in range(len(mutated_os)):
-            # Apply mutation with probability equal to mutation rate
-            if random.random() <= self.mutation_rate:
-                # Select a random position to swap with
-                j = random.randint(0, len(mutated_os) - 1)
-                # Perform swap
-                mutated_os[i], mutated_os[j] = mutated_os[j], mutated_os[i]
+            # Select a random position to swap with
+            j = random.randint(0, len(mutated_os) - 1)
+            # Perform swap
+            mutated_os[i], mutated_os[j] = mutated_os[j], mutated_os[i]
 
         return mutated_os

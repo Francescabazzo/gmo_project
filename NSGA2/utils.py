@@ -177,7 +177,15 @@ def calculate_metrics(pareto_front):
 
 def calculate_GD(pareto_front, optimal_pareto_front):
     """
-    Computes the generational distance 
+    Computes the generational distance between pareto_front and 
+    optimal_pareto_front 
+
+    Args: 
+        pareto_front: NumPy array of shape (n_solutions, n_objectives)
+        optimal_pareto_front: NumPy array of shape (n_optimal_solutions, n_objectives)
+
+    Return:
+        gd_value (float): metric 
     """
     indicator = GD(optimal_pareto_front)
     gd_value = indicator(pareto_front)
@@ -185,6 +193,18 @@ def calculate_GD(pareto_front, optimal_pareto_front):
 
 
 def calculate_hypervolumes(pareto_front, optimal_front):
+    """
+    Computes the hypervolume of the found pareto front and the hypervolume 
+    of the "optimal" pareto front.
+
+    Args: 
+        pareto_front: normalized NumPy array of shape (n_solutions, n_objectives)
+        optimal_pareto_front: normalized NumPy array of shape (n_optimal_solutions, n_objectives)
+
+    Returns: 
+        HV_pf: Hypervolume of the Pareto front. 
+        HV_of: Hypervolume of the "optimal" Pareto front. 
+    """
     ref_point = np.array([1.2, 1.2, 1.2])
     ind = HV(ref_point)
     HV_pf = ind(pareto_front)
@@ -202,7 +222,6 @@ def compute_distances_full(df):
     Returns:
         - df_out: normalized Pareto front dataframe containing the distaces as well
     """
-
     # Pareto front points
     original_front = df[
         ["Time Differences", "Assignment Differences", "Makespan"]
@@ -472,14 +491,6 @@ def save_results(res, decoder, output_dir: str = "results"):
 
     print(f"Pareto solutions saved to JSON: {json_path}")
 
-    """# Calculate and save metrics
-    metrics = calculate_metrics(res.F)
-    metrics_path = os.path.join(output_dir, "metrics.txt")
-    with open(metrics_path, "w") as f:
-        for key, value in metrics.items():
-            f.write(f"{key}: {value}\n")
-    print(f"Metrics saved to: {metrics_path}")"""
-
 
 def save_normalized_pareto_distance_log(
     file_path,
@@ -501,7 +512,6 @@ def save_normalized_pareto_distance_log(
         - distances: Distances between pareto front points
         - nearest_indices: Nearest indices
     """
-
     file_path = Path(file_path)
     file_path.parent.mkdir(parents=True, exist_ok=True)
 
